@@ -3,27 +3,24 @@
 import Link from "next/link"
 import { useLocale, useTranslations } from "next-intl"
 import { ArrowUpRight, Braces, FileUser, Hammer, Headset, type LucideIcon } from "lucide-react"
-import { appPath, routePath } from "../../../lib/routes"
-import { StatusMark, type Status } from "./apps"
+import { routePath } from "../../../lib/routes"
 
 /**
  * The first viewport is a portrait-led split. Left of the axis, the portrait
  * as a full grid module; right of it, the name, one line of promise and the
- * two doors. Under both, the work as a four-cell strip. The apps carry their
- * own App Store icons; client work carries a line icon in the accent.
+ * two doors. Under them, hung from the axis like the doors, the client work,
+ * each marked by a line icon in the accent. The apps have their own section
+ * right below, so they are not repeated here.
  */
 export default function Hero() {
   const t = useTranslations("hero")
   const tHome = useTranslations("home")
-  const tApps = useTranslations("apps")
   const locale = useLocale()
   const work = `${routePath("work", locale)}#cases`
 
-  const index: { id: string; name: string; href: string; status: Status; Icon: LucideIcon | string }[] = [
-    { id: "crudo", name: tApps("crudo.name"), href: appPath("crudo", locale), status: "pending", Icon: "/apps/crudo-icon.webp" },
-    { id: "feit-y", name: tApps("feit-y.name"), href: appPath("feit-y", locale), status: "pending", Icon: "/apps/feit-y-icon.webp" },
-    { id: "aircall", name: tHome("index.aircall.name"), href: work, status: "live", Icon: Headset },
-    { id: "engineai", name: tHome("index.engineai.name"), href: work, status: "done", Icon: Braces },
+  const index: { id: string; name: string; Icon: LucideIcon }[] = [
+    { id: "aircall", name: tHome("index.aircall.name"), Icon: Headset },
+    { id: "engineai", name: tHome("index.engineai.name"), Icon: Braces },
   ]
 
   return (
@@ -69,25 +66,21 @@ export default function Hero() {
         <Door Icon={Hammer} door="build" href={routePath("services", locale)} delay={420} />
       </nav>
 
-      <ol aria-label={tHome("indexLabel")} className="col-span-4 grid gap-x-6 md:col-span-8 md:grid-cols-2 lg:col-span-12 lg:mt-10 lg:grid-cols-4">
+      <ol aria-label={tHome("indexLabel")} className="col-span-4 grid gap-x-6 md:col-span-8 md:grid-cols-2 lg:col-span-9 lg:col-start-4 lg:mt-10 lg:pl-8">
         {index.map(({ Icon, ...item }, i) => (
           <li key={item.id} className="rise" style={{ animationDelay: `${480 + i * 70}ms` }}>
             <Link
-              href={item.href}
-              className="group relative grid h-full grid-cols-[auto_1fr] items-start gap-x-4 border-t border-rule/15 pt-4 pb-5 transition-colors duration-500 hover:bg-primary/[0.04] hairline-draw lg:pr-4"
+              href={work}
+              className="group relative grid h-full grid-cols-[3.25rem_1fr] items-start gap-x-3 border-t border-rule/15 pt-4 pb-5 transition-colors duration-500 hover:bg-primary/[0.04] hairline-draw lg:pr-4"
             >
-              <span className="flex h-10 w-10 items-center justify-center transition-transform duration-500 ease-[cubic-bezier(.16,1,.3,1)] group-hover:translate-x-1">
-                {typeof Icon === "string" ? (
-                  // eslint-disable-next-line @next/next/no-img-element -- static export, pre-sized webp
-                  <img src={Icon} alt="" width={512} height={512} className="h-10 w-10 rounded-[22%]" />
-                ) : (
-                  <Icon className="h-9 w-9 text-primary" strokeWidth={1.25} aria-hidden="true" />
-                )}
-              </span>
+              <Icon
+                className="mt-1 h-7 w-7 text-primary transition-transform duration-500 ease-[cubic-bezier(.16,1,.3,1)] group-hover:translate-x-1"
+                strokeWidth={1.25}
+                aria-hidden="true"
+              />
               <span className="flex flex-col gap-1">
                 <span className="text-xl font-semibold leading-tight tracking-tight">{item.name}</span>
                 <span className="text-sm text-muted-foreground">{tHome(`index.${item.id}.meta`)}</span>
-                <StatusMark status={item.status} label={tHome(`index.${item.id}.status`)} />
               </span>
             </Link>
           </li>

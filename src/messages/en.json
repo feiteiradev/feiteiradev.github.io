@@ -593,13 +593,11 @@
       },
       "aircall": {
         "name": "Aircall",
-        "meta": "via AdvanceWorks · AI support system · Python, React, AWS",
-        "status": "In production since 2025"
+        "meta": "via AdvanceWorks · AI support system · Python, React, AWS"
       },
       "engineai": {
         "name": "EngineAI",
-        "meta": "Python SDK, test and load suites · Snowflake",
-        "status": "Delivered, 2021–2025"
+        "meta": "Python SDK, test and load suites · Snowflake"
       }
     },
     "indexLabel": "Selected work",

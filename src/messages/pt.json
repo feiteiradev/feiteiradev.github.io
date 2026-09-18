@@ -593,13 +593,11 @@
       },
       "aircall": {
         "name": "Aircall",
-        "meta": "via AdvanceWorks · sistema de apoio com IA · Python, React, AWS",
-        "status": "Em produção desde 2025"
+        "meta": "via AdvanceWorks · sistema de apoio com IA · Python, React, AWS"
       },
       "engineai": {
         "name": "EngineAI",
-        "meta": "SDK em Python, testes e testes de carga · Snowflake",
-        "status": "Entregue, 2021–2025"
+        "meta": "SDK em Python, testes e testes de carga · Snowflake"
       }
     },
     "indexLabel": "Trabalho selecionado",

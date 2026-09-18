@@ -165,20 +165,25 @@ test.describe('Interactive background', () => {
   test('lights accent dots around the pointer', async ({ page }) => {
     await page.goto('/en/');
     await page.waitForLoadState('networkidle');
-    await page.mouse.move(600, 400, { steps: 5 });
-    await page.waitForTimeout(600);
+    // The centre of whatever viewport this project runs, so phones count too.
+    const { width, height } = page.viewportSize()!;
+    const [cx, cy] = [Math.round(width / 2), Math.round(height / 2)];
+    await page.mouse.move(cx, cy, { steps: 5 });
 
-    const accentPixels = await page.evaluate(() => {
+    // Polled rather than waited: a 3440px canvas under parallel load can take
+    // longer than a fixed pause to paint its next frame.
+    const accentPixels = () => page.evaluate(([cx, cy]) => {
       const canvas = document.querySelector('canvas');
       const ctx = canvas?.getContext('2d');
       if (!canvas || !ctx) return -1;
       const dpr = canvas.width / canvas.clientWidth;
-      const { data } = ctx.getImageData((600 - 200) * dpr, (400 - 200) * dpr, 400 * dpr, 400 * dpr);
+      const r = 150;
+      const { data } = ctx.getImageData((cx - r) * dpr, (cy - r) * dpr, 2 * r * dpr, 2 * r * dpr);
       let n = 0;
       // Ultramarine (#2b47f5): blue well above red and green, clearly opaque.
       for (let i = 0; i < data.length; i += 4) if (data[i + 3] > 60 && data[i + 2] > data[i] + 80) n++;
       return n;
-    });
-    expect(accentPixels).toBeGreaterThan(50);
+    }, [cx, cy]);
+    await expect.poll(accentPixels, { timeout: 5000 }).toBeGreaterThan(50);
   });
 });
