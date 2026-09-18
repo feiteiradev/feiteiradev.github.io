@@ -15,16 +15,16 @@
 <priority>1</priority>
 </url>
 <url>
-<loc>https://feiteiradev.github.io/en/about/</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/about/" />
-<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/sobre/" />
+<loc>https://feiteiradev.github.io/en/work/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/work/" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/trabalho/" />
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
-<loc>https://feiteiradev.github.io/pt/sobre/</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/about/" />
-<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/sobre/" />
+<loc>https://feiteiradev.github.io/pt/trabalho/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/work/" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/trabalho/" />
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
@@ -39,48 +39,6 @@
 <loc>https://feiteiradev.github.io/pt/servicos/</loc>
 <xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/services/" />
 <xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/servicos/" />
-<changefreq>monthly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://feiteiradev.github.io/en/skills/</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/skills/" />
-<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/competencias/" />
-<changefreq>monthly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://feiteiradev.github.io/pt/competencias/</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/skills/" />
-<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/competencias/" />
-<changefreq>monthly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://feiteiradev.github.io/en/showcase/</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/showcase/" />
-<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/trabalhos/" />
-<changefreq>monthly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://feiteiradev.github.io/pt/trabalhos/</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/showcase/" />
-<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/trabalhos/" />
-<changefreq>monthly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://feiteiradev.github.io/en/case-studies/</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/case-studies/" />
-<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/casos/" />
-<changefreq>monthly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://feiteiradev.github.io/pt/casos/</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/case-studies/" />
-<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/casos/" />
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
@@ -127,88 +85,60 @@
 <priority>0.8</priority>
 </url>
 <url>
-<loc>https://feiteiradev.github.io/en/showcase/vertex-studio/</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/showcase/vertex-studio/" />
-<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/trabalhos/vertex-studio/" />
+<loc>https://feiteiradev.github.io/en/work/meridian-goods/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/work/meridian-goods/" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/trabalho/meridian-goods/" />
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 <url>
-<loc>https://feiteiradev.github.io/pt/trabalhos/vertex-studio/</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/showcase/vertex-studio/" />
-<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/trabalhos/vertex-studio/" />
+<loc>https://feiteiradev.github.io/pt/trabalho/meridian-goods/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/work/meridian-goods/" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/trabalho/meridian-goods/" />
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 <url>
-<loc>https://feiteiradev.github.io/en/showcase/meridian-goods/</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/showcase/meridian-goods/" />
-<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/trabalhos/meridian-goods/" />
+<loc>https://feiteiradev.github.io/en/work/linha-viva-listings/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/work/linha-viva-listings/" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/trabalho/linha-viva-listings/" />
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 <url>
-<loc>https://feiteiradev.github.io/pt/trabalhos/meridian-goods/</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/showcase/meridian-goods/" />
-<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/trabalhos/meridian-goods/" />
+<loc>https://feiteiradev.github.io/pt/trabalho/linha-viva-listings/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/work/linha-viva-listings/" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/trabalho/linha-viva-listings/" />
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 <url>
-<loc>https://feiteiradev.github.io/en/showcase/linha-viva-listings/</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/showcase/linha-viva-listings/" />
-<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/trabalhos/linha-viva-listings/" />
+<loc>https://feiteiradev.github.io/en/work/sereno-spa/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/work/sereno-spa/" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/trabalho/sereno-spa/" />
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 <url>
-<loc>https://feiteiradev.github.io/pt/trabalhos/linha-viva-listings/</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/showcase/linha-viva-listings/" />
-<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/trabalhos/linha-viva-listings/" />
+<loc>https://feiteiradev.github.io/pt/trabalho/sereno-spa/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/work/sereno-spa/" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/trabalho/sereno-spa/" />
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 <url>
-<loc>https://feiteiradev.github.io/en/showcase/linha-viva-obras/</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/showcase/linha-viva-obras/" />
-<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/trabalhos/linha-viva-obras/" />
+<loc>https://feiteiradev.github.io/en/apps/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/apps/" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/apps/" />
 <changefreq>monthly</changefreq>
-<priority>0.5</priority>
+<priority>0.7</priority>
 </url>
 <url>
-<loc>https://feiteiradev.github.io/pt/trabalhos/linha-viva-obras/</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/showcase/linha-viva-obras/" />
-<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/trabalhos/linha-viva-obras/" />
+<loc>https://feiteiradev.github.io/pt/apps/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/apps/" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/apps/" />
 <changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://feiteiradev.github.io/en/showcase/roam-bean/</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/showcase/roam-bean/" />
-<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/trabalhos/roam-bean/" />
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://feiteiradev.github.io/pt/trabalhos/roam-bean/</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/showcase/roam-bean/" />
-<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/trabalhos/roam-bean/" />
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://feiteiradev.github.io/en/showcase/sereno-spa/</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/showcase/sereno-spa/" />
-<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/trabalhos/sereno-spa/" />
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
-</url>
-<url>
-<loc>https://feiteiradev.github.io/pt/trabalhos/sereno-spa/</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/showcase/sereno-spa/" />
-<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/trabalhos/sereno-spa/" />
-<changefreq>monthly</changefreq>
-<priority>0.5</priority>
+<priority>0.7</priority>
 </url>
 <url>
 <loc>https://feiteiradev.github.io/en/apps/crudo/</loc>
