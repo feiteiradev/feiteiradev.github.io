@@ -128,6 +128,13 @@ test.describe('Localised routes', () => {
   // language has to translate the slug, not just swap the /pt/ prefix. Getting
   // that wrong lands the visitor on /en/servicos/, which is not built.
   test('language switcher translates the slug, not just the prefix', async ({ page }, testInfo) => {
+    // The switch remounts the [locale] layout on the client, which is where
+    // next-themes' inline script used to trip React's script-tag error.
+    const scriptErrors: string[] = [];
+    page.on('console', (msg) => {
+      if (msg.type() === 'error' && msg.text().includes('Encountered a script tag')) scriptErrors.push(msg.text());
+    });
+
     await page.goto('/pt/servicos/');
     await page.waitForLoadState('networkidle');
 
@@ -142,6 +149,7 @@ test.describe('Localised routes', () => {
 
     await expect(page).toHaveURL(/\/en\/services\/?$/);
     await expect(page.locator('#services')).toBeVisible();
+    expect(scriptErrors).toEqual([]);
   });
 
   test('a slug from the wrong locale is not served', async ({ page }) => {
