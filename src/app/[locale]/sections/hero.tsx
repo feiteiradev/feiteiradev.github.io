@@ -52,7 +52,7 @@ export default function Hero() {
       </div>
 
       <p
-        className="rise col-span-4 max-w-[26ch] text-2xl font-medium leading-snug tracking-tight md:col-span-8 lg:col-span-7 lg:col-start-4 lg:mt-6 lg:pl-8 lg:text-3xl"
+        className="rise col-span-4 max-w-[40ch] text-2xl font-medium leading-snug tracking-tight md:col-span-8 lg:col-span-7 lg:col-start-4 lg:mt-6 lg:pl-8 lg:text-3xl"
         style={{ animationDelay: "280ms" }}
       >
         {t("tagline")}
