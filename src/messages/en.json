@@ -14,19 +14,8 @@
     "mainNav": "Main navigation"
   },
   "hero": {
-    "greeting": "Hi! I'm Pedro Feiteira",
     "role": "Software engineer",
-    "tagline": "I build web and mobile products end to end: an AI-powered support system for Aircall, a Python SDK for EngineAI, and my own iOS apps, Crudo and Feit-Y. I also build custom software for businesses.",
-    "ticker": [
-      "Automation",
-      "Websites",
-      "Web Apps",
-      "Integrations",
-      "Prototypes",
-      "Python",
-      "React",
-      "AWS"
-    ],
+    "tagline": "I build web and mobile products end to end: an AI-powered support system for Aircall, a Python SDK for EngineAI, and my own iOS apps, Crudo and Feit-⁠Y. I also build custom software for businesses.",
     "profileAlt": "Pedro Feiteira, software engineer",
     "doors": {
       "hire": {
@@ -37,16 +26,17 @@
         "title": "Need something built?",
         "body": "What I build for businesses, and how to start."
       }
-    }
+    },
+    "doorsLabel": "Where to go next"
   },
   "experience": {
     "title": "Experience",
-    "ongoing": "On Going",
+    "ongoing": "ongoing",
     "entries": [
       {
         "role": "Software Engineer",
         "company": "AdvanceWorks (client: Aircall)",
-        "period": "Sep 2025 -- On Going",
+        "period": "Sep 2025 – ongoing",
         "location": "Lisbon, Portugal",
         "description": [
           "Built and maintain a generative AI-powered support system that helps answer customer questions.",
@@ -71,7 +61,7 @@
       {
         "role": "Python Developer",
         "company": "EngineAI",
-        "period": "Sep 2021 -- Aug 2025",
+        "period": "Sep 2021 – Aug 2025",
         "location": "Lisbon, Portugal",
         "description": [
           "Developed and maintained the company's Python SDK, using pandas for data processing and Pytest for unit testing.",
@@ -94,7 +84,7 @@
       {
         "role": "Internship",
         "company": "Celfocus",
-        "period": "Apr 2018 -- Jul 2018",
+        "period": "Apr 2018 – Jul 2018",
         "location": "Lisbon, Portugal",
         "description": [
           "Built a proof of concept for automatic test-case generation from software requirements, as a full-stack application in Node.js with IBM Watson, deployed to the cloud."
@@ -120,7 +110,7 @@
     "updatedDate": "August 2026",
     "sections": {
       "experience": "Experience",
-      "techStack": "Tech Stack",
+      "techStack": "Tech stack",
       "education": "Education",
       "languages": "Languages"
     },
@@ -189,7 +179,7 @@
         ]
       },
       {
-        "label": "Quality & Observability",
+        "label": "Quality and observability",
         "items": [
           "Pytest",
           "Playwright",
@@ -198,11 +188,11 @@
         ]
       },
       {
-        "label": "Architecture & Process",
+        "label": "Architecture and process",
         "items": [
           "Software Architecture",
-          "Process Automation",
-          "Systems Integration",
+          "Process automation",
+          "Systems integration",
           "Zendesk"
         ]
       }
@@ -228,24 +218,24 @@
     ]
   },
   "services": {
-    "title": "What I Build",
+    "title": "What I build",
     "subtitle": "Tell me the business problem. I will tell you what gets built, what it costs, and when it is done.",
     "cta": "Talk about your project",
     "items": [
       {
-        "title": "Process Automation",
+        "title": "Process automation",
         "description": "The manual work that eats your team's week, handled by a workflow. I connect the systems you already use and take the repeated tasks out of the way."
       },
       {
-        "title": "Websites and Web Apps",
+        "title": "Websites and web apps",
         "description": "A website or web application built to fit the business, from design to live product. Fast to load, findable on Google, simple to maintain."
       },
       {
-        "title": "Systems Integration",
+        "title": "Systems integration",
         "description": "Your invoicing, CRM, online store and spreadsheets talking to each other. An integration written to fit, instead of copying data across by hand."
       },
       {
-        "title": "Prototype in Days",
+        "title": "Prototype in days",
         "description": "A working version of the idea, to validate with real customers before investing in the full product."
       }
     ]
@@ -254,7 +244,7 @@
     "title": "Concepts",
     "description": "Concept sites by sector. Each one shows how a site looks when it is built for that kind of business.",
     "disclosure": "Fictional brands, made for demonstration. They are not real clients.",
-    "viewProject": "View Project",
+    "viewProject": "View project",
     "meridian-goods": {
       "title": "Meridian Goods",
       "description": "Lifestyle retail store"
@@ -313,7 +303,7 @@
   },
   "contact": {
     "title": "Contact Me",
-    "sendMessage": "Send a Message",
+    "sendMessage": "Send a message",
     "getInTouch": "Get in touch",
     "trustTitle": "How I work",
     "trust": [
@@ -325,7 +315,7 @@
       "namePlaceholder": "Your name",
       "emailPlaceholder": "Your email",
       "messagePlaceholder": "Your message",
-      "sendButton": "Send Message",
+      "sendButton": "Send message",
       "sending": "Sending...",
       "characters": "{count} / {max} characters",
       "topics": {
@@ -333,7 +323,7 @@
         "project": "A project",
         "job": "A job or role",
         "crudo": "Crudo support",
-        "feit-y": "Feit-Y support"
+        "feit-y": "Feit-⁠Y support"
       }
     },
     "validation": {
@@ -381,21 +371,21 @@
     },
     "apps": {
       "title": "Apps · Pedro Feiteira",
-      "description": "Crudo and Feit-Y, the iOS apps I design, build and support."
+      "description": "Crudo and Feit-⁠Y, the iOS apps I design, build and support."
     }
   },
   "footer": {
-    "backToTop": "Back to Top",
+    "backToTop": "Back to top",
     "scrollToTop": "Scroll to top",
     "copyright": "Pedro Feiteira. All rights reserved.",
     "privacy": "Privacy",
     "apps": "Apps"
   },
   "notFound": {
-    "title": "Page Not Found",
+    "title": "Page not found",
     "description": "The page you're looking for doesn't exist or has been moved.",
-    "goHome": "Go Home",
-    "goBack": "Go Back"
+    "goHome": "Go home",
+    "goBack": "Go back"
   },
   "common": {
     "loading": "Loading...",
@@ -420,7 +410,7 @@
       },
       {
         "heading": "My apps",
-        "body": "Crudo and Feit-Y each have their own privacy policy, linked from their pages under Apps."
+        "body": "Crudo and Feit-⁠Y each have their own privacy policy, linked from their pages under Apps."
       },
       {
         "heading": "Legal basis and retention",
@@ -465,7 +455,7 @@
         "sections": [
           {
             "heading": "Getting in touch",
-            "body": "Email pedrofeiteira.dev@gmail.com, or use the contact form. I read everything and usually reply within two working days.\n\nIf you are reporting a problem, telling me your device, your iOS version and what you were doing at the time will get you a useful answer much faster."
+            "body": "Email pedrofeiteira.dev@gmail.com, or use the contact form. I read everything and reply within 24 working hours.\n\nIf you are reporting a problem, telling me your device, your iOS version and what you were doing at the time will get you a useful answer much faster."
           },
           {
             "heading": "Purchases and restoring",
@@ -513,24 +503,24 @@
       }
     },
     "feit-y": {
-      "name": "Feit-Y",
+      "name": "Feit-⁠Y",
       "tagline": "Your training memory.",
-      "description": "Feit-Y is a workout companion you talk to. Tell it what you lifted and it logs the set; ask about your training and it answers from your own records. Every set, every load, every PR, remembered.",
+      "description": "Feit-⁠Y is a workout companion you talk to. Tell it what you lifted and it logs the set; ask about your training and it answers from your own records. Every set, every load, every PR, remembered.",
       "meta": {
-        "title": "Feit-Y · Your training memory",
+        "title": "Feit-⁠Y · Your training memory",
         "description": "A workout companion you talk to. It logs your sets and answers from your own training records. For iPhone."
       },
       "support": {
         "meta": {
-          "title": "Feit-Y support",
-          "description": "Help with Feit-Y: reaching me, your account, subscriptions and deleting your data."
+          "title": "Feit-⁠Y support",
+          "description": "Help with Feit-⁠Y: reaching me, your account, subscriptions and deleting your data."
         },
-        "statement": "Something not working, or a question about Feit-Y? Write to me directly.",
+        "statement": "Something not working, or a question about Feit-⁠Y? Write to me directly.",
         "updated": "Last updated 18 September 2026",
         "sections": [
           {
             "heading": "Getting in touch",
-            "body": "Email pedrofeiteira.dev@gmail.com, or use the contact form. I read everything and usually reply within two working days.\n\nIf you are reporting a problem, telling me your device, your iOS version and what you said to the assistant will get you a useful answer much faster."
+            "body": "Email pedrofeiteira.dev@gmail.com, or use the contact form. I read everything and reply within 24 working hours.\n\nIf you are reporting a problem, telling me your device, your iOS version and what you said to the assistant will get you a useful answer much faster."
           },
           {
             "heading": "Your account",
@@ -542,37 +532,37 @@
           },
           {
             "heading": "Not medical advice",
-            "body": "Feit-Y records your training and answers questions about it. It is training guidance, not medical advice: if something hurts, or you have a condition that affects how you train, talk to a health professional."
+            "body": "Feit-⁠Y records your training and answers questions about it. It is training guidance, not medical advice: if something hurts, or you have a condition that affects how you train, talk to a health professional."
           }
         ]
       },
       "privacy": {
         "meta": {
-          "title": "Feit-Y privacy policy",
-          "description": "What Feit-Y stores, why, who processes it, and how to delete it."
+          "title": "Feit-⁠Y privacy policy",
+          "description": "What Feit-⁠Y stores, why, who processes it, and how to delete it."
         },
-        "statement": "Feit-Y keeps what you tell it so it can remember your training. Here is exactly what that is, and how to erase it.",
+        "statement": "Feit-⁠Y keeps what you tell it so it can remember your training. Here is exactly what that is, and how to erase it.",
         "updated": "Last updated 18 September 2026",
         "sections": [
           {
             "heading": "Who is responsible",
-            "body": "Feit-Y is made by Pedro Feiteira, an independent software engineer based in Portugal, who is the controller of your data. For anything on this page, write to pedrofeiteira.dev@gmail.com."
+            "body": "Feit-⁠Y is made by Pedro Feiteira, an independent software engineer based in Portugal, who is the controller of your data. For anything on this page, write to pedrofeiteira.dev@gmail.com."
           },
           {
-            "heading": "What Feit-Y stores",
+            "heading": "What Feit-⁠Y stores",
             "body": "Your account: your email address and how you sign in (email and password, Google or Apple).\n\nYour training: workouts, sets, loads, reps, effort, rest and notes.\n\nYour body and health: measurements such as weight and height, personal records, food entries (macros and notes), progress photos you choose to add, and what you tell the assistant about your goals, equipment and limitations, including injuries.\n\nWhat you say to the assistant: the text of each command, kept with the actions it produced."
           },
           {
             "heading": "Why, and on what basis",
-            "body": "All of it is used for one thing: to run Feit-Y for you — to log your training, remember it and answer your questions about it.\n\nMeasurements, injuries and progress photos are health data. Feit-Y processes them only with your explicit consent, which the app asks for before you first use the assistant. You can withdraw it at any time by deleting your account."
+            "body": "All of it is used for one thing: to run Feit-⁠Y for you — to log your training, remember it and answer your questions about it.\n\nMeasurements, injuries and progress photos are health data. Feit-⁠Y processes them only with your explicit consent, which the app asks for before you first use the assistant. You can withdraw it at any time by deleting your account."
           },
           {
             "heading": "The AI that reads your commands",
-            "body": "When you talk to the assistant, the text of your command, the state of your current workout and a short summary of what Feit-Y remembers about you are sent to OVHcloud AI Endpoints, which runs the open-weight gpt-oss-20b model and returns the actions to take. OVHcloud processes this on my behalf to answer that request.\n\nI do not use your data to train any model."
+            "body": "When you talk to the assistant, the text of your command, the state of your current workout and a short summary of what Feit-⁠Y remembers about you are sent to OVHcloud AI Endpoints, which runs the open-weight gpt-oss-20b model and returns the actions to take. OVHcloud processes this on my behalf to answer that request.\n\nI do not use your data to train any model."
           },
           {
             "heading": "Who else processes it",
-            "body": "Supabase stores your account, your data and your photos, in the European Union. Apple or Google confirm your identity only if you choose to sign in with them. Apple handles subscriptions and payments; I never see your payment details.\n\nFeit-Y has no advertising, no analytics or tracking SDKs, and I never sell your data."
+            "body": "Supabase stores your account, your data and your photos, in the European Union. Apple or Google confirm your identity only if you choose to sign in with them. Apple handles subscriptions and payments; I never see your payment details.\n\nFeit-⁠Y has no advertising, no analytics or tracking SDKs, and I never sell your data."
           },
           {
             "heading": "How long, and how to delete it",
@@ -591,8 +581,35 @@
     }
   },
   "home": {
-    "proof": "Recent work",
-    "clients": "Client work",
-    "seeWork": "See all work"
+    "caption": "Software engineer, Portugal",
+    "index": {
+      "crudo": {
+        "meta": "iOS app · SwiftUI · design, build, support",
+        "status": "Coming to the App Store, 2026"
+      },
+      "feit-y": {
+        "meta": "iOS app · SwiftUI, FastAPI, Supabase",
+        "status": "Coming to the App Store, 2026"
+      },
+      "aircall": {
+        "name": "Aircall",
+        "meta": "via AdvanceWorks · AI support system · Python, React, AWS",
+        "status": "In production since 2025"
+      },
+      "engineai": {
+        "name": "EngineAI",
+        "meta": "Python SDK, test and load suites · Snowflake",
+        "status": "Delivered, 2021–2025"
+      }
+    },
+    "indexLabel": "Selected work",
+    "appsTitle": "My apps",
+    "appsIntro": "Two iOS apps I design, build, ship and support myself, each with its own identity.",
+    "close": {
+      "title": "Contact",
+      "line": "A role to fill, or something to build?",
+      "body": "Write to me directly. I read everything and reply within 24 working hours.",
+      "form": "Or use the contact form"
+    }
   }
 }

@@ -40,3 +40,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Playwright output
+/test-results/
+/playwright-report/
+
+# Impeccable working files (screenshots, caches); the brief, decision and config are tracked
+/.impeccable/review/
+/.impeccable/questions/
+/.impeccable/hook.cache.json
+/.impeccable/config.local.json

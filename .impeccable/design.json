@@ -1,0 +1,837 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-18T15:24:08+00:00",
+  "title": "Design System: Pedro Feiteira",
+  "extensions": {
+    "colorMeta": {
+      "ultramarine": {
+        "role": "primary",
+        "displayName": "Ultramarine",
+        "canonical": "#2b47f5",
+        "tonalRamp": [
+          "oklch(15% 0.257 267)",
+          "oklch(27% 0.257 267)",
+          "oklch(39% 0.257 267)",
+          "oklch(51% 0.257 267)",
+          "oklch(63% 0.257 267)",
+          "oklch(75% 0.257 267)",
+          "oklch(86% 0.257 267)",
+          "oklch(95% 0.257 267)"
+        ]
+      },
+      "on-ultramarine": {
+        "role": "neutral",
+        "displayName": "On Ultramarine",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "oklch(15% 0.000 90)",
+          "oklch(27% 0.000 90)",
+          "oklch(39% 0.000 90)",
+          "oklch(51% 0.000 90)",
+          "oklch(63% 0.000 90)",
+          "oklch(75% 0.000 90)",
+          "oklch(86% 0.000 90)",
+          "oklch(95% 0.000 90)"
+        ]
+      },
+      "cool-paper": {
+        "role": "neutral",
+        "displayName": "Cool Paper",
+        "canonical": "#f2f3f0",
+        "tonalRamp": [
+          "oklch(15% 0.004 122)",
+          "oklch(27% 0.004 122)",
+          "oklch(39% 0.004 122)",
+          "oklch(51% 0.004 122)",
+          "oklch(63% 0.004 122)",
+          "oklch(75% 0.004 122)",
+          "oklch(86% 0.004 122)",
+          "oklch(95% 0.004 122)"
+        ]
+      },
+      "sheet-paper": {
+        "role": "neutral",
+        "displayName": "Sheet Paper",
+        "canonical": "#f7f8f5",
+        "tonalRamp": [
+          "oklch(15% 0.004 122)",
+          "oklch(27% 0.004 122)",
+          "oklch(39% 0.004 122)",
+          "oklch(51% 0.004 122)",
+          "oklch(63% 0.004 122)",
+          "oklch(75% 0.004 122)",
+          "oklch(86% 0.004 122)",
+          "oklch(95% 0.004 122)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#0e0f0d",
+        "tonalRamp": [
+          "oklch(15% 0.004 129)",
+          "oklch(27% 0.004 129)",
+          "oklch(39% 0.004 129)",
+          "oklch(51% 0.004 129)",
+          "oklch(63% 0.004 129)",
+          "oklch(75% 0.004 129)",
+          "oklch(86% 0.004 129)",
+          "oklch(95% 0.004 129)"
+        ]
+      },
+      "stone-wash": {
+        "role": "neutral",
+        "displayName": "Stone Wash",
+        "canonical": "#e4e6e0",
+        "tonalRamp": [
+          "oklch(15% 0.008 122)",
+          "oklch(27% 0.008 122)",
+          "oklch(39% 0.008 122)",
+          "oklch(51% 0.008 122)",
+          "oklch(63% 0.008 122)",
+          "oklch(75% 0.008 122)",
+          "oklch(86% 0.008 122)",
+          "oklch(95% 0.008 122)"
+        ]
+      },
+      "graphite": {
+        "role": "neutral",
+        "displayName": "Graphite",
+        "canonical": "#565b53",
+        "tonalRamp": [
+          "oklch(15% 0.014 133)",
+          "oklch(27% 0.014 133)",
+          "oklch(39% 0.014 133)",
+          "oklch(51% 0.014 133)",
+          "oklch(63% 0.014 133)",
+          "oklch(75% 0.014 133)",
+          "oklch(86% 0.014 133)",
+          "oklch(95% 0.014 133)"
+        ]
+      },
+      "hairline-grey": {
+        "role": "neutral",
+        "displayName": "Hairline Grey",
+        "canonical": "#d3d6cf",
+        "tonalRamp": [
+          "oklch(15% 0.010 126)",
+          "oklch(27% 0.010 126)",
+          "oklch(39% 0.010 126)",
+          "oklch(51% 0.010 126)",
+          "oklch(63% 0.010 126)",
+          "oklch(75% 0.010 126)",
+          "oklch(86% 0.010 126)",
+          "oklch(95% 0.010 126)"
+        ]
+      },
+      "field-edge": {
+        "role": "neutral",
+        "displayName": "Field Edge",
+        "canonical": "#bfc3ba",
+        "tonalRamp": [
+          "oklch(15% 0.013 126)",
+          "oklch(27% 0.013 126)",
+          "oklch(39% 0.013 126)",
+          "oklch(51% 0.013 126)",
+          "oklch(63% 0.013 126)",
+          "oklch(75% 0.013 126)",
+          "oklch(86% 0.013 126)",
+          "oklch(95% 0.013 126)"
+        ]
+      },
+      "signal-red": {
+        "role": "error",
+        "displayName": "Signal Red",
+        "canonical": "#c2361f",
+        "tonalRamp": [
+          "oklch(15% 0.180 32)",
+          "oklch(27% 0.180 32)",
+          "oklch(39% 0.180 32)",
+          "oklch(51% 0.180 32)",
+          "oklch(63% 0.180 32)",
+          "oklch(75% 0.180 32)",
+          "oklch(86% 0.180 32)",
+          "oklch(95% 0.180 32)"
+        ]
+      },
+      "mesh-periwinkle": {
+        "role": "neutral",
+        "displayName": "Mesh Periwinkle",
+        "canonical": "#7f93ff",
+        "tonalRamp": [
+          "oklch(15% 0.159 274)",
+          "oklch(27% 0.159 274)",
+          "oklch(39% 0.159 274)",
+          "oklch(51% 0.159 274)",
+          "oklch(63% 0.159 274)",
+          "oklch(75% 0.159 274)",
+          "oklch(86% 0.159 274)",
+          "oklch(95% 0.159 274)"
+        ]
+      },
+      "mesh-mist": {
+        "role": "neutral",
+        "displayName": "Mesh Mist",
+        "canonical": "#b9c3cf",
+        "tonalRamp": [
+          "oklch(15% 0.020 253)",
+          "oklch(27% 0.020 253)",
+          "oklch(39% 0.020 253)",
+          "oklch(51% 0.020 253)",
+          "oklch(63% 0.020 253)",
+          "oklch(75% 0.020 253)",
+          "oklch(86% 0.020 253)",
+          "oklch(95% 0.020 253)"
+        ]
+      },
+      "night-ultramarine": {
+        "role": "primary",
+        "displayName": "Night Ultramarine",
+        "canonical": "#8392ff",
+        "tonalRamp": [
+          "oklch(15% 0.160 276)",
+          "oklch(27% 0.160 276)",
+          "oklch(39% 0.160 276)",
+          "oklch(51% 0.160 276)",
+          "oklch(63% 0.160 276)",
+          "oklch(75% 0.160 276)",
+          "oklch(86% 0.160 276)",
+          "oklch(95% 0.160 276)"
+        ]
+      },
+      "on-night-ultramarine": {
+        "role": "neutral",
+        "displayName": "On Night Ultramarine",
+        "canonical": "#0b0c12",
+        "tonalRamp": [
+          "oklch(15% 0.013 277)",
+          "oklch(27% 0.013 277)",
+          "oklch(39% 0.013 277)",
+          "oklch(51% 0.013 277)",
+          "oklch(63% 0.013 277)",
+          "oklch(75% 0.013 277)",
+          "oklch(86% 0.013 277)",
+          "oklch(95% 0.013 277)"
+        ]
+      },
+      "night-paper": {
+        "role": "neutral",
+        "displayName": "Night Paper",
+        "canonical": "#101113",
+        "tonalRamp": [
+          "oklch(15% 0.004 264)",
+          "oklch(27% 0.004 264)",
+          "oklch(39% 0.004 264)",
+          "oklch(51% 0.004 264)",
+          "oklch(63% 0.004 264)",
+          "oklch(75% 0.004 264)",
+          "oklch(86% 0.004 264)",
+          "oklch(95% 0.004 264)"
+        ]
+      },
+      "night-sheet": {
+        "role": "neutral",
+        "displayName": "Night Sheet",
+        "canonical": "#16171a",
+        "tonalRamp": [
+          "oklch(15% 0.006 271)",
+          "oklch(27% 0.006 271)",
+          "oklch(39% 0.006 271)",
+          "oklch(51% 0.006 271)",
+          "oklch(63% 0.006 271)",
+          "oklch(75% 0.006 271)",
+          "oklch(86% 0.006 271)",
+          "oklch(95% 0.006 271)"
+        ]
+      },
+      "night-ink": {
+        "role": "neutral",
+        "displayName": "Night Ink",
+        "canonical": "#ecede9",
+        "tonalRamp": [
+          "oklch(15% 0.005 118)",
+          "oklch(27% 0.005 118)",
+          "oklch(39% 0.005 118)",
+          "oklch(51% 0.005 118)",
+          "oklch(63% 0.005 118)",
+          "oklch(75% 0.005 118)",
+          "oklch(86% 0.005 118)",
+          "oklch(95% 0.005 118)"
+        ]
+      },
+      "night-stone": {
+        "role": "neutral",
+        "displayName": "Night Stone",
+        "canonical": "#1e2024",
+        "tonalRamp": [
+          "oklch(15% 0.008 264)",
+          "oklch(27% 0.008 264)",
+          "oklch(39% 0.008 264)",
+          "oklch(51% 0.008 264)",
+          "oklch(63% 0.008 264)",
+          "oklch(75% 0.008 264)",
+          "oklch(86% 0.008 264)",
+          "oklch(95% 0.008 264)"
+        ]
+      },
+      "night-graphite": {
+        "role": "neutral",
+        "displayName": "Night Graphite",
+        "canonical": "#9da297",
+        "tonalRamp": [
+          "oklch(15% 0.017 127)",
+          "oklch(27% 0.017 127)",
+          "oklch(39% 0.017 127)",
+          "oklch(51% 0.017 127)",
+          "oklch(63% 0.017 127)",
+          "oklch(75% 0.017 127)",
+          "oklch(86% 0.017 127)",
+          "oklch(95% 0.017 127)"
+        ]
+      },
+      "night-hairline": {
+        "role": "neutral",
+        "displayName": "Night Hairline",
+        "canonical": "#2a2d31",
+        "tonalRamp": [
+          "oklch(15% 0.008 256)",
+          "oklch(27% 0.008 256)",
+          "oklch(39% 0.008 256)",
+          "oklch(51% 0.008 256)",
+          "oklch(63% 0.008 256)",
+          "oklch(75% 0.008 256)",
+          "oklch(86% 0.008 256)",
+          "oklch(95% 0.008 256)"
+        ]
+      },
+      "night-field-edge": {
+        "role": "neutral",
+        "displayName": "Night Field Edge",
+        "canonical": "#3a3d42",
+        "tonalRamp": [
+          "oklch(15% 0.010 261)",
+          "oklch(27% 0.010 261)",
+          "oklch(39% 0.010 261)",
+          "oklch(51% 0.010 261)",
+          "oklch(63% 0.010 261)",
+          "oklch(75% 0.010 261)",
+          "oklch(86% 0.010 261)",
+          "oklch(95% 0.010 261)"
+        ]
+      },
+      "night-signal-red": {
+        "role": "error",
+        "displayName": "Night Signal Red",
+        "canonical": "#e5664f",
+        "tonalRamp": [
+          "oklch(15% 0.163 32)",
+          "oklch(27% 0.163 32)",
+          "oklch(39% 0.163 32)",
+          "oklch(51% 0.163 32)",
+          "oklch(63% 0.163 32)",
+          "oklch(75% 0.163 32)",
+          "oklch(86% 0.163 32)",
+          "oklch(95% 0.163 32)"
+        ]
+      },
+      "crudo-terracotta": {
+        "role": "app-crudo",
+        "displayName": "Crudo Terracotta",
+        "canonical": "#9e5328",
+        "tonalRamp": [
+          "oklch(15% 0.114 48)",
+          "oklch(27% 0.114 48)",
+          "oklch(39% 0.114 48)",
+          "oklch(51% 0.114 48)",
+          "oklch(63% 0.114 48)",
+          "oklch(75% 0.114 48)",
+          "oklch(86% 0.114 48)",
+          "oklch(95% 0.114 48)"
+        ]
+      },
+      "crudo-mark": {
+        "role": "app-crudo",
+        "displayName": "Crudo Mark",
+        "canonical": "#c9713d",
+        "tonalRamp": [
+          "oklch(15% 0.129 49)",
+          "oklch(27% 0.129 49)",
+          "oklch(39% 0.129 49)",
+          "oklch(51% 0.129 49)",
+          "oklch(63% 0.129 49)",
+          "oklch(75% 0.129 49)",
+          "oklch(86% 0.129 49)",
+          "oklch(95% 0.129 49)"
+        ]
+      },
+      "crudo-cream": {
+        "role": "app-crudo",
+        "displayName": "Crudo Cream",
+        "canonical": "#f3ece1",
+        "tonalRamp": [
+          "oklch(15% 0.016 79)",
+          "oklch(27% 0.016 79)",
+          "oklch(39% 0.016 79)",
+          "oklch(51% 0.016 79)",
+          "oklch(63% 0.016 79)",
+          "oklch(75% 0.016 79)",
+          "oklch(86% 0.016 79)",
+          "oklch(95% 0.016 79)"
+        ]
+      },
+      "crudo-sheet": {
+        "role": "app-crudo",
+        "displayName": "Crudo Sheet",
+        "canonical": "#fbf7f0",
+        "tonalRamp": [
+          "oklch(15% 0.010 82)",
+          "oklch(27% 0.010 82)",
+          "oklch(39% 0.010 82)",
+          "oklch(51% 0.010 82)",
+          "oklch(63% 0.010 82)",
+          "oklch(75% 0.010 82)",
+          "oklch(86% 0.010 82)",
+          "oklch(95% 0.010 82)"
+        ]
+      },
+      "crudo-ink": {
+        "role": "app-crudo",
+        "displayName": "Crudo Ink",
+        "canonical": "#2b2723",
+        "tonalRamp": [
+          "oklch(15% 0.009 67)",
+          "oklch(27% 0.009 67)",
+          "oklch(39% 0.009 67)",
+          "oklch(51% 0.009 67)",
+          "oklch(63% 0.009 67)",
+          "oklch(75% 0.009 67)",
+          "oklch(86% 0.009 67)",
+          "oklch(95% 0.009 67)"
+        ]
+      },
+      "crudo-taupe": {
+        "role": "app-crudo",
+        "displayName": "Crudo Taupe",
+        "canonical": "#6e665d",
+        "tonalRamp": [
+          "oklch(15% 0.017 71)",
+          "oklch(27% 0.017 71)",
+          "oklch(39% 0.017 71)",
+          "oklch(51% 0.017 71)",
+          "oklch(63% 0.017 71)",
+          "oklch(75% 0.017 71)",
+          "oklch(86% 0.017 71)",
+          "oklch(95% 0.017 71)"
+        ]
+      },
+      "crudo-hairline": {
+        "role": "app-crudo",
+        "displayName": "Crudo Hairline",
+        "canonical": "#dccfbe",
+        "tonalRamp": [
+          "oklch(15% 0.027 75)",
+          "oklch(27% 0.027 75)",
+          "oklch(39% 0.027 75)",
+          "oklch(51% 0.027 75)",
+          "oklch(63% 0.027 75)",
+          "oklch(75% 0.027 75)",
+          "oklch(86% 0.027 75)",
+          "oklch(95% 0.027 75)"
+        ]
+      },
+      "feity-moss": {
+        "role": "app-feit-y",
+        "displayName": "Feit-Y Moss",
+        "canonical": "#4a6b2a",
+        "tonalRamp": [
+          "oklch(15% 0.101 132)",
+          "oklch(27% 0.101 132)",
+          "oklch(39% 0.101 132)",
+          "oklch(51% 0.101 132)",
+          "oklch(63% 0.101 132)",
+          "oklch(75% 0.101 132)",
+          "oklch(86% 0.101 132)",
+          "oklch(95% 0.101 132)"
+        ]
+      },
+      "feity-sage-paper": {
+        "role": "app-feit-y",
+        "displayName": "Feit-Y Sage Paper",
+        "canonical": "#edefe7",
+        "tonalRamp": [
+          "oklch(15% 0.011 118)",
+          "oklch(27% 0.011 118)",
+          "oklch(39% 0.011 118)",
+          "oklch(51% 0.011 118)",
+          "oklch(63% 0.011 118)",
+          "oklch(75% 0.011 118)",
+          "oklch(86% 0.011 118)",
+          "oklch(95% 0.011 118)"
+        ]
+      },
+      "feity-ink": {
+        "role": "app-feit-y",
+        "displayName": "Feit-Y Ink",
+        "canonical": "#141810",
+        "tonalRamp": [
+          "oklch(15% 0.017 129)",
+          "oklch(27% 0.017 129)",
+          "oklch(39% 0.017 129)",
+          "oklch(51% 0.017 129)",
+          "oklch(63% 0.017 129)",
+          "oklch(75% 0.017 129)",
+          "oklch(86% 0.017 129)",
+          "oklch(95% 0.017 129)"
+        ]
+      },
+      "feity-lichen": {
+        "role": "app-feit-y",
+        "displayName": "Feit-Y Lichen",
+        "canonical": "#4c5547",
+        "tonalRamp": [
+          "oklch(15% 0.025 134)",
+          "oklch(27% 0.025 134)",
+          "oklch(39% 0.025 134)",
+          "oklch(51% 0.025 134)",
+          "oklch(63% 0.025 134)",
+          "oklch(75% 0.025 134)",
+          "oklch(86% 0.025 134)",
+          "oklch(95% 0.025 134)"
+        ]
+      },
+      "feity-hairline": {
+        "role": "app-feit-y",
+        "displayName": "Feit-Y Hairline",
+        "canonical": "#cdd3c4",
+        "tonalRamp": [
+          "oklch(15% 0.021 125)",
+          "oklch(27% 0.021 125)",
+          "oklch(39% 0.021 125)",
+          "oklch(51% 0.021 125)",
+          "oklch(63% 0.021 125)",
+          "oklch(75% 0.021 125)",
+          "oklch(86% 0.021 125)",
+          "oklch(95% 0.021 125)"
+        ]
+      },
+      "feity-lime": {
+        "role": "app-feit-y",
+        "displayName": "Feit-Y Lime",
+        "canonical": "#bcd292",
+        "tonalRamp": [
+          "oklch(15% 0.088 124)",
+          "oklch(27% 0.088 124)",
+          "oklch(39% 0.088 124)",
+          "oklch(51% 0.088 124)",
+          "oklch(63% 0.088 124)",
+          "oklch(75% 0.088 124)",
+          "oklch(86% 0.088 124)",
+          "oklch(95% 0.088 124)"
+        ]
+      },
+      "feity-night": {
+        "role": "app-feit-y",
+        "displayName": "Feit-Y Night",
+        "canonical": "#0f130d",
+        "tonalRamp": [
+          "oklch(15% 0.014 135)",
+          "oklch(27% 0.014 135)",
+          "oklch(39% 0.014 135)",
+          "oklch(51% 0.014 135)",
+          "oklch(63% 0.014 135)",
+          "oklch(75% 0.014 135)",
+          "oklch(86% 0.014 135)",
+          "oklch(95% 0.014 135)"
+        ]
+      },
+      "feity-night-sheet": {
+        "role": "app-feit-y",
+        "displayName": "Feit-Y Night Sheet",
+        "canonical": "#1b211a",
+        "tonalRamp": [
+          "oklch(15% 0.016 141)",
+          "oklch(27% 0.016 141)",
+          "oklch(39% 0.016 141)",
+          "oklch(51% 0.016 141)",
+          "oklch(63% 0.016 141)",
+          "oklch(75% 0.016 141)",
+          "oklch(86% 0.016 141)",
+          "oklch(95% 0.016 141)"
+        ]
+      },
+      "feity-night-ink": {
+        "role": "app-feit-y",
+        "displayName": "Feit-Y Night Ink",
+        "canonical": "#f1f4ec",
+        "tonalRamp": [
+          "oklch(15% 0.011 123)",
+          "oklch(27% 0.011 123)",
+          "oklch(39% 0.011 123)",
+          "oklch(51% 0.011 123)",
+          "oklch(63% 0.011 123)",
+          "oklch(75% 0.011 123)",
+          "oklch(86% 0.011 123)",
+          "oklch(95% 0.011 123)"
+        ]
+      },
+      "feity-night-lichen": {
+        "role": "app-feit-y",
+        "displayName": "Feit-Y Night Lichen",
+        "canonical": "#a7afa0",
+        "tonalRamp": [
+          "oklch(15% 0.023 130)",
+          "oklch(27% 0.023 130)",
+          "oklch(39% 0.023 130)",
+          "oklch(51% 0.023 130)",
+          "oklch(63% 0.023 130)",
+          "oklch(75% 0.023 130)",
+          "oklch(86% 0.023 130)",
+          "oklch(95% 0.023 130)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "the name only, in two lines, each line revealed through its own box on load."
+      },
+      "numeral": {
+        "displayName": "Numeral",
+        "purpose": "the home index numbers 01-04, in ultramarine, co-focal with the name."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "the closing line on home and the services subtitle; measure 20-26ch."
+      },
+      "statement": {
+        "displayName": "Statement",
+        "purpose": "the lead sentence of document pages (privacy, app support/privacy); measure 24ch."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "block headings on the left of the axis, rail titles, door titles (up to 1.875rem at lg)."
+      },
+      "item": {
+        "displayName": "Item",
+        "purpose": "index row names, service row titles, document section headings."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "intros and the hero statement; 46-60ch."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "running text; long reading capped at 65ch."
+      },
+      "meta": {
+        "displayName": "Meta",
+        "purpose": "provenance lines, captions, dates, footer, nav (15px in the header)."
+      },
+      "status": {
+        "displayName": "Status",
+        "purpose": "the dated status line beside an 8px square mark."
+      },
+      "crudo-display": {
+        "displayName": "Crudo Display",
+        "purpose": "App band face; see Typography, App band faces."
+      },
+      "feity-display": {
+        "displayName": "Feity Display",
+        "purpose": "App band face; see Typography, App band faces."
+      },
+      "feity-figures": {
+        "displayName": "Feity Figures",
+        "purpose": "App band face; see Typography, App band faces."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "ease-out-expo",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "The one easing: load rise, name reveal, hairline draw, numeral and arrow nudges."
+      },
+      {
+        "name": "rise",
+        "value": "900ms, translateY(14px) + opacity 0 to rest, staggered 80-600ms",
+        "purpose": "First-viewport modules on load only; CSS, never gated on JavaScript."
+      },
+      {
+        "name": "reveal-line",
+        "value": "1100ms, clip-path inset(0 0 100% 0) + translateY(0.35em) to rest, lines 90ms apart",
+        "purpose": "The name's two lines on load."
+      },
+      {
+        "name": "hairline-draw",
+        "value": "600ms scaleX(0 to 1) from the left",
+        "purpose": "Accent rule on hovered or focused rows; 2px on doors."
+      },
+      {
+        "name": "row-tint",
+        "value": "500ms background to primary at 4%",
+        "purpose": "Hover tint on index rows and doors."
+      },
+      {
+        "name": "mesh-drift",
+        "value": "38s / 46s / 52s ease-in-out loops, pointer lean spring (stiffness 30, damping 20) max 24px",
+        "purpose": "The living background; held still under prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg (axis appears, 12 columns)",
+        "value": "1024px"
+      },
+      {
+        "name": "3xl",
+        "value": "1920px"
+      },
+      {
+        "name": "4xl",
+        "value": "2560px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Action",
+      "kind": "button",
+      "refersTo": "cta-primary",
+      "description": "The one filled action on a page: services call to action, app support contact.",
+      "html": "<a class=\"ds-cta\" href=\"#\">Falar sobre o projeto <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M7 7h10v10\"/><path d=\"M7 17 17 7\"/></svg></a>",
+      "css": ".ds-cta { font-family: var(--font-grotesk), 'Schibsted Grotesk', sans-serif; display: inline-flex; align-items: center; gap: 12px; background: var(--primary, #2b47f5); color: var(--primary-foreground, #fff); padding: 16px 24px; font-size: 1.125rem; font-weight: 500; text-decoration: none; border-radius: 0; transition: opacity 150ms; } .ds-cta:hover { opacity: 0.9; } .ds-cta:focus-visible { outline: 2px solid var(--ring, #2b47f5); outline-offset: 3px; }"
+    },
+    {
+      "name": "Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "shadcn button with the radius scale collapsed to zero; résumé download.",
+      "html": "<button class=\"ds-btn\">Descarregar PDF</button>",
+      "css": ".ds-btn { font-family: var(--font-grotesk), 'Schibsted Grotesk', sans-serif; height: 44px; padding: 0 20px; background: var(--primary, #2b47f5); color: var(--primary-foreground, #fff); border: 0; border-radius: 0; font-size: 15px; font-weight: 500; cursor: pointer; transition: all 150ms; } .ds-btn:hover { background: color-mix(in srgb, var(--primary, #2b47f5) 90%, transparent); } .ds-btn:focus-visible { outline: 2px solid var(--ring, #2b47f5); outline-offset: 3px; }"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary action beside the primary: print, email me.",
+      "html": "<button class=\"ds-btn-outline\">Imprimir</button>",
+      "css": ".ds-btn-outline { font-family: var(--font-grotesk), 'Schibsted Grotesk', sans-serif; height: 44px; padding: 0 20px; background: transparent; color: var(--foreground, #0e0f0d); border: 1px solid color-mix(in srgb, var(--rule, #0e0f0d) 40%, transparent); border-radius: 0; font-size: 15px; font-weight: 500; cursor: pointer; transition: border-color 150ms, color 150ms; } .ds-btn-outline:hover { border-color: var(--primary, #2b47f5); color: var(--primary, #2b47f5); } .ds-btn-outline:focus-visible { outline: 2px solid var(--ring, #2b47f5); outline-offset: 3px; }"
+    },
+    {
+      "name": "Index Row",
+      "kind": "custom",
+      "refersTo": "index-row",
+      "description": "Signature: numbered ruled row with provenance and a dated status mark; the hairline draws in the accent on hover.",
+      "html": "<a class=\"ds-index\" href=\"#\"><span class=\"ds-index-n\">01</span><span class=\"ds-index-body\"><span class=\"ds-index-name\">Crudo</span><span class=\"ds-index-meta\">App iOS · SwiftUI · desenho, código e apoio</span><span class=\"ds-status\"><i></i>Brevemente na App Store, 2026</span></span></a>",
+      "css": ".ds-index { font-family: var(--font-grotesk), 'Schibsted Grotesk', sans-serif; position: relative; display: grid; grid-template-columns: minmax(4.5rem, auto) 1fr; gap: 0 20px; align-items: start; padding: 16px 0; border-top: 1px solid color-mix(in srgb, var(--rule, #0e0f0d) 15%, transparent); color: var(--foreground, #0e0f0d); text-decoration: none; transition: background-color 500ms; } .ds-index::before { content: ''; position: absolute; left: 0; right: 0; top: -1px; height: 1px; background: var(--primary, #2b47f5); transform: scaleX(0); transform-origin: left; transition: transform 600ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-index:hover, .ds-index:focus-visible { background: color-mix(in srgb, var(--primary, #2b47f5) 4%, transparent); outline: none; } .ds-index:hover::before, .ds-index:focus-visible::before { transform: scaleX(1); } .ds-index-n { font-size: clamp(3rem, 1.25rem + 3vw, 5rem); line-height: 0.8; letter-spacing: -0.04em; font-weight: 500; font-variant-numeric: tabular-nums; color: var(--primary, #2b47f5); transition: transform 500ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-index:hover .ds-index-n { transform: translateX(4px); } .ds-index-body { display: flex; flex-direction: column; gap: 4px; padding-top: 4px; } .ds-index-name { font-size: 1.25rem; font-weight: 600; line-height: 1.25; letter-spacing: -0.025em; } .ds-index-meta { font-size: 0.875rem; color: var(--muted-foreground, #565b53); } .ds-status { display: flex; align-items: center; gap: 8px; margin-top: 4px; font-size: 13px; color: var(--muted-foreground, #565b53); } .ds-status i { width: 8px; height: 8px; border: 1px solid var(--primary, #2b47f5); }"
+    },
+    {
+      "name": "Door",
+      "kind": "custom",
+      "refersTo": "door",
+      "description": "One of the two numbered primary ways in from home: 2px ink rule that draws 2px in the accent on hover.",
+      "html": "<a class=\"ds-door\" href=\"#\"><span class=\"ds-door-n\">05</span><span class=\"ds-door-body\"><span class=\"ds-door-title\">Está a recrutar?</span><span class=\"ds-door-sub\">Currículo, experiência e o trabalho com clientes.</span></span><span class=\"ds-door-arrow\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M7 7h10v10\"/><path d=\"M7 17 17 7\"/></svg></span></a>",
+      "css": ".ds-door { font-family: var(--font-grotesk), 'Schibsted Grotesk', sans-serif; position: relative; display: grid; grid-template-columns: 3.25rem 1fr auto; gap: 0 12px; align-items: start; padding: 20px 0; border-top: 2px solid var(--rule, #0e0f0d); color: var(--foreground, #0e0f0d); text-decoration: none; transition: background-color 500ms; } .ds-door::before { content: ''; position: absolute; left: 0; right: 0; top: -2px; height: 2px; background: var(--primary, #2b47f5); transform: scaleX(0); transform-origin: left; transition: transform 600ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-door:hover, .ds-door:focus-visible { background: color-mix(in srgb, var(--primary, #2b47f5) 4%, transparent); outline: none; } .ds-door:hover::before, .ds-door:focus-visible::before { transform: scaleX(1); } .ds-door-n { padding-top: 4px; font-size: 0.875rem; font-weight: 500; font-variant-numeric: tabular-nums; color: var(--primary, #2b47f5); } .ds-door-body { display: flex; flex-direction: column; gap: 4px; } .ds-door-title { font-size: 1.5rem; font-weight: 600; letter-spacing: -0.025em; } .ds-door-sub { color: var(--muted-foreground, #565b53); } .ds-door-arrow { margin-top: 4px; transition: transform 500ms cubic-bezier(0.16, 1, 0.3, 1), color 500ms; } .ds-door:hover .ds-door-arrow { transform: translate(2px, -2px); color: var(--primary, #2b47f5); }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Square 1px-stroke field; ring-coloured border and 3px halo on focus.",
+      "html": "<input class=\"ds-input\" placeholder=\"O seu email\" />",
+      "css": ".ds-input { font-family: var(--font-grotesk), 'Schibsted Grotesk', sans-serif; height: 44px; width: 100%; padding: 4px 12px; background: transparent; color: var(--foreground, #0e0f0d); border: 1px solid var(--input, #bfc3ba); border-radius: 0; font-size: 1rem; outline: none; transition: box-shadow 150ms, border-color 150ms; } .ds-input::placeholder { color: var(--muted-foreground, #565b53); } .ds-input:focus-visible { border-color: var(--ring, #2b47f5); box-shadow: 0 0 0 3px color-mix(in srgb, var(--ring, #2b47f5) 50%, transparent); }"
+    },
+    {
+      "name": "Header Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Links start on the axis; hover and current page turn ultramarine, no underline or pill.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\">Trabalho</a><a href=\"#\">Serviços</a><a href=\"#\" aria-current=\"page\">Apps</a></nav>",
+      "css": ".ds-nav { font-family: var(--font-grotesk), 'Schibsted Grotesk', sans-serif; display: flex; gap: 28px; } .ds-nav a { font-size: 15px; color: var(--foreground, #0e0f0d); text-decoration: none; padding: 20px 0; transition: color 150ms; } .ds-nav a:hover, .ds-nav a[aria-current=page] { color: var(--primary, #2b47f5); } .ds-nav a:focus-visible { outline: 2px solid var(--ring, #2b47f5); outline-offset: 3px; }"
+    },
+    {
+      "name": "Crudo Band",
+      "kind": "custom",
+      "refersTo": "crudo-display",
+      "description": "Scoped sub-system: an app page re-points the site tokens to Crudo's palette and General Sans; light-only.",
+      "html": "<div class=\"ds-band-crudo\"><p class=\"ds-band-title\">Crudo</p><a class=\"ds-band-cta\" href=\"#\">Abrir o formulário</a></div>",
+      "css": ".ds-band-crudo { --background: #f3ece1; --foreground: #2b2723; --primary: #9e5328; --primary-foreground: #fff; --rule: #2b2723; color-scheme: light; background: var(--background); color: var(--foreground); font-family: var(--font-general-sans), 'General Sans', sans-serif; padding: 32px; } .ds-band-title { font-size: 4rem; font-weight: 600; line-height: 0.9; letter-spacing: -0.03em; margin: 0 0 24px; } .ds-band-cta { display: inline-block; background: var(--primary); color: var(--primary-foreground); padding: 12px 20px; font-weight: 500; text-decoration: none; transition: opacity 150ms; } .ds-band-cta:hover { opacity: 0.9; } .ds-band-cta:focus-visible { outline: 2px solid #c9713d; outline-offset: 3px; }"
+    },
+    {
+      "name": "Feit-Y Band",
+      "kind": "custom",
+      "refersTo": "feity-display",
+      "description": "Scoped sub-system: Outfit with IBM Plex Mono figures, moss accent in light and lime in dark.",
+      "html": "<div class=\"ds-band-feity\"><p class=\"ds-band-title\">Feit-Y</p><p class=\"ds-band-date\">Last updated 18 September 2026</p><a class=\"ds-band-cta\" href=\"#\">Open the contact form</a></div>",
+      "css": ".ds-band-feity { --background: #edefe7; --foreground: #141810; --primary: #4a6b2a; --primary-foreground: #f1f4ec; --muted-foreground: #4c5547; background: var(--background); color: var(--foreground); font-family: var(--font-outfit), 'Outfit', sans-serif; padding: 32px; } .dark .ds-band-feity, .ds-band-feity.is-dark { --background: #0f130d; --foreground: #f1f4ec; --primary: #bcd292; --primary-foreground: #12160f; --muted-foreground: #a7afa0; } .ds-band-feity .ds-band-title { font-size: 4rem; font-weight: 600; line-height: 0.9; letter-spacing: -0.03em; margin: 0 0 12px; } .ds-band-date { font-family: var(--font-plex-mono), 'IBM Plex Mono', monospace; font-size: 0.875rem; color: var(--muted-foreground); margin: 0 0 24px; } .ds-band-feity .ds-band-cta { display: inline-block; background: var(--primary); color: var(--primary-foreground); padding: 12px 20px; font-weight: 500; text-decoration: none; transition: opacity 150ms; } .ds-band-feity .ds-band-cta:hover { opacity: 0.9; } .ds-band-feity .ds-band-cta:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Numbered Poster",
+    "overview": "The site is one International Typographic Style poster, set on a strict 12-column grid and hung from a single vertical axis. The name runs at poster scale, the work is a numbered index set in display-size numerals beside it, and the two ways in are simply the next two numbers. Everything is ruled, square, and flat: hairlines do the structural work that cards and shadows do elsewhere.\n\nColour is almost absent on purpose. Cool paper and ink carry the page; one ultramarine does all the signalling, so a visitor's eye goes to numerals, links, the active state and the primary action and nowhere else. Behind every page runs one living surface: three accent-tinted mesh fields drifting under a fading dot grid, leaning a few pixels toward the cursor and held still under reduced motion. It keeps the poster from feeling cold without ever competing with it.\n\nInside the site's frame, each iOS app wears its own brand. The Crudo and Feit-Y bands re-point the same tokens to the app's palette and face, so the grid, axis, rules and interaction stay the site's while colour and type become the app's.",
+    "keyCharacteristics": [
+      "One vertical axis at the left edge of column 4 (lg and up); headings hang left of it, content sits right of it.",
+      "Numbered, ruled index rows instead of cards.",
+      "A single accent, used for signal only.",
+      "Square corners and no shadows anywhere in the site's own world.",
+      "One grotesk for everything, with tabular figures wherever numbers line up.",
+      "One living background, one load choreography, one hover signature; nothing else moves."
+    ],
+    "rules": [
+      {
+        "name": "The One Signal Rule",
+        "body": "Ultramarine means \"this is a number, a way in, or where you are\". It never fills a section, a background or a decorative shape; the mesh is the only place it appears diffused.",
+        "section": "colors"
+      },
+      {
+        "name": "The Band Re-point Rule",
+        "body": "An app band changes colour and face by re-pointing the site's own tokens on the band element (`--background`, `--foreground`, `--primary`, `--rule`, `--border`, `--ring`, `--brand-mark`). It never introduces new layout, radii or shadows; grid, axis, rules and hover stay the site's.",
+        "section": "colors"
+      },
+      {
+        "name": "The Tabular Figures Rule",
+        "body": "Any number that sits in a column or a date line (index numerals, door numbers, periods, \"updated\" dates, the footer year) is set with tabular figures.",
+        "section": "typography"
+      },
+      {
+        "name": "The No Label Rule",
+        "body": "Sections are named by a sentence-case heading left of the axis, never by a small uppercase, letter-spaced label above the content.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Axis Rule",
+        "body": "Nothing crosses the axis at lg: a heading is either left of it or the content is right of it. A row that needs to span starts on the axis, not before it.",
+        "section": "layout"
+      },
+      {
+        "name": "The Rules Not Shadows Rule",
+        "body": "Structure is a 1px ink hairline at 15%, or a 2px full-ink rule for the primary doors. If a surface seems to need a shadow, it needs a rule.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do hang every block from the axis: heading in columns 1-3, content from column 4 inset 32px.",
+      "Do present lists of work, services, routes and documents as numbered or ruled index rows with provenance and a dated status mark.",
+      "Do use ultramarine only for numerals, links, the active state, the primary action and focus.",
+      "Do give interactive rows the hairline-draw hover: accent rule drawn from the axis side, 4% accent tint, and a small nudge on the numeral or arrow.",
+      "Do set numbers that line up with tabular figures.",
+      "Do keep app pages inside a brand band that re-points tokens only, with Crudo locked to light."
+    ],
+    "donts": [
+      "Don't round corners or add shadows to anything in the site's own world; app icons keep their own superellipse.",
+      "Don't add a second typeface to the site's world; app bands and concept demos bring their own.",
+      "Don't put small uppercase letter-spaced labels or kickers above headings.",
+      "Don't replace index rows with a card grid of projects.",
+      "Don't animate anything beyond the background, the first-viewport rise and the hairline-draw hover.",
+      "Don't lay type across the axis at lg."
+    ]
+  }
+}

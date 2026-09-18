@@ -1,214 +1,82 @@
 "use client"
-import Image from "next/image"
+
 import Link from "next/link"
-import { useTranslations, useLocale } from "next-intl"
-import { ArrowRight } from "lucide-react"
-import { motion, Variants } from "framer-motion"
-import { routePath } from "../../../lib/routes"
+import { useLocale, useTranslations } from "next-intl"
+import { ArrowUpRight } from "lucide-react"
+import { appPath, routePath } from "../../../lib/routes"
+import { StatusMark, type Status } from "./apps"
 
-// The ticker words are content, so they live in the message files. "LLM
-// Agents" and "RAG Systems" used to sit here: neither is work done alone, so
-// neither belongs on a page selling my own services.
-
-const GRAIN_SVG = `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")`
-
+/**
+ * The first viewport is the poster: the name at poster scale, the work as a
+ * numbered index beside it, and the two doors as the last two numbers. The
+ * index is ordered from most real to least, which is why it is numbered.
+ */
 export default function Hero() {
   const t = useTranslations("hero")
+  const tHome = useTranslations("home")
+  const tApps = useTranslations("apps")
   const locale = useLocale()
-  const words = t.raw("ticker")
-  // Duplicated so the marquee loops without a visible seam.
-  const tickerItems = Array.isArray(words)
-    ? [...(words as string[]), ...(words as string[])]
-    : []
+  const work = `${routePath("work", locale)}#cases`
+
+  const index: { id: string; name: string; href: string; status: Status }[] = [
+    { id: "crudo", name: tApps("crudo.name"), href: appPath("crudo", locale), status: "pending" },
+    { id: "feit-y", name: tApps("feit-y.name"), href: appPath("feit-y", locale), status: "pending" },
+    { id: "aircall", name: tHome("index.aircall.name"), href: work, status: "live" },
+    { id: "engineai", name: tHome("index.engineai.name"), href: work, status: "done" },
+  ]
 
   return (
-    <div className="flex flex-col min-h-[100dvh]">
-      {/* Full-viewport split: content left | portrait right */}
-      <div className="flex-1 grid grid-cols-1 md:grid-cols-[3fr_2fr]">
+    <section className="frame grid12 gap-y-12 pt-10 pb-16 lg:min-h-[calc(100svh-4rem)] lg:content-between lg:gap-y-14 lg:pt-16">
+      <h1 className="display-name rise col-span-4 md:col-span-8 lg:col-span-7">
+        <span className="line block">Pedro</span>
+        <span className="line block">Feiteira</span>
+      </h1>
 
-        {/* Content column */}
-        <div className="flex flex-col justify-center gap-7 px-6 pt-8 pb-6 md:py-0 md:pl-16 lg:pl-24 md:pr-8 text-center md:text-left order-2 md:order-1">
-          <HeroName />
-
-          <motion.p
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
-            className="text-base sm:text-lg text-muted-foreground max-w-lg mx-auto md:mx-0 leading-relaxed"
-          >
-            {t("tagline")}
-          </motion.p>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.75, ease: [0.16, 1, 0.3, 1] }}
-            className="flex w-full max-w-xl flex-col sm:flex-row gap-4 mx-auto md:mx-0 mt-1"
-          >
-            <Door door="hire" href={routePath("resume", locale)} />
-            <Door door="build" href={routePath("services", locale)} />
-          </motion.div>
-        </div>
-
-        {/* Portrait column */}
-        <div className="relative flex items-center justify-center py-10 md:py-0 md:pr-12 lg:pr-20 order-1 md:order-2 overflow-hidden">
-          {/* Very subtle radial tonal focus — barely perceptible */}
-          <div
-            aria-hidden="true"
-            className="absolute inset-0 pointer-events-none"
-            style={{
-              background:
-                "radial-gradient(ellipse 70% 55% at 55% 50%, hsl(0 0% 0% / 0.025), transparent)",
-            }}
-          />
-          <FloatingPortrait alt={t("profileAlt")} />
-        </div>
+      <div className="rise col-span-4 flex items-end gap-4 md:col-span-3 lg:col-span-3" style={{ animationDelay: "240ms" }}>
+        {/* eslint-disable-next-line @next/next/no-img-element -- static export, pre-sized webp */}
+        <img
+          src="/profile-480.webp"
+          alt={t("profileAlt")}
+          width={480}
+          height={480}
+          className="h-24 w-24 object-cover object-top lg:h-28 lg:w-28"
+        />
+        <p className="text-sm leading-snug text-muted-foreground">{tHome("caption")}</p>
       </div>
 
-      {/* Ticker strip */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1.1 }}
-        className="w-full border-t border-border/30 overflow-hidden py-3"
+      <p
+        className="rise col-span-4 max-w-[46ch] text-lg leading-relaxed md:col-span-5 lg:col-span-4 lg:col-start-4 lg:pl-8"
+        style={{ animationDelay: "320ms" }}
       >
-        <div className="animate-ticker flex gap-10 whitespace-nowrap w-max">
-          {tickerItems.map((item, i) => (
-            <span
-              key={i}
-              className="font-mono text-[10px] sm:text-xs uppercase tracking-[0.18em] text-muted-foreground/60 select-none"
-            >
-              {item}
-              <span className="ml-10 opacity-30">·</span>
-            </span>
-          ))}
-        </div>
-      </motion.div>
-    </div>
-  )
-}
+        {t("tagline")}
+      </p>
 
-function FloatingPortrait({ alt }: { alt: string }) {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 28 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1.3, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
-      className="relative flex items-center justify-center"
-    >
-      {/* Float loop — wraps both ring and portrait so they move together */}
-      <motion.div
-        animate={{ y: [0, -16, 0] }}
-        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-        className="relative"
+      <nav aria-label={t("doorsLabel")} className="col-span-4 grid grid-cols-1 gap-x-6 md:col-span-8 md:grid-cols-2 lg:col-span-9 lg:col-start-4 lg:row-start-3 lg:pl-8">
+        <Door n={5} door="hire" href={routePath("resume", locale)} delay={520} />
+        <Door n={6} door="build" href={routePath("services", locale)} delay={600} />
+      </nav>
+
+      <ol
+        aria-label={tHome("indexLabel")}
+        className="col-span-4 md:col-span-8 lg:col-span-5 lg:col-start-8 lg:row-span-2 lg:row-start-1 lg:self-start"
       >
-        {/* Outer decorative ring — extends 20px beyond the portrait */}
-        <div
-          aria-hidden="true"
-          className="absolute rounded-full border border-border/20 pointer-events-none"
-          style={{ inset: "-20px" }}
-        />
-
-        {/* Second, wider ring — very faint */}
-        <div
-          aria-hidden="true"
-          className="absolute rounded-full border border-border/10 pointer-events-none"
-          style={{ inset: "-40px" }}
-        />
-
-        {/* Portrait — pill/capsule shape via rounded-full on portrait-ratio container */}
-        <div className="relative w-[190px] h-[270px] md:w-[290px] md:h-[414px] rounded-full overflow-hidden border border-border/35 shadow-[0_36px_90px_-24px_rgba(0,0,0,0.22)]">
-          <Image
-            src="/profile.jpeg"
-            alt={alt}
-            fill
-            className="object-cover object-top grayscale"
-            loading="eager"
-            priority
-            sizes="(max-width: 768px) 200px, 310px"
-          />
-
-          {/* Film grain texture */}
-          <div
-            aria-hidden="true"
-            className="absolute inset-0 pointer-events-none opacity-[0.045]"
-            style={{
-              backgroundImage: GRAIN_SVG,
-              mixBlendMode: "overlay",
-            }}
-          />
-
-          {/* Inner top edge refraction highlight */}
-          <div
-            aria-hidden="true"
-            className="absolute inset-0 pointer-events-none rounded-full shadow-[inset_0_1px_0_rgba(255,255,255,0.16)]"
-          />
-
-          {/* Very subtle bottom vignette */}
-          <div
-            aria-hidden="true"
-            className="absolute inset-x-0 bottom-0 h-1/3 pointer-events-none"
-            style={{
-              background: "linear-gradient(to top, rgba(0,0,0,0.12), transparent)",
-            }}
-          />
-        </div>
-      </motion.div>
-    </motion.div>
-  )
-}
-
-function HeroName() {
-  const t = useTranslations("hero")
-  const fullName = t("greeting")
-
-  const container: Variants = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-        delayChildren: 0.3,
-      },
-    },
-  }
-
-  const child: Variants = {
-    hidden: { opacity: 0, y: 30, filter: "blur(8px)" },
-    show: {
-      opacity: 1,
-      y: 0,
-      filter: "blur(0px)",
-      transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] as const },
-    },
-  }
-
-  return (
-    <motion.h1
-      variants={container}
-      initial="hidden"
-      animate="show"
-      className="text-fluid-display font-semibold tracking-tighter leading-[0.9] break-words"
-    >
-      <div
-        aria-live="polite"
-        aria-atomic="true"
-        className="flex flex-wrap justify-center md:justify-start overflow-hidden pb-4"
-      >
-        {fullName.split(" ").map((word, wordIndex) => (
-          <div key={wordIndex} className="inline-flex mr-4 last:mr-0">
-            <motion.span variants={child} className="inline-block">
-              {word}
-            </motion.span>
-          </div>
+        {index.map((item, i) => (
+          <li key={item.id} className="rise" style={{ animationDelay: `${120 + i * 80}ms` }}>
+            <Link href={item.href} className="group relative grid grid-cols-[minmax(4.5rem,auto)_1fr] items-start gap-x-5 border-t border-rule/15 py-4 transition-colors duration-500 hover:bg-primary/[0.04] hairline-draw">
+              <span className="index-numeral tabular font-medium text-primary transition-transform duration-500 ease-[cubic-bezier(.16,1,.3,1)] group-hover:translate-x-1">
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              <span className="flex flex-col gap-1 pt-1">
+                <span className="text-xl font-semibold leading-tight tracking-tight">{item.name}</span>
+                <span className="text-sm text-muted-foreground">{tHome(`index.${item.id}.meta`)}</span>
+                <StatusMark status={item.status} label={tHome(`index.${item.id}.status`)} />
+              </span>
+            </Link>
+          </li>
         ))}
-      </div>
-      <motion.p variants={child}>
-        <span className="font-mono text-sm md:text-base mt-4 md:mt-8 block font-medium text-muted-foreground tracking-[0.2em] uppercase">
-          {t("role")}
-        </span>
-      </motion.p>
-    </motion.h1>
+      </ol>
+
+    </section>
   )
 }
 
@@ -216,19 +84,27 @@ function HeroName() {
  * The two ways in: a recruiter heads for the résumé, a client for services.
  * App users never need a door; they arrive from the App Store.
  */
-function Door({ door, href }: { door: "hire" | "build"; href: string }) {
+function Door({ n, door, href, delay }: { n: number; door: "hire" | "build"; href: string; delay: number }) {
   const t = useTranslations("hero.doors")
 
   return (
     <Link
       href={href}
-      className="group flex flex-1 flex-col gap-1 rounded-xl border border-border/40 bg-card/60 px-5 py-4 text-left backdrop-blur-sm transition-colors hover:border-foreground/30 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+      className="rise group relative grid grid-cols-[3.25rem_1fr_auto] items-start gap-x-3 border-t-2 border-rule py-5 transition-colors duration-500 hover:bg-primary/[0.04] hairline-draw hairline-draw-thick"
+      style={{ animationDelay: `${delay}ms` }}
     >
-      <span className="flex items-center justify-between gap-3 text-base font-semibold">
-        {t(`${door}.title`)}
-        <ArrowRight className="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+      <span className="tabular pt-1 text-sm font-medium text-primary transition-transform duration-500 ease-[cubic-bezier(.16,1,.3,1)] group-hover:translate-x-1">
+        {String(n).padStart(2, "0")}
       </span>
-      <span className="text-sm text-muted-foreground">{t(`${door}.body`)}</span>
+      <span className="flex flex-col gap-1">
+        <span className="text-2xl font-semibold tracking-tight lg:text-3xl">{t(`${door}.title`)}</span>
+        <span className="text-muted-foreground">{t(`${door}.body`)}</span>
+      </span>
+      <ArrowUpRight
+        className="mt-1 h-6 w-6 transition-transform duration-500 ease-[cubic-bezier(.16,1,.3,1)] group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-primary"
+        strokeWidth={1.5}
+        aria-hidden="true"
+      />
     </Link>
   )
 }

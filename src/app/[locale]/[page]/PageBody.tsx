@@ -8,7 +8,7 @@ import Cases from "../sections/cases"
 import Contact from "../sections/contact"
 import Apps from "../sections/apps"
 import { Privacy } from "../sections/legal"
-import { AnimatedItem } from "../sections/components/common/AnimatedItem"
+import { Axis } from "../sections/components/common/Block"
 import type { RouteKey } from "../../../lib/routes"
 
 // Every one of these pages was its own file rendering the identical shell with
@@ -42,24 +42,16 @@ export default function PageBody({ routeKey }: { routeKey: RouteKey }) {
   )
 }
 
-/** Header, one animated section, footer: the frame every inner page shares. */
+/** Axis, header, the page, footer: the frame every inner page shares. */
 export function PageShell({ children }: { children: React.ReactNode }) {
   return (
     <div>
+      <Axis />
       <Header />
-      <main id="main-content">
-        <div
-          className="pb-24"
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            gap: "var(--spacing-fluid-section)",
-          }}
-        >
-          <AnimatedItem>{children}</AnimatedItem>
-          <Footer />
-        </div>
+      <main id="main-content" className="[&>section:first-child]:border-t-0">
+        {children}
       </main>
+      <Footer />
     </div>
   )
 }

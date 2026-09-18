@@ -1,57 +1,49 @@
 "use client"
 
-import { useTranslations, useLocale } from "next-intl"
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
 import Link from "next/link"
-import { SHOWCASES, ShowcaseMeta } from "../../../lib/data/showcases"
+import { useLocale, useTranslations } from "next-intl"
+import { ArrowUpRight } from "lucide-react"
+import { SHOWCASES } from "../../../lib/data/showcases"
 import { routePath } from "../../../lib/routes"
+import { Block } from "./components/common/Block"
 
+/** Concepts come last and say so: fictional brands, shown as what they are. */
 export default function Showcase() {
   const t = useTranslations("showcase")
   const locale = useLocale()
 
   return (
-    <section id="showcase" className="section-spacing scroll-mt-24 px-4 sm:px-6 lg:px-8">
-      <div style={{ maxWidth: "var(--container-content)", margin: "0 auto" }}>
-        <div className="mb-12">
-          <span className="section-eyebrow">{t("title")}</span>
-          <p className="text-muted-foreground max-w-xl text-base mt-6">
-            {t("description")}
-          </p>
-          <p className="text-muted-foreground/80 max-w-xl text-sm mt-2">
-            {t("disclosure")}
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 3xl:grid-cols-4 gap-6">
-          {SHOWCASES.map((showcase: ShowcaseMeta) => (
-            <Card key={showcase.slug} className="group overflow-hidden flex flex-col hover:shadow-lg transition-shadow duration-300">
-              <div className="h-40 lg:h-48 3xl:h-64 w-full opacity-80 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center" style={{ background: `linear-gradient(to bottom right, ${showcase.gradientFrom}, ${showcase.gradientTo})` }}>
-                <span className="text-white/30 font-bold text-4xl tracking-wider">
-                  {t(`${showcase.slug}.title`).split(' ')[0]}
+    <Block id="showcase" title={t("title")} intro={`${t("description")} ${t("disclosure")}`}>
+      <ul className="grid gap-x-6 gap-y-12 md:grid-cols-2 xl:grid-cols-3">
+        {SHOWCASES.map(({ slug }) => (
+          <li key={slug}>
+            <Link href={`${routePath("work", locale)}${slug}/`} className="group block">
+              <span className="block overflow-hidden border border-rule/15">
+                {/* eslint-disable-next-line @next/next/no-img-element -- static export, pre-sized webp */}
+                <img
+                  src={`/work/${slug}.webp`}
+                  alt=""
+                  width={960}
+                  height={600}
+                  loading="lazy"
+                  className="aspect-[8/5] w-full object-cover object-top transition-transform duration-700 ease-[cubic-bezier(.16,1,.3,1)] group-hover:scale-[1.02]"
+                />
+              </span>
+              <span className="mt-4 flex items-start justify-between gap-4">
+                <span className="flex flex-col">
+                  <span className="text-lg font-semibold tracking-tight">{t(`${slug}.title`)}</span>
+                  <span className="text-sm text-muted-foreground">{t(`${slug}.description`)}</span>
                 </span>
-              </div>
-              <CardHeader>
-                <CardTitle className="text-xl">
-                  {t(`${showcase.slug}.title`)}
-                </CardTitle>
-                <CardDescription className="text-base">
-                  {t(`${showcase.slug}.description`)}
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="mt-auto pt-4 pb-6">
-                <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors" asChild>
-                  <Link href={`${routePath("work", locale)}${showcase.slug}/`}>
-                    {t("viewProject")} <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </div>
-    </section>
+                <ArrowUpRight
+                  className="mt-1 h-5 w-5 shrink-0 text-muted-foreground transition-all duration-500 group-hover:text-primary"
+                  strokeWidth={1.5}
+                  aria-label={t("viewProject")}
+                />
+              </span>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </Block>
   )
 }

@@ -6,7 +6,7 @@ export default function RootPage() {
   return (
     <main style={{ fontFamily: "system-ui, sans-serif", padding: "3rem 1.5rem" }}>
       <h1>Pedro Feiteira</h1>
-      <p>Software à medida para pequenas e médias empresas.</p>
+      <p>Engenheiro de software. Trabalho, serviços e apoio às apps Crudo e Feit-Y.</p>
       <p>
         <Link href="/pt/">Continuar para o site</Link>{" · "}
         <Link href="/en/">English version</Link>

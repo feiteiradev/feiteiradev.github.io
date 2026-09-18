@@ -46,3 +46,16 @@ for (const locale of LOCALES) {
     expect(res?.ok()).toBe(false);
   });
 }
+
+// App documents are localised too, so switching language on one has to
+// translate the document slug: /pt/apps/crudo/suporte/ -> /en/apps/crudo/support/.
+test('language switcher translates an app document slug', async ({ page }) => {
+  await page.goto('/pt/apps/crudo/suporte/');
+  await page.waitForLoadState('networkidle');
+  if (page.viewportSize()!.width < 1024) {
+    await page.locator('button[aria-controls="mobile-navigation"]').click();
+  }
+  await page.locator('button[aria-label="Mudar idioma"]:visible').first().click();
+  await page.getByRole('menuitem', { name: /English/i }).click();
+  await expect(page).toHaveURL(/\/en\/apps\/crudo\/support\/?$/);
+});

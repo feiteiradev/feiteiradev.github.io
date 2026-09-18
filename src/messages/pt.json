@@ -14,19 +14,8 @@
     "mainNav": "Navegação principal"
   },
   "hero": {
-    "greeting": "Olá! Sou o Pedro Feiteira",
     "role": "Engenheiro de software",
-    "tagline": "Construo produtos web e mobile de ponta a ponta: um sistema de apoio com IA para a Aircall, um SDK em Python para a EngineAI e as minhas próprias apps iOS, a Crudo e o Feit-Y. Também desenvolvo software à medida para empresas.",
-    "ticker": [
-      "Automação",
-      "Sites",
-      "Aplicações Web",
-      "Integrações",
-      "Protótipos",
-      "Python",
-      "React",
-      "AWS"
-    ],
+    "tagline": "Construo produtos web e mobile de ponta a ponta: um sistema de apoio com IA para a Aircall, um SDK em Python para a EngineAI e as minhas próprias apps iOS, a Crudo e o Feit-⁠Y. Também desenvolvo software à medida para empresas.",
     "profileAlt": "Pedro Feiteira, engenheiro de software",
     "doors": {
       "hire": {
@@ -37,16 +26,17 @@
         "title": "Precisa de algo construído?",
         "body": "O que construo para empresas, e como começar."
       }
-    }
+    },
+    "doorsLabel": "Por onde seguir"
   },
   "experience": {
     "title": "Experiência",
-    "ongoing": "A Decorrer",
+    "ongoing": "a decorrer",
     "entries": [
       {
-        "role": "Engenheiro de Software",
+        "role": "Engenheiro de software",
         "company": "AdvanceWorks (cliente: Aircall)",
-        "period": "Set 2025 -- A Decorrer",
+        "period": "Set 2025 – a decorrer",
         "location": "Lisboa, Portugal",
         "description": [
           "Construí e mantenho um sistema de suporte com IA generativa que ajuda a responder a perguntas de clientes.",
@@ -71,7 +61,7 @@
       {
         "role": "Programador Python",
         "company": "EngineAI",
-        "period": "Set 2021 -- Ago 2025",
+        "period": "Set 2021 – Ago 2025",
         "location": "Lisboa, Portugal",
         "description": [
           "Desenvolvi e mantive o SDK Python da empresa, com pandas para processamento de dados e Pytest para testes unitários.",
@@ -94,7 +84,7 @@
       {
         "role": "Estágio",
         "company": "Celfocus",
-        "period": "Abr 2018 -- Jul 2018",
+        "period": "Abr 2018 – Jul 2018",
         "location": "Lisboa, Portugal",
         "description": [
           "Desenvolvi uma prova de conceito para geração automática de casos de teste a partir de requisitos de software, uma aplicação full-stack em Node.js com IBM Watson, publicada em cloud."
@@ -189,7 +179,7 @@
         ]
       },
       {
-        "label": "Qualidade & Observabilidade",
+        "label": "Qualidade e observabilidade",
         "items": [
           "Pytest",
           "Playwright",
@@ -198,7 +188,7 @@
         ]
       },
       {
-        "label": "Arquitetura & Processo",
+        "label": "Arquitetura e processo",
         "items": [
           "Software Architecture",
           "Process Automation",
@@ -228,24 +218,24 @@
     ]
   },
   "services": {
-    "title": "O Que Construo",
+    "title": "O que construo",
     "subtitle": "Diga-me o problema do negócio. Eu digo-lhe o que se constrói, quanto custa e quando fica pronto.",
     "cta": "Falar sobre o seu projeto",
     "items": [
       {
-        "title": "Automação de Processos",
+        "title": "Automação de processos",
         "description": "O trabalho manual que ocupa a sua equipa todas as semanas, feito por um workflow. Ligo os sistemas que já usa e tiro as tarefas repetidas do caminho."
       },
       {
-        "title": "Sites e Aplicações Web",
+        "title": "Sites e aplicações web",
         "description": "Um site ou uma aplicação web à medida do negócio, do desenho ao produto no ar. Rápido a carregar, encontrável no Google, simples de manter."
       },
       {
-        "title": "Integrações entre Sistemas",
+        "title": "Integrações entre sistemas",
         "description": "A faturação, o CRM, a loja online e as folhas de cálculo a falar umas com as outras. Uma integração escrita à medida em vez de copiar e colar dados à mão."
       },
       {
-        "title": "Protótipo em Dias",
+        "title": "Protótipo em dias",
         "description": "Uma versão funcional da ideia, para validar com clientes reais antes de investir no produto completo."
       }
     ]
@@ -254,7 +244,7 @@
     "title": "Conceitos",
     "description": "Sites conceito por setor. Cada um mostra como fica um site feito para esse tipo de negócio.",
     "disclosure": "Marcas fictícias, criadas para demonstração. Não são clientes reais.",
-    "viewProject": "Ver Projeto",
+    "viewProject": "Ver projeto",
     "meridian-goods": {
       "title": "Meridian Goods",
       "description": "Loja de retalho de estilo de vida"
@@ -313,7 +303,7 @@
   },
   "contact": {
     "title": "Contacte-me",
-    "sendMessage": "Enviar Mensagem",
+    "sendMessage": "Enviar mensagem",
     "getInTouch": "Entre em contacto",
     "trustTitle": "Como trabalho",
     "trust": [
@@ -325,7 +315,7 @@
       "namePlaceholder": "O seu nome",
       "emailPlaceholder": "O seu email",
       "messagePlaceholder": "A sua mensagem",
-      "sendButton": "Enviar Mensagem",
+      "sendButton": "Enviar mensagem",
       "sending": "A enviar...",
       "characters": "{count} / {max} caracteres",
       "topics": {
@@ -333,7 +323,7 @@
         "project": "Um projeto",
         "job": "Uma oferta de emprego",
         "crudo": "Apoio Crudo",
-        "feit-y": "Apoio Feit-Y"
+        "feit-y": "Apoio Feit-⁠Y"
       }
     },
     "validation": {
@@ -381,20 +371,20 @@
     },
     "apps": {
       "title": "Apps · Pedro Feiteira",
-      "description": "A Crudo e o Feit-Y, as apps iOS que desenho, construo e apoio."
+      "description": "A Crudo e o Feit-⁠Y, as apps iOS que desenho, construo e apoio."
     }
   },
   "footer": {
-    "backToTop": "Voltar ao Topo",
+    "backToTop": "Voltar ao topo",
     "scrollToTop": "Rolar para o topo",
     "copyright": "Pedro Feiteira. Todos os direitos reservados.",
     "privacy": "Privacidade",
     "apps": "Apps"
   },
   "notFound": {
-    "title": "Página Não Encontrada",
+    "title": "Página não encontrada",
     "description": "A página que procura não existe ou foi movida.",
-    "goHome": "Ir para Início",
+    "goHome": "Ir para o início",
     "goBack": "Voltar"
   },
   "common": {
@@ -420,7 +410,7 @@
       },
       {
         "heading": "As minhas aplicações",
-        "body": "A Crudo e o Feit-Y têm cada um a sua própria política de privacidade, acessível a partir das respetivas páginas em Apps."
+        "body": "A Crudo e o Feit-⁠Y têm cada um a sua própria política de privacidade, acessível a partir das respetivas páginas em Apps."
       },
       {
         "heading": "Fundamento legal e conservação",
@@ -465,7 +455,7 @@
         "sections": [
           {
             "heading": "Como falar comigo",
-            "body": "Envie um email para pedrofeiteira.dev@gmail.com ou use o formulário de contacto. Leio tudo e respondo normalmente em dois dias úteis.\n\nSe estiver a comunicar um problema, indicar o seu dispositivo, a versão do iOS e o que estava a fazer na altura permite-me dar-lhe uma resposta útil muito mais depressa."
+            "body": "Envie um email para pedrofeiteira.dev@gmail.com ou use o formulário de contacto. Leio tudo e respondo em 24 horas úteis.\n\nSe estiver a comunicar um problema, indicar o seu dispositivo, a versão do iOS e o que estava a fazer na altura permite-me dar-lhe uma resposta útil muito mais depressa."
           },
           {
             "heading": "Compras e restauro",
@@ -513,24 +503,24 @@
       }
     },
     "feit-y": {
-      "name": "Feit-Y",
+      "name": "Feit-⁠Y",
       "tagline": "A memória do seu treino.",
-      "description": "O Feit-Y é um companheiro de treino com quem fala. Diga-lhe o que levantou e ele regista a série; pergunte-lhe pelo seu treino e ele responde a partir dos seus próprios registos. Cada série, cada carga, cada recorde, lembrados.",
+      "description": "O Feit-⁠Y é um companheiro de treino com quem fala. Diga-lhe o que levantou e ele regista a série; pergunte-lhe pelo seu treino e ele responde a partir dos seus próprios registos. Cada série, cada carga, cada recorde, lembrados.",
       "meta": {
-        "title": "Feit-Y · A memória do seu treino",
+        "title": "Feit-⁠Y · A memória do seu treino",
         "description": "Um companheiro de treino com quem fala. Regista as suas séries e responde a partir dos seus próprios registos. Para iPhone."
       },
       "support": {
         "meta": {
-          "title": "Apoio Feit-Y",
-          "description": "Ajuda com o Feit-Y: como falar comigo, a sua conta, subscrições e como apagar os seus dados."
+          "title": "Apoio Feit-⁠Y",
+          "description": "Ajuda com o Feit-⁠Y: como falar comigo, a sua conta, subscrições e como apagar os seus dados."
         },
-        "statement": "Algo não está a funcionar, ou tem uma questão sobre o Feit-Y? Escreva-me diretamente.",
+        "statement": "Algo não está a funcionar, ou tem uma questão sobre o Feit-⁠Y? Escreva-me diretamente.",
         "updated": "Última atualização a 18 de setembro de 2026",
         "sections": [
           {
             "heading": "Como falar comigo",
-            "body": "Envie um email para pedrofeiteira.dev@gmail.com ou use o formulário de contacto. Leio tudo e respondo normalmente em dois dias úteis.\n\nSe estiver a comunicar um problema, indicar o seu dispositivo, a versão do iOS e o que disse ao assistente permite-me dar-lhe uma resposta útil muito mais depressa."
+            "body": "Envie um email para pedrofeiteira.dev@gmail.com ou use o formulário de contacto. Leio tudo e respondo em 24 horas úteis.\n\nSe estiver a comunicar um problema, indicar o seu dispositivo, a versão do iOS e o que disse ao assistente permite-me dar-lhe uma resposta útil muito mais depressa."
           },
           {
             "heading": "A sua conta",
@@ -542,37 +532,37 @@
           },
           {
             "heading": "Não é aconselhamento médico",
-            "body": "O Feit-Y regista o seu treino e responde a perguntas sobre ele. É orientação de treino e não aconselhamento médico: se algo lhe dói, ou tem uma condição que afeta a forma como treina, fale com um profissional de saúde."
+            "body": "O Feit-⁠Y regista o seu treino e responde a perguntas sobre ele. É orientação de treino e não aconselhamento médico: se algo lhe dói, ou tem uma condição que afeta a forma como treina, fale com um profissional de saúde."
           }
         ]
       },
       "privacy": {
         "meta": {
-          "title": "Política de privacidade do Feit-Y",
-          "description": "O que o Feit-Y guarda, porquê, quem trata esses dados e como os apagar."
+          "title": "Política de privacidade do Feit-⁠Y",
+          "description": "O que o Feit-⁠Y guarda, porquê, quem trata esses dados e como os apagar."
         },
-        "statement": "O Feit-Y guarda o que lhe diz para se lembrar do seu treino. Eis exatamente o que isso é, e como apagá-lo.",
+        "statement": "O Feit-⁠Y guarda o que lhe diz para se lembrar do seu treino. Eis exatamente o que isso é, e como apagá-lo.",
         "updated": "Última atualização a 18 de setembro de 2026",
         "sections": [
           {
             "heading": "Quem é o responsável",
-            "body": "O Feit-Y é da autoria de Pedro Feiteira, engenheiro de software independente em Portugal, responsável pelo tratamento dos seus dados. Para qualquer questão sobre esta página, escreva para pedrofeiteira.dev@gmail.com."
+            "body": "O Feit-⁠Y é da autoria de Pedro Feiteira, engenheiro de software independente em Portugal, responsável pelo tratamento dos seus dados. Para qualquer questão sobre esta página, escreva para pedrofeiteira.dev@gmail.com."
           },
           {
-            "heading": "O que o Feit-Y guarda",
+            "heading": "O que o Feit-⁠Y guarda",
             "body": "A sua conta: o seu endereço de email e a forma como entra (email e palavra-passe, Google ou Apple).\n\nO seu treino: treinos, séries, cargas, repetições, esforço, descanso e notas.\n\nO seu corpo e a sua saúde: medidas como o peso e a altura, recordes pessoais, registos de alimentação (macronutrientes e notas), as fotografias de progresso que decidir adicionar e o que diz ao assistente sobre os seus objetivos, equipamento e limitações, incluindo lesões.\n\nO que diz ao assistente: o texto de cada comando, guardado com as ações que produziu."
           },
           {
             "heading": "Porquê, e com que fundamento",
-            "body": "Tudo isto serve um único fim: fazer o Feit-Y funcionar para si — registar o seu treino, lembrá-lo e responder às suas perguntas sobre ele.\n\nAs medidas, as lesões e as fotografias de progresso são dados de saúde. O Feit-Y só os trata com o seu consentimento explícito, que a aplicação lhe pede antes de usar o assistente pela primeira vez. Pode retirá-lo a qualquer momento apagando a sua conta."
+            "body": "Tudo isto serve um único fim: fazer o Feit-⁠Y funcionar para si — registar o seu treino, lembrá-lo e responder às suas perguntas sobre ele.\n\nAs medidas, as lesões e as fotografias de progresso são dados de saúde. O Feit-⁠Y só os trata com o seu consentimento explícito, que a aplicação lhe pede antes de usar o assistente pela primeira vez. Pode retirá-lo a qualquer momento apagando a sua conta."
           },
           {
             "heading": "A IA que lê os seus comandos",
-            "body": "Quando fala com o assistente, o texto do seu comando, o estado do treino em curso e um breve resumo do que o Feit-Y sabe sobre si são enviados para os OVHcloud AI Endpoints, que executam o modelo de pesos abertos gpt-oss-20b e devolvem as ações a realizar. A OVHcloud trata estes dados por minha conta, apenas para responder a esse pedido.\n\nNão uso os seus dados para treinar nenhum modelo."
+            "body": "Quando fala com o assistente, o texto do seu comando, o estado do treino em curso e um breve resumo do que o Feit-⁠Y sabe sobre si são enviados para os OVHcloud AI Endpoints, que executam o modelo de pesos abertos gpt-oss-20b e devolvem as ações a realizar. A OVHcloud trata estes dados por minha conta, apenas para responder a esse pedido.\n\nNão uso os seus dados para treinar nenhum modelo."
           },
           {
             "heading": "Quem mais trata os seus dados",
-            "body": "A Supabase guarda a sua conta, os seus dados e as suas fotografias, na União Europeia. A Apple ou a Google confirmam a sua identidade apenas se escolher entrar com elas. A Apple trata as subscrições e os pagamentos; nunca vejo os seus dados de pagamento.\n\nO Feit-Y não tem publicidade nem SDKs de análise ou rastreio, e nunca vendo os seus dados."
+            "body": "A Supabase guarda a sua conta, os seus dados e as suas fotografias, na União Europeia. A Apple ou a Google confirmam a sua identidade apenas se escolher entrar com elas. A Apple trata as subscrições e os pagamentos; nunca vejo os seus dados de pagamento.\n\nO Feit-⁠Y não tem publicidade nem SDKs de análise ou rastreio, e nunca vendo os seus dados."
           },
           {
             "heading": "Durante quanto tempo, e como apagar",
@@ -591,8 +581,35 @@
     }
   },
   "home": {
-    "proof": "Trabalho recente",
-    "clients": "Trabalho com clientes",
-    "seeWork": "Ver todo o trabalho"
+    "caption": "Engenheiro de software, Portugal",
+    "index": {
+      "crudo": {
+        "meta": "App iOS · SwiftUI · desenho, código e apoio",
+        "status": "Brevemente na App Store, 2026"
+      },
+      "feit-y": {
+        "meta": "App iOS · SwiftUI, FastAPI, Supabase",
+        "status": "Brevemente na App Store, 2026"
+      },
+      "aircall": {
+        "name": "Aircall",
+        "meta": "via AdvanceWorks · sistema de apoio com IA · Python, React, AWS",
+        "status": "Em produção desde 2025"
+      },
+      "engineai": {
+        "name": "EngineAI",
+        "meta": "SDK em Python, testes e testes de carga · Snowflake",
+        "status": "Entregue, 2021–2025"
+      }
+    },
+    "indexLabel": "Trabalho selecionado",
+    "appsTitle": "As minhas apps",
+    "appsIntro": "Duas apps iOS que desenho, construo, publico e apoio por conta própria, cada uma com identidade própria.",
+    "close": {
+      "title": "Contacto",
+      "line": "Uma vaga para preencher, ou algo para construir?",
+      "body": "Escreva-me diretamente. Leio tudo e respondo em 24 horas úteis.",
+      "form": "Ou use o formulário de contacto"
+    }
   }
 }

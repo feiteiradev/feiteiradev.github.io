@@ -1,0 +1,131 @@
+{
+  "title": "Choose the visual world",
+  "question": "The roll assigned the International Grid. Keep it, take an alternate, or re-roll.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "International Grid",
+      "kicker": "THE ROLL",
+      "lineage": "Swiss International Typographic Style posters (Müller-Brockmann, Neue Grafik)",
+      "thesis": "The portfolio set as one Swiss poster: a strict grid, a single accent, and the work as a numbered index.",
+      "palette": ["#F2F3F0", "#0E0F0D", "#2B47F5", "#8A8F87"],
+      "materials": ["flush-left grotesk at poster scale", "numbered grid modules", "the dot grid as the visible 12-column field"],
+      "viewport": "Name flush-left across eight columns at poster scale; the right four columns are a numbered index: 01 Crudo, 02 Feit-Y, 03 Aircall, 04 EngineAI, each with year and status; the two doors are the last two numbered cells.",
+      "risk": "Swiss grids go cold when the type is timid; warmth has to come from the portrait and the voice.",
+      "raised": [
+        {"from": "challenger-passport", "raise": "Every piece of work carries one dated status mark (in production, in App Store review, concept), stamped once and left alone."},
+        {"from": "challenger-quilt", "raise": "Every item seams its provenance to it: client, years, role and stack on one ruled line."},
+        {"from": "challenger-tropicalia", "raise": "Scale courage: name and index numbers run at poster scale, three steps apart, never an even ramp."},
+        {"from": "challenger-ebru", "raise": "The mesh background is one living surface that drifts and parts around the cursor, and holds still under reduced motion."},
+        {"from": "challenger-versailles", "raise": "One axis: every page hangs from the same vertical rule, so the whole site reads as a single plan."}
+      ]
+    },
+    {
+      "id": "model-pick",
+      "label": "Drafting Sheet",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "engineering drawing sheets with title blocks and revision tables",
+      "thesis": "Each project drawn up as an engineering sheet: title block, revision, date, scale.",
+      "palette": ["#EDEFEA", "#262926", "#D2462B", "#9AA096"],
+      "materials": ["dot-grid drafting field", "sheet border with corner ticks", "red-pencil revision marks"],
+      "viewport": "A sheet border with corner ticks over the dot field; your name sits in the title block bottom-right, the work listed above as the drawing register.",
+      "risk": "The familiar engineer-portfolio trope; it turns to costume if the title block becomes decoration."
+    },
+    {
+      "id": "challenger-cutting-bench",
+      "label": "Cutting Bench Rail",
+      "verdict": "competitive",
+      "lineage": "film cutting bench select rail",
+      "thesis": "The work strung along a perforated rail as selected frames; status is a mark, not a colour.",
+      "palette": ["#FF6A13", "#0A0A0A", "#FFFFFF"],
+      "materials": ["coarse film grain", "perforated rail", "grease-pencil and tape-flag marks"],
+      "viewport": "An orange field crossed by a perforated rail; frames for Crudo, Feit-Y, Aircall and EngineAI, with a folded tape flag on the door the visitor picked.",
+      "case": "Fuses cleanly (shipped work as selected frames, status as marks) but loses on audience: recruiters and clients do not live on a film bench.",
+      "risk": "Orange owning a third of the screen fights the calm brief and reads as a film studio.",
+      "hero": "https://impeccable.style/worlds/cards/operate-a-cutting-bench-select-rail-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/operate-a-cutting-bench-select-rail.webp"
+    },
+    {
+      "id": "challenger-passport",
+      "label": "Well-Travelled Passport",
+      "verdict": "declined",
+      "lineage": "passport visa pages and entry stamps",
+      "thesis": "A career as an accumulating booklet of stamps.",
+      "palette": ["#6B1E2A", "#C9A24A", "#E8D9DC", "#DDE8DD"],
+      "materials": ["guilloché security paper", "rubber-stamp ink"],
+      "viewport": "A data page with the name in OCR-B, stamps for each client and app.",
+      "case": "Fuses poorly: stamps obscure what was built, and hiring managers are not reading a travel record.",
+      "risk": "Novelty over clarity.",
+      "kept": "Dated status marks stamped once on each piece of work.",
+      "hero": "https://impeccable.style/worlds/cards/vernacular-ephemera-well-traveled-passport-hero.webp"
+    },
+    {
+      "id": "challenger-quilt",
+      "label": "Memory Quilt",
+      "verdict": "declined",
+      "lineage": "hand-pieced memory quilts",
+      "thesis": "Every project a patch seamed to its history.",
+      "palette": ["#5E7FA3", "#1C1C1C", "#C8342B", "#6B4A2E"],
+      "materials": ["worn fabric patches", "visible stitch rules"],
+      "viewport": "An unequal patch grid, each patch a project.",
+      "case": "Fuses poorly: domestic textile warmth contradicts precise and engineered.",
+      "risk": "Sentimental for a hiring context.",
+      "kept": "Provenance seamed to every item: client, years, role, stack.",
+      "hero": "https://impeccable.style/worlds/cards/textiles-weave-drape-fashion-memory-quilt-atlas-hero.webp"
+    },
+    {
+      "id": "challenger-tropicalia",
+      "label": "Tropicália Sleeve",
+      "verdict": "declined",
+      "lineage": "Brazilian tropicália album collage",
+      "thesis": "A crowded collage of cut-outs at mismatched scales.",
+      "palette": ["#1F8A3A", "#F2A31B", "#E4442B", "#F5E6C4"],
+      "materials": ["scissor-cut photographs", "concrete-poetry lettering"],
+      "viewport": "The portrait cut out and pasted among project fragments.",
+      "case": "Fuses poorly: too loud for the calm brief, and the work gets lost in the scene.",
+      "risk": "Flashy.",
+      "kept": "Courage in scale contrast.",
+      "hero": "https://impeccable.style/worlds/cards/posters-covers-sleeves-tropicalia-sleeve-collage-hero.webp"
+    },
+    {
+      "id": "challenger-ebru",
+      "label": "Ebru Marbling",
+      "verdict": "declined",
+      "lineage": "Turkish floated-pigment marbling",
+      "thesis": "Every mark made by moving liquid.",
+      "palette": ["#1E3A8A", "#D97706", "#F3F0E8", "#7F1D1D"],
+      "materials": ["floating pigment", "combed rings"],
+      "viewport": "A marbled bath that the visitor combs into the work.",
+      "case": "Fuses poorly: an art toy that hides the offer.",
+      "risk": "Interaction over information.",
+      "kept": "One living surface behind everything.",
+      "hero": "https://impeccable.style/worlds/cards/medium-native-ebru-floated-pigment-hero.webp"
+    },
+    {
+      "id": "challenger-versailles",
+      "label": "Versailles Vistas",
+      "verdict": "declined",
+      "lineage": "Le Nôtre's axial gardens",
+      "thesis": "A site walked along axes with hidden rooms.",
+      "palette": ["#3F5A36", "#CDBF9E", "#B8913A", "#F4F4F0"],
+      "materials": ["clipped hedges", "raked gravel"],
+      "viewport": "An axial vista down to the two doors.",
+      "case": "Fuses poorly: ceremony and grandeur are wrong for one engineer.",
+      "risk": "Pompous.",
+      "kept": "A single axis every page hangs from.",
+      "hero": "https://impeccable.style/worlds/cards/architecture-inhabitable-space-versailles-bosquet-vistas-hero.webp"
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "buildPath": { "value": "code", "toggle": false },
+  "canon": true,
+  "canonCard": {
+    "label": "The dev-portfolio standard",
+    "thesis": "What developer portfolios ship, executed impeccably.",
+    "palette": ["#0A0A0A", "#FAFAFA", "#6366F1"],
+    "materials": ["dark ground", "project cards with screenshots"],
+    "viewport": "Name and role, a short intro, then a grid of project cards.",
+    "risk": "Indistinguishable from other developer sites by design."
+  },
+  "steer": true
+}

@@ -1,32 +1,46 @@
+"use client"
+
 import Link from "next/link"
-import { Button } from "./sections/components/ui/button"
-import GoBackButton from "./sections/components/GoBackButton"
-import { Home } from "lucide-react"
+import { useLocale, useTranslations } from "next-intl"
+import { ArrowLeft, ArrowUpRight } from "lucide-react"
+import Header from "./sections/header"
+import Footer from "./sections/footer"
+import { Axis } from "./sections/components/common/Block"
 
-export const dynamic = "force-static"
-
+/** A missing page still hangs from the axis: the number left, the way out right. */
 export default function NotFound() {
-  return (
-    <div className="min-h-screen flex items-center justify-center px-4">
-      <div className="max-w-md w-full text-center space-y-6">
-        <div className="space-y-2">
-          <h1 className="text-6xl font-bold">404</h1>
-          <h2 className="text-2xl font-semibold">Page Not Found</h2>
-          <p className="text-muted-foreground">
-            The page you&apos;re looking for doesn&apos;t exist or has been moved.
-          </p>
-        </div>
+  const t = useTranslations("notFound")
+  const locale = useLocale()
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button asChild>
-            <Link href="/">
-              <Home className="mr-2 h-4 w-4" />
-              Go Home
+  return (
+    <div>
+      <Axis />
+      <Header />
+      <main id="main-content" className="frame grid12 min-h-[70svh] content-center gap-y-8 py-20">
+        <p className="display-name tabular col-span-4 text-primary md:col-span-8 lg:col-span-3">404</p>
+        <div className="col-span-4 md:col-span-8 lg:col-span-8 lg:col-start-4 lg:pl-8">
+          <h1 className="text-4xl font-semibold tracking-tight lg:text-6xl">{t("title")}</h1>
+          <p className="mt-4 max-w-[52ch] text-lg text-muted-foreground">{t("description")}</p>
+          <div className="mt-10 flex flex-wrap gap-3">
+            <Link
+              href={`/${locale}/`}
+              className="inline-flex items-center gap-2 bg-primary px-5 py-3 font-medium text-primary-foreground transition-opacity hover:opacity-90"
+            >
+              {t("goHome")}
+              <ArrowUpRight className="h-4 w-4" strokeWidth={1.5} aria-hidden="true" />
             </Link>
-          </Button>
-          <GoBackButton />
+            <button
+              type="button"
+              onClick={() => window.history.back()}
+              className="inline-flex items-center gap-2 border border-rule/40 px-5 py-3 font-medium transition-colors hover:border-primary hover:text-primary"
+            >
+              <ArrowLeft className="h-4 w-4" strokeWidth={1.5} aria-hidden="true" />
+              {t("goBack")}
+            </button>
+          </div>
         </div>
-      </div>
+      </main>
+      <Footer />
     </div>
   )
 }

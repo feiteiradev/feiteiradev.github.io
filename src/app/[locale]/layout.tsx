@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist_Mono, Schibsted_Grotesk } from "next/font/google";
 import "../globals.css";
 import { ThemeProvider } from "./sections/components/theme-provider";
 import { QueryClientProvider } from "@tanstack/react-query";
@@ -24,9 +24,11 @@ const messagesMap: Record<Locale, typeof enMessages> = {
   pt: ptMessages,
 };
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+// One grotesk carries the whole site, figures included (tabular where they
+// line up). Geist Mono stays only for the concept demos' own brands.
+const grotesk = Schibsted_Grotesk({
+  variable: "--font-grotesk",
+  subsets: ["latin", "latin-ext"],
 });
 
 const geistMono = Geist_Mono({
@@ -147,7 +149,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} suppressHydrationWarning className="scroll-smooth scroll-pt-24">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${grotesk.variable} ${geistMono.variable} antialiased`}
       >
         <StructuredData locale={locale} />
         <Analytics />

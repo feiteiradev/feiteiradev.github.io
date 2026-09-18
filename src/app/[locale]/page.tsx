@@ -1,28 +1,27 @@
 "use client"
 import Hero from "./sections/hero";
-import Proof from "./sections/proof";
 import Header from "./sections/header";
 import Footer from "./sections/footer";
-import { AnimatedItem } from "./sections/components/common/AnimatedItem";
-import { ScrollProgressBar } from "./sections/components/common/ScrollProgressBar";
+import Close from "./sections/close";
+import { Block, Axis } from "./sections/components/common/Block";
+import { AppPanels } from "./sections/apps";
+import { useTranslations } from "next-intl";
 
 export default function Page() {
+  const t = useTranslations("home");
+
   return (
     <div>
-      <ScrollProgressBar />
+      <Axis />
       <Header />
       <main id="main-content">
-        <div className="pb-24" style={{ display: "flex", flexDirection: "column", gap: "var(--spacing-fluid-section)" }}>
-          {/* Hero manages its own staggered entry — no outer wrapper needed */}
-          <Hero />
-          <AnimatedItem>
-            <Proof />
-          </AnimatedItem>
-          <AnimatedItem direction="none" delay={0.1}>
-            <Footer />
-          </AnimatedItem>
-        </div>
+        <Hero />
+        <Block id="apps" title={t("appsTitle")} intro={t("appsIntro")}>
+          <AppPanels />
+        </Block>
+        <Close />
       </main>
+      <Footer />
     </div>
   );
 }

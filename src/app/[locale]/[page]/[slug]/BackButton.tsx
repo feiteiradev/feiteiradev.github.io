@@ -20,7 +20,7 @@ export default function BackButton() {
     <div className="fixed left-4 top-20 z-50 sm:left-6 sm:top-24">
       <Link
         href={routePath("work", locale)}
-        className="inline-flex h-9 items-center justify-center rounded-md border border-input bg-background/95 px-3 py-2 text-sm font-medium shadow-sm backdrop-blur transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring sm:px-4"
+        className="inline-flex h-10 items-center justify-center border border-rule/40 bg-background px-4 text-sm font-medium text-foreground transition-colors hover:border-primary hover:text-primary"
       >
         <ArrowLeft className="mr-2 h-4 w-4" />
         {t("goBack")}

@@ -51,6 +51,7 @@
     --muted-foreground: hsl(0 0% 32%);
     --accent: hsl(0 0% 96%);
     --border: hsl(0 0% 80%);
+    --rule: hsl(0 0% 9%);
     color: hsl(0 0% 9%) !important;
     background: #fff !important;
     font-size: 10.5pt;

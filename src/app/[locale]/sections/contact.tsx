@@ -6,7 +6,8 @@ import { Button } from "@/components/ui/button"
 import emailjs from "@emailjs/browser"
 import { useEffect, useState, useRef } from "react"
 import { useTranslations } from "next-intl"
-import Image from "next/image"
+import { ArrowUpRight, ChevronDown } from "lucide-react"
+import { Block } from "./components/common/Block"
 import { toast } from "sonner"
 import { CONTACT_FORM, IDENTITY, SOCIAL_LINKS } from "../../../lib/constants"
 
@@ -19,19 +20,12 @@ export default function Contact() {
   const t = useTranslations("contact")
 
   return (
-    <div id="contact" className="section-spacing scroll-mt-24 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-5xl mx-auto mb-10">
-        <span className="section-eyebrow">{t("title")}</span>
+    <Block id="contact" title={t("title")}>
+      <div className="grid gap-14 md:grid-cols-2 md:gap-10">
+        <ContactInfo />
+        <ContactForm />
       </div>
-      <div className="flex flex-col gap-8 max-w-5xl mx-auto py-4 md:grid md:grid-cols-2 md:gap-8">
-        <div className="order-1 md:order-none">
-          <ContactInfo />
-        </div>
-        <div className="order-2 md:order-none">
-          <ContactForm />
-        </div>
-      </div>
-    </div>
+    </Block>
   )
 }
 
@@ -168,9 +162,6 @@ function ContactForm() {
 
   return (
     <div>
-      <span className="text-3xl font-semibold block text-center md:text-left">
-        {t("sendMessage")}
-      </span>
       <div
         ref={statusRef}
         className="sr-only"
@@ -178,7 +169,7 @@ function ContactForm() {
         aria-live="polite"
         aria-atomic="true"
       />
-      <form onSubmit={handleSubmit} className="flex flex-col gap-4 my-5" noValidate>
+      <form onSubmit={handleSubmit} aria-label={t("sendMessage")} className="flex flex-col gap-4" noValidate>
         {/* Honeypot field - hidden from users */}
         <input
           type="text"
@@ -194,13 +185,14 @@ function ContactForm() {
           <label htmlFor="contact-topic" className="sr-only">
             {t("form.topics.label")}
           </label>
+          <div className="relative">
           <select
             id="contact-topic"
             name="topic"
             value={topic}
             onChange={(e) => setTopic(e.target.value as Topic)}
             disabled={loading}
-            className="border-input dark:bg-input/30 flex h-9 w-full rounded-md border bg-transparent px-3 py-1 text-base shadow-xs outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] disabled:opacity-50 md:text-sm"
+            className="border-input flex h-11 w-full appearance-none border bg-transparent px-3 pr-10 text-base outline-none focus-visible:border-ring focus-visible:ring-ring/30 focus-visible:ring-[3px] disabled:opacity-50"
           >
             {TOPICS.map((key) => (
               <option key={key} value={key}>
@@ -208,6 +200,8 @@ function ContactForm() {
               </option>
             ))}
           </select>
+          <ChevronDown className="pointer-events-none absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" strokeWidth={1.5} aria-hidden="true" />
+          </div>
         </div>
 
         <div>
@@ -283,38 +277,38 @@ function ContactForm() {
   )
 }
 
-const contacts = [
-  { icon: "email", label: IDENTITY.email },
-  ...SOCIAL_LINKS.map(({ icon, label }) => ({ icon, label })),
-]
-
 function ContactInfo() {
   const t = useTranslations("contact")
+  const routes = [
+    { href: `mailto:${IDENTITY.email}`, label: IDENTITY.email, external: false },
+    ...SOCIAL_LINKS.map(({ href, label }) => ({ href, label, external: true })),
+  ]
 
   return (
-    <div className="flex flex-col gap-2 space-y-4">
-      <h2 className="text-3xl font-semibold text-center md:text-left">{t("getInTouch")}</h2>
-      {contacts.map((contact, index) => (
-        <div key={index} className="flex items-center gap-4">
-          <Image
-            src={`/icons/${contact.icon.toLowerCase()}.svg`}
-            alt={`${contact.icon} icon`}
-            width={35}
-            height={35}
-            className="dark:invert"
-          />
-          <span className="text-md">{contact.label}</span>
-        </div>
-      ))}
+    <div className="flex flex-col gap-10">
+      <div>
+        <ul aria-label={t("getInTouch")} className="border-b border-rule/15">
+          {routes.map((r) => (
+            <li key={r.href}>
+              <a
+                href={r.href}
+                {...(r.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                className="group relative flex items-center justify-between gap-4 border-t border-rule/15 py-4 hairline-draw"
+              >
+                <span className="break-all group-hover:text-primary">{r.label}</span>
+                <ArrowUpRight className="h-4 w-4 shrink-0 text-muted-foreground group-hover:text-primary" strokeWidth={1.5} aria-hidden="true" />
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
 
-      <div className="pt-4">
-        <h3 className="text-lg font-semibold mb-2">{t("trustTitle")}</h3>
-        <ul className="text-sm text-muted-foreground space-y-1">
-          {(Array.isArray(t.raw("trust")) ? (t.raw("trust") as string[]) : []).map(
-            (line) => (
-              <li key={line}>{line}</li>
-            ),
-          )}
+      <div>
+        <h3 className="mb-3 text-lg font-semibold">{t("trustTitle")}</h3>
+        <ul className="space-y-1 text-muted-foreground">
+          {(t.raw("trust") as string[]).map((line) => (
+            <li key={line}>{line}</li>
+          ))}
         </ul>
       </div>
     </div>

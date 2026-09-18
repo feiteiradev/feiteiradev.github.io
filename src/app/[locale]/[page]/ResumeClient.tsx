@@ -4,7 +4,6 @@ import * as React from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { useLocale, useTranslations } from "next-intl"
-import { motion, type Variants } from "framer-motion"
 import {
   Download,
   Printer,
@@ -18,6 +17,7 @@ import {
 
 import Header from "../sections/header"
 import Footer from "../sections/footer"
+import { Axis } from "../sections/components/common/Block"
 import { Button } from "@/components/ui/button"
 import { IDENTITY, SITE_HOST, SITE_URL } from "../../../lib/constants"
 
@@ -58,39 +58,20 @@ const CONTACT = {
   githubLabel: IDENTITY.githubUser,
 }
 
-/* -------------------------------------------------------------------------- */
-/*  Motion helpers (whileInView; the print stylesheet forces full opacity)    */
-/* -------------------------------------------------------------------------- */
-
-const fadeUp: Variants = {
-  hidden: { opacity: 0, y: 24 },
-  show: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] },
-  },
-}
-
+/** A section wrapper; it used to fade in on scroll, and now simply renders. */
 function Reveal({
   children,
   className,
-  delay = 0,
 }: {
   children: React.ReactNode
   className?: string
-  delay?: number
 }) {
   return (
-    <motion.div
-      className={className}
-      variants={fadeUp}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, margin: "-8%" }}
-      transition={{ delay }}
-    >
+    // Visible by default: a résumé is read, and content that waits for a
+    // scroll to appear is content a quick reader never sees.
+    <div className={className}>
       {children}
-    </motion.div>
+    </div>
   )
 }
 
@@ -115,48 +96,39 @@ export default function ResumeClient() {
   return (
     <div className="min-h-screen">
       <div className="no-print">
+        <Axis />
         <Header />
       </div>
 
-      <main id="main-content" className="px-4 pb-24 pt-10 sm:px-6">
-        {/* Action bar (excluded from the printed document) */}
-        <div className="no-print mx-auto mb-8 flex w-full max-w-3xl flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-          <Link
-            href={`/${locale}`}
-            className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 rounded"
-          >
-            <ArrowLeft className="h-4 w-4" strokeWidth={1.5} />
-            {t("backToHome")}
-          </Link>
-
-          <div className="flex items-center gap-3">
-            <Button
-              onClick={handleDownload}
-              className="cursor-pointer gap-2"
-              title={t("downloadHint")}
-              aria-label={t("download")}
+      <main id="main-content" className="frame grid12 gap-y-8 pb-24 pt-10 lg:pt-16">
+        {/* The rail left of the axis: where you are and what you can do with
+            the document. Never printed. */}
+        <aside className="no-print col-span-4 md:col-span-8 lg:col-span-3">
+          <div className="flex flex-col gap-5 lg:sticky lg:top-24">
+            <Link
+              href={`/${locale}/`}
+              className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-primary"
             >
-              <Download className="h-4 w-4" strokeWidth={1.75} />
-              {t("download")}
-            </Button>
-            <Button
-              variant="outline"
-              onClick={() => window.print()}
-              className="cursor-pointer gap-2"
-              aria-label={t("print")}
-            >
-              <Printer className="h-4 w-4" strokeWidth={1.75} />
-              <span className="hidden sm:inline">{t("print")}</span>
-            </Button>
+              <ArrowLeft className="h-4 w-4" strokeWidth={1.5} />
+              {t("backToHome")}
+            </Link>
+            <p className="text-2xl font-semibold tracking-tight">{t("title")}</p>
+            <div className="flex flex-wrap gap-3">
+              <Button onClick={handleDownload} className="cursor-pointer gap-2" title={t("downloadHint")} aria-label={t("download")}>
+                <Download className="h-4 w-4" strokeWidth={1.75} />
+                {t("download")}
+              </Button>
+              <Button variant="outline" onClick={() => window.print()} className="cursor-pointer gap-2" aria-label={t("print")}>
+                <Printer className="h-4 w-4" strokeWidth={1.75} />
+                {t("print")}
+              </Button>
+            </div>
+            <p className="max-w-[30ch] text-sm text-muted-foreground">{t("downloadHint")}</p>
           </div>
-        </div>
+        </aside>
 
-        <p className="no-print mx-auto mb-6 max-w-3xl text-center text-xs text-muted-foreground/70">
-          {t("downloadHint")}
-        </p>
-
-        {/* The printable résumé document */}
-        <article className="resume-sheet mx-auto w-full max-w-3xl rounded-xl border border-border/60 bg-card/70 p-7 shadow-[0_30px_80px_-40px_rgba(0,0,0,0.35)] backdrop-blur-sm sm:p-10 md:p-12">
+        {/* The printable résumé document, hung from the axis. */}
+        <article className="resume-sheet col-span-4 w-full border border-rule/15 bg-card p-7 sm:p-10 md:col-span-8 md:p-12 lg:col-span-8 lg:col-start-4 lg:ml-8">
           <Masthead />
           <Profile />
           <ExperienceSection entries={experience} ongoing={tExp("ongoing")} />
@@ -202,7 +174,7 @@ function Masthead() {
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
             Pedro Feiteira
           </h1>
-          <p className="font-mono text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground sm:text-sm">
+          <p className="text-base text-muted-foreground sm:text-lg">
             {t("role")}
           </p>
         </div>
@@ -258,7 +230,7 @@ function Masthead() {
 
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
-    <h2 className="mb-5 font-mono text-xs font-semibold uppercase tracking-[0.2em] text-foreground/70">
+    <h2 className="mb-5 border-t border-rule/15 pt-4 text-lg font-semibold tracking-tight">
       {children}
     </h2>
   )
@@ -301,7 +273,7 @@ function ExperienceSection({
       </Reveal>
       <div className="flex flex-col gap-7">
         {entries.map((entry, i) => (
-          <Reveal key={`${entry.company}-${i}`} delay={i * 0.04}>
+          <Reveal key={`${entry.company}-${i}`}>
             <ExperienceItem entry={entry} ongoing={ongoing} />
           </Reveal>
         ))}
@@ -323,13 +295,13 @@ function ExperienceItem({
     <div className="resume-avoid-break border-l border-border/70 pl-5">
       <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
         <h3 className="text-base font-semibold text-foreground">{entry.role}</h3>
-        <span className="inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wide text-muted-foreground">
+        <span className="tabular inline-flex items-center gap-1.5 text-sm text-muted-foreground">
           <Calendar className="h-3 w-3" strokeWidth={1.5} />
           {entry.period}
           {isOngoing && (
             <span
               aria-hidden="true"
-              className="ml-1 inline-block h-1.5 w-1.5 rounded-full bg-emerald-500"
+              className="ml-1 inline-block h-2 w-2 bg-primary"
             />
           )}
         </span>
@@ -349,22 +321,13 @@ function ExperienceItem({
             key={i}
             className="flex items-start gap-2 text-sm leading-relaxed text-muted-foreground"
           >
-            <span className="mt-[7px] h-1 w-1 flex-shrink-0 rounded-full bg-foreground/40" />
+            <span className="mt-[9px] h-1 w-1 flex-shrink-0 bg-foreground/50" />
             <span>{line}</span>
           </li>
         ))}
       </ul>
 
-      <div className="mt-3 flex flex-wrap gap-1.5">
-        {entry.technologies.map((tech) => (
-          <span
-            key={tech}
-            className="rounded-full border border-border/60 px-2.5 py-0.5 font-mono text-[10.5px] text-muted-foreground"
-          >
-            {tech}
-          </span>
-        ))}
-      </div>
+      <p className="mt-3 text-sm text-muted-foreground">{entry.technologies.join(" · ")}</p>
     </div>
   )
 }
@@ -382,19 +345,10 @@ function TechStack({ groups }: { groups: SkillGroup[] }) {
         <div className="grid gap-x-8 gap-y-4 sm:grid-cols-2">
           {groups.map((group) => (
             <div key={group.label}>
-              <p className="mb-2 text-[11px] font-medium uppercase tracking-wider text-muted-foreground/70">
+              <p className="mb-1 text-sm font-semibold">
                 {group.label}
               </p>
-              <div className="flex flex-wrap gap-1.5">
-                {group.items.map((item) => (
-                  <span
-                    key={item}
-                    className="rounded-md border border-border/60 bg-muted/40 px-2.5 py-1 text-xs text-foreground/80"
-                  >
-                    {item}
-                  </span>
-                ))}
-              </div>
+              <p className="text-sm text-muted-foreground">{group.items.join(" · ")}</p>
             </div>
           ))}
         </div>
@@ -425,7 +379,7 @@ function EducationSection({ entries }: { entries: EducationEntry[] }) {
                   {edu.degree}
                 </h3>
                 <p className="text-sm text-foreground/80">{edu.school}</p>
-                <p className="mt-0.5 font-mono text-[11px] uppercase tracking-wide text-muted-foreground">
+                <p className="tabular mt-0.5 text-sm text-muted-foreground">
                   {edu.period} · {edu.location}
                 </p>
                 <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
@@ -457,7 +411,7 @@ function LanguagesSection({ languages }: { languages: LanguageEntry[] }) {
                 <span className="text-sm font-medium text-foreground">
                   {lang.name}
                 </span>
-                <span className="font-mono text-[11px] uppercase tracking-wide text-muted-foreground">
+                <span className="text-sm text-muted-foreground">
                   {lang.level}
                 </span>
               </div>
