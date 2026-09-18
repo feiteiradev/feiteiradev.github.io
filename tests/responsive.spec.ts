@@ -158,3 +158,27 @@ test.describe('Localised routes', () => {
     expect(response?.status(), '/en/servicos/ must not exist').toBe(404);
   });
 });
+
+test.describe('Interactive background', () => {
+  // The dot field has to answer the visitor: dots near the pointer turn the
+  // accent. Sampled from the canvas itself, so a silent no-op fails here.
+  test('lights accent dots around the pointer', async ({ page }) => {
+    await page.goto('/en/');
+    await page.waitForLoadState('networkidle');
+    await page.mouse.move(600, 400, { steps: 5 });
+    await page.waitForTimeout(600);
+
+    const accentPixels = await page.evaluate(() => {
+      const canvas = document.querySelector('canvas');
+      const ctx = canvas?.getContext('2d');
+      if (!canvas || !ctx) return -1;
+      const dpr = canvas.width / canvas.clientWidth;
+      const { data } = ctx.getImageData((600 - 200) * dpr, (400 - 200) * dpr, 400 * dpr, 400 * dpr);
+      let n = 0;
+      // Ultramarine (#2b47f5): blue well above red and green, clearly opaque.
+      for (let i = 0; i < data.length; i += 4) if (data[i + 3] > 60 && data[i + 2] > data[i] + 80) n++;
+      return n;
+    });
+    expect(accentPixels).toBeGreaterThan(50);
+  });
+});

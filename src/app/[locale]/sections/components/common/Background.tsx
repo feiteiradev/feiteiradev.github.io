@@ -1,10 +1,11 @@
 "use client";
 
 import { useEffect } from "react";
+import DotField from "./DotField";
 import { MotionConfig, motion, useMotionValue, useReducedMotion, useSpring } from "framer-motion";
 
 // One living surface behind every page: three accent-tinted fields drifting
-// under a dot grid, the whole mesh leaning a little toward the cursor. Under
+// under an interactive dot grid, the mesh leaning a little toward the cursor. Under
 // reduced motion it is the same picture, held still.
 const FIELDS = [
   {
@@ -63,16 +64,8 @@ export default function Background() {
         ))}
       </motion.div>
 
-      {/* The dot field, fading out toward the edges. */}
-      <div
-        className="absolute inset-0 text-foreground opacity-[0.07] dark:opacity-[0.09]"
-        style={{
-          backgroundImage: "radial-gradient(currentColor 1px, transparent 1px)",
-          backgroundSize: "24px 24px",
-          maskImage: "radial-gradient(ellipse 80% 70% at 50% 40%, #000 40%, transparent 100%)",
-          WebkitMaskImage: "radial-gradient(ellipse 80% 70% at 50% 40%, #000 40%, transparent 100%)",
-        }}
-      />
+      {/* The dot field is the interactive layer: see DotField. */}
+      <DotField />
     </div>
     </MotionConfig>
   );

@@ -189,7 +189,7 @@ components:
 
 The site is one International Typographic Style poster, set on a strict 12-column grid and hung from a single vertical axis. The name runs at poster scale, the work is a numbered index set in display-size numerals beside it, and the two ways in are simply the next two numbers. Everything is ruled, square, and flat: hairlines do the structural work that cards and shadows do elsewhere.
 
-Colour is almost absent on purpose. Cool paper and ink carry the page; one ultramarine does all the signalling, so a visitor's eye goes to numerals, links, the active state and the primary action and nowhere else. Behind every page runs one living surface: three accent-tinted mesh fields drifting under a fading dot grid, leaning a few pixels toward the cursor and held still under reduced motion. It keeps the poster from feeling cold without ever competing with it.
+Colour is almost absent on purpose. Cool paper and ink carry the page; one ultramarine does all the signalling, so a visitor's eye goes to numerals, links, the active state and the primary action and nowhere else. Behind every page runs one living surface that answers the visitor: three accent-tinted mesh fields drift under an interactive dot grid; the dots part around the pointer, swell and turn ultramarine, a tap or click sends a ripple through the grid, and a slow wave keeps it breathing when nobody is pointing. Under reduced motion it is the same grid, still. It keeps the poster from feeling cold without covering the work.
 
 Inside the site's frame, each iOS app wears its own brand. The Crudo and Feit-Y bands re-point the same tokens to the app's palette and face, so the grid, axis, rules and interaction stay the site's while colour and type become the app's.
 
@@ -229,7 +229,7 @@ Cool paper, ink, and one ultramarine; every other colour is a neutral or belongs
 - **Feit-Y Night / Night Sheet / Night Ink / Night Lichen** (`feity-night`, `feity-night-sheet`, `feity-night-ink`, `feity-night-lichen`): the dark band, following the visitor's theme as the app does.
 
 ### Named Rules
-**The One Signal Rule.** Ultramarine means "this is a number, a way in, or where you are". It never fills a section, a background or a decorative shape; the mesh is the only place it appears diffused.
+**The One Signal Rule.** Ultramarine means "this is a number, a way in, or where you are". It never fills a section, a background or a decorative shape; the mesh and the dots the visitor lights up are the only places it appears in the background.
 
 **The Band Re-point Rule.** An app band changes colour and face by re-pointing the site's own tokens on the band element (`--background`, `--foreground`, `--primary`, `--rule`, `--border`, `--ring`, `--brand-mark`). It never introduces new layout, radii or shadows; grid, axis, rules and hover stay the site's.
 
@@ -310,7 +310,7 @@ The two primary ways in from home, numbered 05 and 06 as the index continues. A 
 Header: 64px sticky bar, name at left in semibold 15px, links at 15px starting on the axis with 28px gaps; hover and current page turn ultramarine (no underline, no pill). Locale switcher and theme toggle sit at the far right as bare 16px icons at 1.5 stroke. On phones a menu button opens a full-width panel of 24px semibold links. App rails list the app's three pages as ruled rows with the current one in semibold ultramarine.
 
 ### Living background
-Fixed behind every page: three accent-tinted fields (70, 60 and 55vw) drifting on 38-52s loops under a 110px blur, a 24px dot grid at 7-9% ink faded out by a radial mask, and a spring lean of at most 24px toward the pointer. Under reduced motion it is the same picture held still.
+Fixed behind every page: three accent-tinted fields (70, 60 and 55vw) drifting on 38-52s loops under a 110px blur with a spring lean of at most 24px toward the pointer, and over them the interactive dot grid (`DotField`, canvas 2D): 24px pitch, 1.2px ink dots at 13% plus a slow diagonal wave; within 240px of the pointer dots are pushed up to 22px outward, grow to about 4.5px and switch to ultramarine above 34% energy; a pointerdown sends a 90px-wide ripple outward at 0.8px/ms that fades over 1.8s. Under reduced motion the grid is drawn once and no listeners are attached.
 
 ### Load choreography
 The only authored motion. First-viewport modules rise 14px and fade in over 900ms with cubic-bezier(0.16, 1, 0.3, 1), staggered 80-600ms; the name's two lines are revealed through their own boxes over 1100ms, 90ms apart. It is CSS, so nothing waits on JavaScript.
