@@ -15,7 +15,7 @@
   },
   "hero": {
     "role": "Software engineer",
-    "tagline": "I build web and mobile products end to end: an AI-powered support system for Aircall, a Python SDK for EngineAI, and my own iOS apps, Crudo and Feit-⁠Y. I also build custom software for businesses.",
+    "tagline": "From the problem to a live product. For clients, and for my own apps.",
     "profileAlt": "Pedro Feiteira, software engineer",
     "doors": {
       "hire": {
@@ -581,7 +581,7 @@
     }
   },
   "home": {
-    "caption": "Software engineer, Portugal",
+    "caption": "Software engineer · Portugal",
     "index": {
       "crudo": {
         "meta": "iOS app · SwiftUI · design, build, support",

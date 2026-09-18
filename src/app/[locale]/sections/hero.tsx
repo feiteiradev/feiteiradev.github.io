@@ -7,9 +7,10 @@ import { appPath, routePath } from "../../../lib/routes"
 import { StatusMark, type Status } from "./apps"
 
 /**
- * The first viewport is the poster: the name at poster scale, the work as a
- * numbered index beside it, and the two doors as the last two numbers. The
- * index is ordered from most real to least, which is why it is numbered.
+ * The first viewport is a portrait-led split. Left of the axis, the portrait
+ * as a full grid module; right of it, the name, one line of promise and the
+ * two doors. Under both, the work as a four-cell strip, numbered because the
+ * order runs from most real to least.
  */
 export default function Hero() {
   const t = useTranslations("hero")
@@ -26,47 +27,59 @@ export default function Hero() {
   ]
 
   return (
-    <section className="frame grid12 gap-y-12 pt-10 pb-16 lg:min-h-[calc(100svh-4rem)] lg:content-between lg:gap-y-14 lg:pt-16">
-      <h1 className="display-name rise col-span-4 md:col-span-8 lg:col-span-7">
-        <span className="line block">Pedro</span>
-        <span className="line block">Feiteira</span>
-      </h1>
-
-      <div className="rise col-span-4 flex items-end gap-4 md:col-span-3 lg:col-span-3" style={{ animationDelay: "240ms" }}>
+    <section className="frame grid12 gap-y-10 pt-8 pb-16 lg:gap-y-0 lg:pt-10">
+      {/* The portrait fills its three columns and the full height of the
+          column beside it: a module of the grid, not a thumbnail. */}
+      <div
+        className="rise relative col-span-4 aspect-[4/3] overflow-hidden md:col-span-3 md:aspect-[3/4] lg:col-span-3 lg:row-span-3 lg:aspect-auto lg:min-h-[28rem]"
+        style={{ animationDelay: "120ms" }}
+      >
         {/* eslint-disable-next-line @next/next/no-img-element -- static export, pre-sized webp */}
         <img
-          src="/profile-480.webp"
+          src="/profile-portrait.webp"
           alt={t("profileAlt")}
-          width={480}
-          height={480}
-          className="h-24 w-24 object-cover object-top lg:h-28 lg:w-28"
+          width={720}
+          height={960}
+          className="absolute inset-0 h-full w-full object-cover object-[50%_25%]"
         />
-        <p className="text-sm leading-snug text-muted-foreground">{tHome("caption")}</p>
+      </div>
+
+      <div className="col-span-4 row-start-1 md:col-span-5 md:row-start-auto lg:col-span-9 lg:col-start-4 lg:pl-8">
+        <h1 className="display-name">
+          <span className="line block">Pedro</span>
+          <span className="line block">Feiteira</span>
+        </h1>
+        <p className="rise mt-5 text-lg text-muted-foreground" style={{ animationDelay: "200ms" }}>
+          {tHome("caption")}
+        </p>
       </div>
 
       <p
-        className="rise col-span-4 max-w-[46ch] text-lg leading-relaxed md:col-span-5 lg:col-span-4 lg:col-start-4 lg:pl-8"
-        style={{ animationDelay: "320ms" }}
+        className="rise col-span-4 max-w-[26ch] text-2xl font-medium leading-snug tracking-tight md:col-span-8 lg:col-span-7 lg:col-start-4 lg:mt-6 lg:pl-8 lg:text-3xl"
+        style={{ animationDelay: "280ms" }}
       >
         {t("tagline")}
       </p>
 
-      <nav aria-label={t("doorsLabel")} className="col-span-4 grid grid-cols-1 gap-x-6 md:col-span-8 md:grid-cols-2 lg:col-span-9 lg:col-start-4 lg:row-start-3 lg:pl-8">
-        <Door n={5} door="hire" href={routePath("resume", locale)} delay={520} />
-        <Door n={6} door="build" href={routePath("services", locale)} delay={600} />
+      <nav
+        aria-label={t("doorsLabel")}
+        className="col-span-4 grid grid-cols-1 gap-x-6 self-end md:col-span-8 md:grid-cols-2 lg:col-span-9 lg:col-start-4 lg:mt-8 lg:pl-8"
+      >
+        <Door n={5} door="hire" href={routePath("resume", locale)} delay={360} />
+        <Door n={6} door="build" href={routePath("services", locale)} delay={420} />
       </nav>
 
-      <ol
-        aria-label={tHome("indexLabel")}
-        className="col-span-4 md:col-span-8 lg:col-span-5 lg:col-start-8 lg:row-span-2 lg:row-start-1 lg:self-start"
-      >
+      <ol aria-label={tHome("indexLabel")} className="col-span-4 grid gap-x-6 md:col-span-8 md:grid-cols-2 lg:col-span-12 lg:mt-10 lg:grid-cols-4">
         {index.map((item, i) => (
-          <li key={item.id} className="rise" style={{ animationDelay: `${120 + i * 80}ms` }}>
-            <Link href={item.href} className="group relative grid grid-cols-[minmax(4.5rem,auto)_1fr] items-start gap-x-5 border-t border-rule/15 py-4 transition-colors duration-500 hover:bg-primary/[0.04] hairline-draw">
-              <span className="index-numeral tabular font-medium text-primary transition-transform duration-500 ease-[cubic-bezier(.16,1,.3,1)] group-hover:translate-x-1">
+          <li key={item.id} className="rise" style={{ animationDelay: `${480 + i * 70}ms` }}>
+            <Link
+              href={item.href}
+              className="group relative grid h-full grid-cols-[auto_1fr] items-start gap-x-4 border-t border-rule/15 pt-4 pb-5 transition-colors duration-500 hover:bg-primary/[0.04] hairline-draw lg:pr-4"
+            >
+              <span className="index-numeral tabular pt-0.5 font-medium text-primary transition-transform duration-500 ease-[cubic-bezier(.16,1,.3,1)] group-hover:translate-x-1">
                 {String(i + 1).padStart(2, "0")}
               </span>
-              <span className="flex flex-col gap-1 pt-1">
+              <span className="flex flex-col gap-1">
                 <span className="text-xl font-semibold leading-tight tracking-tight">{item.name}</span>
                 <span className="text-sm text-muted-foreground">{tHome(`index.${item.id}.meta`)}</span>
                 <StatusMark status={item.status} label={tHome(`index.${item.id}.status`)} />
@@ -75,7 +88,6 @@ export default function Hero() {
           </li>
         ))}
       </ol>
-
     </section>
   )
 }

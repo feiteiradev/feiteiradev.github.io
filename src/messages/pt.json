@@ -15,7 +15,7 @@
   },
   "hero": {
     "role": "Engenheiro de software",
-    "tagline": "Construo produtos web e mobile de ponta a ponta: um sistema de apoio com IA para a Aircall, um SDK em Python para a EngineAI e as minhas próprias apps iOS, a Crudo e o Feit-⁠Y. Também desenvolvo software à medida para empresas.",
+    "tagline": "Do problema ao produto no ar. Para clientes, e para as minhas próprias apps.",
     "profileAlt": "Pedro Feiteira, engenheiro de software",
     "doors": {
       "hire": {
@@ -581,7 +581,7 @@
     }
   },
   "home": {
-    "caption": "Engenheiro de software, Portugal",
+    "caption": "Engenheiro de software · Portugal",
     "index": {
       "crudo": {
         "meta": "App iOS · SwiftUI · desenho, código e apoio",

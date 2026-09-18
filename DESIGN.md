@@ -187,7 +187,7 @@ components:
 
 **Creative North Star: "The Numbered Poster"**
 
-The site is one International Typographic Style poster, set on a strict 12-column grid and hung from a single vertical axis. The name runs at poster scale, the work is a numbered index set in display-size numerals beside it, and the two ways in are simply the next two numbers. Everything is ruled, square, and flat: hairlines do the structural work that cards and shadows do elsewhere.
+The site is one International Typographic Style poster, set on a strict 12-column grid and hung from a single vertical axis. The home opens as a portrait-led split: a tall colour portrait cropped to the three columns left of the axis, the name at poster scale and one line of promise right of it, the two ways in as numbered ruled cells, and the work as a four-cell numbered strip across the bottom of the first viewport. Everything is ruled, square, and flat: hairlines do the structural work that cards and shadows do elsewhere.
 
 Colour is almost absent on purpose. Cool paper and ink carry the page; one ultramarine does all the signalling, so a visitor's eye goes to numerals, links, the active state and the primary action and nowhere else. Behind every page runs one living surface that answers the visitor: three accent-tinted mesh fields drift under an interactive dot grid; the dots part around the pointer, swell and turn ultramarine, a tap or click sends a ripple through the grid, and a slow wave keeps it breathing when nobody is pointing. Under reduced motion it is the same grid, still. It keeps the poster from feeling cold without covering the work.
 
@@ -268,7 +268,7 @@ A centred frame (max 1440px) with side padding of 16px, 24px from 640px, and 40p
 
 At 1024px and up, the axis is the left edge of column 4. A faint ink rule (15%) is drawn there once, fixed behind the whole page; opaque app bands redraw it on their content column. Every block puts its heading in columns 1-3 (sticky at 96px from the top) and its content in columns 4-12, inset 32px from the axis. The header's nav starts on the axis too. Below 1024px the heading stacks above the content and the axis disappears.
 
-Blocks are separated by a 15% top hairline and 64px vertical padding (96px at lg). Rows inside them are 16-32px tall in padding, separated only by hairlines. The home hero fills the first viewport at lg (100svh minus the header) and distributes name, portrait, statement and doors between top and bottom; the index occupies columns 8-12. On phones the order is name, portrait, statement, doors, then index.
+Blocks are separated by a 15% top hairline and 64px vertical padding (96px at lg). Rows inside them are 16-32px tall in padding, separated only by hairlines. The home hero is a portrait-led split at lg: the portrait spans columns 1-3 and stretches to the height of the column beside it (name, role line, one-line statement, doors in columns 4-12); the work strip spans all 12 columns below, four cells of three columns each, numeral beside name. It fits the first viewport at 1280x800 and up. On phones the order is name, portrait (4:3), statement, doors, then the work cells.
 
 **The One Axis Rule.** Nothing crosses the axis at lg: a heading is either left of it or the content is right of it. A row that needs to span starts on the axis, not before it.
 
@@ -280,7 +280,7 @@ The site's own world is flat. There is no shadow vocabulary: depth comes from ha
 
 ## Shapes
 
-Every corner in the site's world is square: the whole radius scale collapses to 0, so shadcn primitives render square without edits. Status marks are 8px squares (filled for live, outlined for pending, 70% ink for done). The portrait is a square crop.
+Every corner in the site's world is square: the whole radius scale collapses to 0, so shadcn primitives render square without edits. Status marks are 8px squares (filled for live, outlined for pending, 70% ink for done). The portrait is a 3:4 crop filling its grid module, square-cornered, in colour.
 
 Round forms come only from outside the site's grammar and are kept: app icons wear the iOS superellipse approximation (22% radius) because that is the icon's own shape, and the background's blurred mesh fields are soft discs that never read as shapes.
 
