@@ -21,7 +21,6 @@ export const ROUTE_SLUGS = {
   resume: { en: "resume", pt: "curriculo" },
   contact: { en: "contact", pt: "contacto" },
   privacy: { en: "privacy", pt: "privacidade" },
-  support: { en: "support", pt: "suporte" },
 } as const satisfies Record<string, Record<Locale, string>>
 
 export type RouteKey = keyof typeof ROUTE_SLUGS
@@ -49,4 +48,36 @@ export function allRoutePairs(): { locale: Locale; key: RouteKey; slug: string }
   return locales.flatMap((locale) =>
     ROUTE_KEYS.map((key) => ({ locale, key, slug: routeSlug(key, locale) })),
   )
+}
+
+/**
+ * The iOS apps, each with a landing page and two documents under /apps/<app>/.
+ *
+ * These URLs are what App Store Connect holds as the Marketing, Support and
+ * Privacy Policy URLs, and App Review opens them from a cold browser. Renaming
+ * a slug here means editing every app's metadata in App Store Connect too.
+ */
+export const APPS = ["crudo", "feit-y"] as const
+
+export type AppSlug = (typeof APPS)[number]
+
+export const APP_DOC_SLUGS = {
+  support: { en: "support", pt: "suporte" },
+  privacy: { en: "privacy", pt: "privacidade" },
+} as const satisfies Record<string, Record<Locale, string>>
+
+export type AppDoc = keyof typeof APP_DOC_SLUGS
+
+export const APP_DOCS = Object.keys(APP_DOC_SLUGS) as AppDoc[]
+
+/** An app's landing page, or one of its documents when `doc` is given. */
+export function appPath(app: AppSlug, locale: string, doc?: AppDoc): string {
+  if (!doc) return `/${locale}/apps/${app}/`
+  const slug = APP_DOC_SLUGS[doc][locale as Locale] ?? APP_DOC_SLUGS[doc].en
+  return `/${locale}/apps/${app}/${slug}/`
+}
+
+/** Reverse lookup for the document route. */
+export function appDocFromSlug(slug: string, locale: string): AppDoc | null {
+  return APP_DOCS.find((doc) => APP_DOC_SLUGS[doc][locale as Locale] === slug) ?? null
 }

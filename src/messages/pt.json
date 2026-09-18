@@ -393,7 +393,14 @@
       "messagePlaceholder": "A sua mensagem",
       "sendButton": "Enviar Mensagem",
       "sending": "A enviar...",
-      "characters": "{count} / {max} caracteres"
+      "characters": "{count} / {max} caracteres",
+      "topics": {
+        "label": "Assunto",
+        "project": "Um projeto",
+        "job": "Uma oferta de emprego",
+        "crudo": "Apoio Crudo",
+        "feit-y": "Apoio Feit-Y"
+      }
     },
     "validation": {
       "nameRequired": "O nome é obrigatório",
@@ -448,11 +455,7 @@
     },
     "privacy": {
       "title": "Privacidade · Pedro Feiteira",
-      "description": "O que este site e a aplicação Crudo fazem com os seus dados. Em resumo: o site só vê mensagens do formulário, e a aplicação não recolhe nada."
-    },
-    "support": {
-      "title": "Apoio · Pedro Feiteira",
-      "description": "Ajuda com a Crudo e com tudo o resto que construo: como falar comigo, restaurar compras e onde ficam os seus dados."
+      "description": "O que este site faz com os seus dados: só vê mensagens do formulário de contacto, sem análise de tráfego nem rastreio."
     }
   },
   "footer": {
@@ -460,7 +463,7 @@
     "scrollToTop": "Rolar para o topo",
     "copyright": "Pedro Feiteira. Todos os direitos reservados.",
     "privacy": "Privacidade",
-    "support": "Apoio"
+    "apps": "Apps"
   },
   "notFound": {
     "title": "Página Não Encontrada",
@@ -478,52 +481,184 @@
   },
   "privacy": {
     "title": "Privacidade",
-    "statement": "Recolho o mínimo possível, e a aplicação Crudo não recolhe absolutamente nada.",
+    "statement": "Este site só vê o que escreve no formulário de contacto.",
     "updated": "Última atualização a 18 de setembro de 2026",
-    "who": {
-      "heading": "Quem é o responsável",
-      "body": "Este site e a aplicação Crudo são da autoria de Pedro Feiteira, engenheiro de software independente em Portugal. Para qualquer questão sobre esta página, escreva para pedrofeiteira.dev@gmail.com."
-    },
-    "site": {
-      "heading": "Este site",
-      "body": "Os únicos dados que este site recebe são os que escreve no formulário de contacto: o seu nome, o seu endereço de email e a sua mensagem. Chegam à minha caixa de correio através do EmailJS e servem apenas para lhe responder. Não os vendo, não os partilho nem os junto a qualquer lista de divulgação.\n\nEste site não usa análise de tráfego, não instala cookies de rastreio e não integra redes de publicidade."
-    },
-    "apps": {
-      "heading": "A aplicação Crudo",
-      "body": "A Crudo não recolhe quaisquer dados pessoais. Funciona inteiramente offline e não tem sistema de contas.\n\nTudo o que cria na aplicação — o histórico de conversões, os favoritos e as calibrações de rendimento — fica guardado apenas no seu dispositivo e desaparece quando apaga a aplicação. Nada disso me é enviado, nem a mim nem a terceiros.\n\nAs compras são tratadas exclusivamente pela Apple. Nunca vejo os seus dados de pagamento, e a Apple comunica-me apenas totais de vendas anónimos."
-    },
-    "legal": {
-      "heading": "Fundamento legal e conservação",
-      "body": "As mensagens do formulário de contacto são tratadas com base no seu consentimento, dado quando decide enviá-las, e conservadas apenas enquanto a conversa o justificar.\n\nComo a aplicação não guarda nada fora do seu dispositivo, não existem dados da aplicação para eu conservar, divulgar ou apagar."
-    },
-    "rights": {
-      "heading": "Os seus direitos",
-      "body": "Ao abrigo do RGPD pode pedir-me uma cópia de tudo o que tenha a seu respeito, pedir a correção ou o apagamento desses dados, ou opor-se à sua utilização. Escreva para pedrofeiteira.dev@gmail.com e responderei.\n\nSe considerar que tratei mal os seus dados, pode apresentar queixa à Comissão Nacional de Proteção de Dados (CNPD), a autoridade de controlo portuguesa."
-    },
-    "changes": {
-      "heading": "Alterações",
-      "body": "Se esta política mudar, a versão revista aparecerá nesta página com uma nova data no topo."
-    }
+    "sections": [
+      {
+        "heading": "Quem é o responsável",
+        "body": "Este site é da autoria de Pedro Feiteira, engenheiro de software independente em Portugal. Para qualquer questão sobre esta página, escreva para pedrofeiteira.dev@gmail.com."
+      },
+      {
+        "heading": "Este site",
+        "body": "Os únicos dados que este site recebe são os que escreve no formulário de contacto: o seu nome, o seu endereço de email, o assunto que escolher e a sua mensagem. Chegam à minha caixa de correio através do EmailJS e servem apenas para lhe responder. Não os vendo, não os partilho nem os junto a qualquer lista de divulgação.\n\nEste site não usa análise de tráfego, não instala cookies de rastreio e não integra redes de publicidade."
+      },
+      {
+        "heading": "As minhas aplicações",
+        "body": "A Crudo e o Feit-Y têm cada um a sua própria política de privacidade, acessível a partir das respetivas páginas em Apps."
+      },
+      {
+        "heading": "Fundamento legal e conservação",
+        "body": "As mensagens do formulário de contacto são tratadas com base no seu consentimento, dado quando decide enviá-las, e conservadas apenas enquanto a conversa o justificar."
+      },
+      {
+        "heading": "Os seus direitos",
+        "body": "Ao abrigo do RGPD pode pedir-me uma cópia de tudo o que tenha a seu respeito, pedir a correção ou o apagamento desses dados, ou opor-se à sua utilização. Escreva para pedrofeiteira.dev@gmail.com e responderei.\n\nSe considerar que tratei mal os seus dados, pode apresentar queixa à Comissão Nacional de Proteção de Dados (CNPD), a autoridade de controlo portuguesa."
+      },
+      {
+        "heading": "Alterações",
+        "body": "Se esta política mudar, a versão revista aparecerá nesta página com uma nova data no topo."
+      }
+    ]
   },
-  "support": {
-    "title": "Apoio",
-    "statement": "Algo não está a funcionar, ou tem uma questão sobre a Crudo? Escreva-me diretamente.",
-    "updated": "Última atualização a 18 de setembro de 2026",
-    "contact": {
-      "heading": "Como falar comigo",
-      "body": "Envie um email para pedrofeiteira.dev@gmail.com ou use o formulário de contacto deste site. Leio tudo e respondo normalmente em dois dias úteis.\n\nSe estiver a comunicar um problema, indicar o seu dispositivo, a versão do iOS e o que estava a fazer na altura permite-me dar-lhe uma resposta útil muito mais depressa."
+  "apps": {
+    "comingSoon": "Brevemente na App Store",
+    "docLinks": {
+      "support": "Apoio",
+      "privacy": "Política de privacidade"
     },
+    "contactCta": "Abrir o formulário de contacto",
+    "emailCta": "Enviar email",
     "crudo": {
-      "heading": "Sobre a Crudo",
-      "body": "A Crudo converte o peso dos alimentos entre o estado cru e o cozinhado, por alimento e método de confeção, para que o valor que regista corresponda ao valor que tem na balança. Os fatores de rendimento vêm de dados publicados pelo USDA.\n\nFunciona sem ligação à Internet e não exige conta."
+      "name": "Crudo",
+      "tagline": "Do cru ao cozinhado, num só número.",
+      "description": "A Crudo converte o peso dos alimentos entre o estado cru e o cozinhado, por alimento e método de confeção, para que o valor que regista corresponda ao valor que tem na balança. Os fatores de rendimento vêm de dados publicados pelo USDA. Funciona sem Internet e não exige conta.",
+      "meta": {
+        "title": "Crudo · Peso cru e cozinhado",
+        "description": "A Crudo converte o peso dos alimentos entre cru e cozinhado, por alimento e método de confeção. Sem Internet, sem conta, para iPhone."
+      },
+      "support": {
+        "meta": {
+          "title": "Apoio Crudo",
+          "description": "Ajuda com a Crudo: como falar comigo, restaurar compras e onde ficam os seus dados."
+        },
+        "statement": "Algo não está a funcionar, ou tem uma questão sobre a Crudo? Escreva-me diretamente.",
+        "updated": "Última atualização a 18 de setembro de 2026",
+        "sections": [
+          {
+            "heading": "Como falar comigo",
+            "body": "Envie um email para pedrofeiteira.dev@gmail.com ou use o formulário de contacto. Leio tudo e respondo normalmente em dois dias úteis.\n\nSe estiver a comunicar um problema, indicar o seu dispositivo, a versão do iOS e o que estava a fazer na altura permite-me dar-lhe uma resposta útil muito mais depressa."
+          },
+          {
+            "heading": "Compras e restauro",
+            "body": "A base de dados completa de alimentos é uma compra única — não há subscrição. Se já a comprou, neste ou noutro dispositivo, toque em Restaurar compra na página de compra ou nas Definições e ela volta sem custo adicional.\n\nAs gorjetas são opcionais, não desbloqueiam nada e não são restauradas.\n\nOs reembolsos são tratados pela Apple e não por mim, em reportaproblem.apple.com."
+          },
+          {
+            "heading": "Os seus dados",
+            "body": "A Crudo guarda o histórico, os favoritos e as calibrações apenas no seu dispositivo. Para apagar tudo, elimine a aplicação.\n\nNão há conta para encerrar nem nada guardado num servidor."
+          }
+        ]
+      },
+      "privacy": {
+        "meta": {
+          "title": "Política de privacidade da Crudo",
+          "description": "A Crudo não recolhe dados pessoais. Tudo fica no seu dispositivo."
+        },
+        "statement": "A Crudo não recolhe absolutamente nenhum dado pessoal.",
+        "updated": "Última atualização a 18 de setembro de 2026",
+        "sections": [
+          {
+            "heading": "Quem é o responsável",
+            "body": "A Crudo é da autoria de Pedro Feiteira, engenheiro de software independente em Portugal. Para qualquer questão sobre esta página, escreva para pedrofeiteira.dev@gmail.com."
+          },
+          {
+            "heading": "O que a aplicação recolhe",
+            "body": "Nada. A Crudo funciona inteiramente offline e não tem sistema de contas.\n\nTudo o que cria na aplicação — o histórico de conversões, os favoritos e as calibrações de rendimento — fica guardado apenas no seu dispositivo e desaparece quando apaga a aplicação. Nada disso me é enviado, nem a mim nem a terceiros."
+          },
+          {
+            "heading": "Compras",
+            "body": "As compras e as gorjetas são tratadas exclusivamente pela Apple. Nunca vejo os seus dados de pagamento, e a Apple comunica-me apenas totais de vendas anónimos."
+          },
+          {
+            "heading": "Se me escrever",
+            "body": "Se me contactar para pedir apoio, o que enviar fica abrangido pela página de privacidade deste site: uso-o apenas para lhe responder."
+          },
+          {
+            "heading": "Os seus direitos",
+            "body": "Ao abrigo do RGPD pode pedir-me uma cópia de tudo o que tenha a seu respeito, pedir a correção ou o apagamento desses dados, ou opor-se à sua utilização. Escreva para pedrofeiteira.dev@gmail.com.\n\nPode também apresentar queixa à Comissão Nacional de Proteção de Dados (CNPD), a autoridade de controlo portuguesa."
+          },
+          {
+            "heading": "Alterações",
+            "body": "Se esta política mudar, a versão revista aparecerá nesta página com uma nova data no topo."
+          }
+        ]
+      }
     },
-    "purchases": {
-      "heading": "Compras e restauro",
-      "body": "A base de dados completa de alimentos é uma compra única — não há subscrição. Se já a comprou, neste ou noutro dispositivo, toque em Restaurar compra na página de compra ou nas Definições e ela volta sem custo adicional.\n\nOs reembolsos são tratados pela Apple e não por mim, em reportaproblem.apple.com."
-    },
-    "data": {
-      "heading": "Os seus dados",
-      "body": "A Crudo guarda o histórico, os favoritos e as calibrações apenas no seu dispositivo. Para apagar tudo, elimine a aplicação.\n\nNão há conta para encerrar nem nada guardado num servidor. Veja a página de privacidade para o detalhe completo."
+    "feit-y": {
+      "name": "Feit-Y",
+      "tagline": "A memória do seu treino.",
+      "description": "O Feit-Y é um companheiro de treino com quem fala. Diga-lhe o que levantou e ele regista a série; pergunte-lhe pelo seu treino e ele responde a partir dos seus próprios registos. Cada série, cada carga, cada recorde, lembrados.",
+      "meta": {
+        "title": "Feit-Y · A memória do seu treino",
+        "description": "Um companheiro de treino com quem fala. Regista as suas séries e responde a partir dos seus próprios registos. Para iPhone."
+      },
+      "support": {
+        "meta": {
+          "title": "Apoio Feit-Y",
+          "description": "Ajuda com o Feit-Y: como falar comigo, a sua conta, subscrições e como apagar os seus dados."
+        },
+        "statement": "Algo não está a funcionar, ou tem uma questão sobre o Feit-Y? Escreva-me diretamente.",
+        "updated": "Última atualização a 18 de setembro de 2026",
+        "sections": [
+          {
+            "heading": "Como falar comigo",
+            "body": "Envie um email para pedrofeiteira.dev@gmail.com ou use o formulário de contacto. Leio tudo e respondo normalmente em dois dias úteis.\n\nSe estiver a comunicar um problema, indicar o seu dispositivo, a versão do iOS e o que disse ao assistente permite-me dar-lhe uma resposta útil muito mais depressa."
+          },
+          {
+            "heading": "A sua conta",
+            "body": "Pode entrar com email e palavra-passe, com a Google ou com a Apple.\n\nPara apagar a sua conta, abra Conta na aplicação e toque em Apagar conta. Isso apaga a conta e tudo o que ela contém — treinos, memória, registos de alimentação e fotografias de progresso — e não pode ser desfeito."
+          },
+          {
+            "heading": "Subscrições",
+            "body": "As subscrições são vendidas e cobradas pela Apple. Para alterar ou cancelar uma subscrição, abra as Definições do iPhone, toque no seu nome e depois em Subscrições. Uma subscrição cancelada mantém-se ativa até ao fim do período que já pagou.\n\nSe reinstalar a aplicação ou mudar de iPhone, entre na mesma conta e use Restaurar compras.\n\nOs reembolsos são tratados pela Apple e não por mim, em reportaproblem.apple.com."
+          },
+          {
+            "heading": "Não é aconselhamento médico",
+            "body": "O Feit-Y regista o seu treino e responde a perguntas sobre ele. É orientação de treino e não aconselhamento médico: se algo lhe dói, ou tem uma condição que afeta a forma como treina, fale com um profissional de saúde."
+          }
+        ]
+      },
+      "privacy": {
+        "meta": {
+          "title": "Política de privacidade do Feit-Y",
+          "description": "O que o Feit-Y guarda, porquê, quem trata esses dados e como os apagar."
+        },
+        "statement": "O Feit-Y guarda o que lhe diz para se lembrar do seu treino. Eis exatamente o que isso é, e como apagá-lo.",
+        "updated": "Última atualização a 18 de setembro de 2026",
+        "sections": [
+          {
+            "heading": "Quem é o responsável",
+            "body": "O Feit-Y é da autoria de Pedro Feiteira, engenheiro de software independente em Portugal, responsável pelo tratamento dos seus dados. Para qualquer questão sobre esta página, escreva para pedrofeiteira.dev@gmail.com."
+          },
+          {
+            "heading": "O que o Feit-Y guarda",
+            "body": "A sua conta: o seu endereço de email e a forma como entra (email e palavra-passe, Google ou Apple).\n\nO seu treino: treinos, séries, cargas, repetições, esforço, descanso e notas.\n\nO seu corpo e a sua saúde: medidas como o peso e a altura, recordes pessoais, registos de alimentação (macronutrientes e notas), as fotografias de progresso que decidir adicionar e o que diz ao assistente sobre os seus objetivos, equipamento e limitações, incluindo lesões.\n\nO que diz ao assistente: o texto de cada comando, guardado com as ações que produziu."
+          },
+          {
+            "heading": "Porquê, e com que fundamento",
+            "body": "Tudo isto serve um único fim: fazer o Feit-Y funcionar para si — registar o seu treino, lembrá-lo e responder às suas perguntas sobre ele.\n\nAs medidas, as lesões e as fotografias de progresso são dados de saúde. O Feit-Y só os trata com o seu consentimento explícito, que a aplicação lhe pede antes de usar o assistente pela primeira vez. Pode retirá-lo a qualquer momento apagando a sua conta."
+          },
+          {
+            "heading": "A IA que lê os seus comandos",
+            "body": "Quando fala com o assistente, o texto do seu comando, o estado do treino em curso e um breve resumo do que o Feit-Y sabe sobre si são enviados para os OVHcloud AI Endpoints, que executam o modelo de pesos abertos gpt-oss-20b e devolvem as ações a realizar. A OVHcloud trata estes dados por minha conta, apenas para responder a esse pedido.\n\nNão uso os seus dados para treinar nenhum modelo."
+          },
+          {
+            "heading": "Quem mais trata os seus dados",
+            "body": "A Supabase guarda a sua conta, os seus dados e as suas fotografias, na União Europeia. A Apple ou a Google confirmam a sua identidade apenas se escolher entrar com elas. A Apple trata as subscrições e os pagamentos; nunca vejo os seus dados de pagamento.\n\nO Feit-Y não tem publicidade nem SDKs de análise ou rastreio, e nunca vendo os seus dados."
+          },
+          {
+            "heading": "Durante quanto tempo, e como apagar",
+            "body": "Os seus dados são guardados enquanto a sua conta existir. Apagar a conta na aplicação — Conta, depois Apagar conta — apaga a conta e tudo o que lhe está associado, incluindo as fotografias de progresso."
+          },
+          {
+            "heading": "Os seus direitos",
+            "body": "Ao abrigo do RGPD pode pedir-me uma cópia dos seus dados, pedir a sua correção ou apagamento, limitar ou opor-se à sua utilização, ou recebê-los num formato portável. Escreva para pedrofeiteira.dev@gmail.com.\n\nPode também apresentar queixa à Comissão Nacional de Proteção de Dados (CNPD), a autoridade de controlo portuguesa."
+          },
+          {
+            "heading": "Alterações",
+            "body": "Se esta política mudar, a versão revista aparecerá nesta página com uma nova data no topo, e as alterações relevantes serão anunciadas na aplicação."
+          }
+        ]
+      }
     }
   }
 }

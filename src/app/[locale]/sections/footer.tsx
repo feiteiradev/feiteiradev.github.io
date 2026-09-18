@@ -6,11 +6,12 @@ import { Button } from "@/components/ui/button"
 import { ArrowUp } from "lucide-react"
 import { useEffect, useState } from "react"
 import Link from "next/link"
-import { routePath } from "../../../lib/routes"
+import { APPS, appPath, routePath } from "../../../lib/routes"
 
 export default function Footer() {
   const [showScrollTop, setShowScrollTop] = useState(false)
   const t = useTranslations("footer")
+  const tApps = useTranslations("apps")
   const locale = useLocale()
 
   useEffect(() => {
@@ -52,12 +53,15 @@ export default function Footer() {
           >
             {t("privacy")}
           </Link>
-          <Link
-            href={routePath("support", locale)}
-            className="text-xs text-muted-foreground hover:text-foreground transition-colors"
-          >
-            {t("support")}
-          </Link>
+          {APPS.map((app) => (
+            <Link
+              key={app}
+              href={appPath(app, locale)}
+              className="text-xs text-muted-foreground hover:text-foreground transition-colors"
+            >
+              {tApps(`${app}.name`)}
+            </Link>
+          ))}
           <SocialMediaSection />
         </div>
       </div>

@@ -8,7 +8,7 @@ import Services from "../sections/services"
 import Showcase from "../sections/showcase"
 import Cases from "../sections/cases"
 import Contact from "../sections/contact"
-import { Privacy, Support } from "../sections/legal"
+import { Privacy } from "../sections/legal"
 import { AnimatedItem } from "../sections/components/common/AnimatedItem"
 import type { RouteKey } from "../../../lib/routes"
 
@@ -22,13 +22,21 @@ const SECTIONS: Partial<Record<RouteKey, React.ComponentType>> = {
   cases: Cases,
   contact: Contact,
   privacy: Privacy,
-  support: Support,
 }
 
 export default function PageBody({ routeKey }: { routeKey: RouteKey }) {
   const Section = SECTIONS[routeKey]
   if (!Section) return null
 
+  return (
+    <PageShell>
+      <Section />
+    </PageShell>
+  )
+}
+
+/** Header, one animated section, footer: the frame every inner page shares. */
+export function PageShell({ children }: { children: React.ReactNode }) {
   return (
     <div>
       <Header />
@@ -41,9 +49,7 @@ export default function PageBody({ routeKey }: { routeKey: RouteKey }) {
             gap: "var(--spacing-fluid-section)",
           }}
         >
-          <AnimatedItem>
-            <Section />
-          </AnimatedItem>
+          <AnimatedItem>{children}</AnimatedItem>
           <Footer />
         </div>
       </main>

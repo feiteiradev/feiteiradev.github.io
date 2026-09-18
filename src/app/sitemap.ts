@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next"
 import { locales } from "@i18n/config"
 import { SHOWCASES } from "../lib/data/showcases"
 import { SITE_URL } from "../lib/constants"
-import { ROUTE_KEYS, routePath, routeSlug } from "../lib/routes"
+import { APPS, APP_DOCS, ROUTE_KEYS, appPath, routePath, routeSlug } from "../lib/routes"
 
 // output: "export" needs this stated explicitly for metadata routes.
 export const dynamic = "force-static"
@@ -53,5 +53,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   )
 
-  return [...home, ...pages, ...demos]
+  const apps: MetadataRoute.Sitemap = APPS.flatMap((app) =>
+    [undefined, ...APP_DOCS].flatMap((doc) =>
+      locales.map((locale) => ({
+        url: `${SITE_URL}${appPath(app, locale, doc)}`,
+        changeFrequency: "monthly" as const,
+        priority: doc ? 0.3 : 0.7,
+        alternates: alternates((l) => appPath(app, l, doc)),
+      })),
+    ),
+  )
+
+  return [...home, ...pages, ...demos, ...apps]
 }

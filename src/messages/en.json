@@ -393,7 +393,14 @@
       "messagePlaceholder": "Your message",
       "sendButton": "Send Message",
       "sending": "Sending...",
-      "characters": "{count} / {max} characters"
+      "characters": "{count} / {max} characters",
+      "topics": {
+        "label": "Subject",
+        "project": "A project",
+        "job": "A job or role",
+        "crudo": "Crudo support",
+        "feit-y": "Feit-Y support"
+      }
     },
     "validation": {
       "nameRequired": "Name is required",
@@ -448,11 +455,7 @@
     },
     "privacy": {
       "title": "Privacy · Pedro Feiteira",
-      "description": "What this site and the Crudo app do with your data. Short version: the site only sees contact-form messages, and the app collects nothing."
-    },
-    "support": {
-      "title": "Support · Pedro Feiteira",
-      "description": "Help with Crudo and anything else I build: how to reach me, restoring purchases, and where your data lives."
+      "description": "What this site does with your data: it only sees contact-form messages, and runs no analytics or tracking."
     }
   },
   "footer": {
@@ -460,7 +463,7 @@
     "scrollToTop": "Scroll to top",
     "copyright": "Pedro Feiteira. All rights reserved.",
     "privacy": "Privacy",
-    "support": "Support"
+    "apps": "Apps"
   },
   "notFound": {
     "title": "Page Not Found",
@@ -478,52 +481,184 @@
   },
   "privacy": {
     "title": "Privacy",
-    "statement": "I collect as little as I can, and the Crudo app collects nothing at all.",
+    "statement": "This site only sees what you type into the contact form.",
     "updated": "Last updated 18 September 2026",
-    "who": {
-      "heading": "Who is responsible",
-      "body": "This site and the Crudo app are made by Pedro Feiteira, an independent software engineer based in Portugal. For anything on this page, write to pedrofeiteira.dev@gmail.com."
-    },
-    "site": {
-      "heading": "This website",
-      "body": "The only data this site receives is what you type into the contact form: your name, your email address and your message. It is delivered to my inbox through EmailJS, and I use it for one thing only — replying to you. I do not sell it, share it or add it to a mailing list.\n\nThis site runs no analytics, sets no tracking cookies and embeds no advertising networks."
-    },
-    "apps": {
-      "heading": "The Crudo app",
-      "body": "Crudo collects no personal data whatsoever. It works entirely offline and has no account system.\n\nEverything you create in the app — your conversion history, favourites and any yield calibrations — is stored only on your own device, and is removed when you delete the app. None of it is sent to me or to anyone else.\n\nPurchases are handled entirely by Apple. I never see your payment details, and Apple tells me only anonymous sales totals."
-    },
-    "legal": {
-      "heading": "Legal basis and retention",
-      "body": "Contact-form messages are processed on the basis of your consent, given when you choose to send the form, and kept only as long as the conversation needs them.\n\nBecause the app stores nothing off your device, there is no app data for me to retain, disclose or delete."
-    },
-    "rights": {
-      "heading": "Your rights",
-      "body": "Under the GDPR you may ask me for a copy of anything I hold about you, ask me to correct or erase it, or object to my using it. Write to pedrofeiteira.dev@gmail.com and I will respond.\n\nIf you believe I have handled your data badly, you may complain to the Comissão Nacional de Proteção de Dados (CNPD), Portugal's supervisory authority."
-    },
-    "changes": {
-      "heading": "Changes",
-      "body": "If this policy changes, the revised version will appear on this page with a new date at the top."
-    }
+    "sections": [
+      {
+        "heading": "Who is responsible",
+        "body": "This site is made by Pedro Feiteira, an independent software engineer based in Portugal. For anything on this page, write to pedrofeiteira.dev@gmail.com."
+      },
+      {
+        "heading": "This website",
+        "body": "The only data this site receives is what you type into the contact form: your name, your email address, the subject you pick and your message. It is delivered to my inbox through EmailJS, and I use it for one thing only — replying to you. I do not sell it, share it or add it to a mailing list.\n\nThis site runs no analytics, sets no tracking cookies and embeds no advertising networks."
+      },
+      {
+        "heading": "My apps",
+        "body": "Crudo and Feit-Y each have their own privacy policy, linked from their pages under Apps."
+      },
+      {
+        "heading": "Legal basis and retention",
+        "body": "Contact-form messages are processed on the basis of your consent, given when you choose to send the form, and kept only as long as the conversation needs them."
+      },
+      {
+        "heading": "Your rights",
+        "body": "Under the GDPR you may ask me for a copy of anything I hold about you, ask me to correct or erase it, or object to my using it. Write to pedrofeiteira.dev@gmail.com and I will respond.\n\nIf you believe I have handled your data badly, you may complain to the Comissão Nacional de Proteção de Dados (CNPD), Portugal's supervisory authority."
+      },
+      {
+        "heading": "Changes",
+        "body": "If this policy changes, the revised version will appear on this page with a new date at the top."
+      }
+    ]
   },
-  "support": {
-    "title": "Support",
-    "statement": "Something not working, or a question about Crudo? Write to me directly.",
-    "updated": "Last updated 18 September 2026",
-    "contact": {
-      "heading": "Getting in touch",
-      "body": "Email pedrofeiteira.dev@gmail.com, or use the contact form on this site. I read everything and usually reply within two working days.\n\nIf you are reporting a problem, telling me your device, your iOS version and what you were doing at the time will get you a useful answer much faster."
+  "apps": {
+    "comingSoon": "Coming soon to the App Store",
+    "docLinks": {
+      "support": "Support",
+      "privacy": "Privacy policy"
     },
+    "contactCta": "Open the contact form",
+    "emailCta": "Email me",
     "crudo": {
-      "heading": "About Crudo",
-      "body": "Crudo converts food weight between its raw and cooked states, by food and cooking method, so the number you log matches the number on your scale. The yield figures come from published USDA data.\n\nIt works with no network connection and needs no account."
+      "name": "Crudo",
+      "tagline": "Raw to cooked, in one number.",
+      "description": "Crudo converts food weight between its raw and cooked states, by food and cooking method, so the number you log matches the number on your scale. The yield figures come from published USDA data. It works offline and needs no account.",
+      "meta": {
+        "title": "Crudo · Raw-to-cooked food weight",
+        "description": "Crudo converts food weight between raw and cooked, by food and cooking method. Offline, no account, for iPhone."
+      },
+      "support": {
+        "meta": {
+          "title": "Crudo support",
+          "description": "Help with Crudo: how to reach me, restoring purchases and where your data lives."
+        },
+        "statement": "Something not working, or a question about Crudo? Write to me directly.",
+        "updated": "Last updated 18 September 2026",
+        "sections": [
+          {
+            "heading": "Getting in touch",
+            "body": "Email pedrofeiteira.dev@gmail.com, or use the contact form. I read everything and usually reply within two working days.\n\nIf you are reporting a problem, telling me your device, your iOS version and what you were doing at the time will get you a useful answer much faster."
+          },
+          {
+            "heading": "Purchases and restoring",
+            "body": "The full food database is a single one-time purchase — there is no subscription. If you have bought it before, on this device or another one, tap Restore Purchase on the paywall or in Settings and it will come back at no extra cost.\n\nTips are optional, unlock nothing and are not restored.\n\nRefunds are handled by Apple rather than by me, at reportaproblem.apple.com."
+          },
+          {
+            "heading": "Your data",
+            "body": "Crudo keeps your history, favourites and calibrations on your device only. To erase all of it, delete the app.\n\nThere is no account to close and nothing stored on a server."
+          }
+        ]
+      },
+      "privacy": {
+        "meta": {
+          "title": "Crudo privacy policy",
+          "description": "Crudo collects no personal data. Everything stays on your device."
+        },
+        "statement": "Crudo collects no personal data at all.",
+        "updated": "Last updated 18 September 2026",
+        "sections": [
+          {
+            "heading": "Who is responsible",
+            "body": "Crudo is made by Pedro Feiteira, an independent software engineer based in Portugal. For anything on this page, write to pedrofeiteira.dev@gmail.com."
+          },
+          {
+            "heading": "What the app collects",
+            "body": "Nothing. Crudo works entirely offline and has no account system.\n\nEverything you create in the app — your conversion history, favourites and any yield calibrations — is stored only on your own device, and is removed when you delete the app. None of it is sent to me or to anyone else."
+          },
+          {
+            "heading": "Purchases",
+            "body": "Purchases and tips are handled entirely by Apple. I never see your payment details, and Apple tells me only anonymous sales totals."
+          },
+          {
+            "heading": "Writing to me",
+            "body": "If you contact me for support, what you send is covered by this site's privacy page: I use it only to reply to you."
+          },
+          {
+            "heading": "Your rights",
+            "body": "Under the GDPR you may ask me for a copy of anything I hold about you, ask me to correct or erase it, or object to my using it. Write to pedrofeiteira.dev@gmail.com.\n\nYou may also complain to the Comissão Nacional de Proteção de Dados (CNPD), Portugal's supervisory authority."
+          },
+          {
+            "heading": "Changes",
+            "body": "If this policy changes, the revised version will appear on this page with a new date at the top."
+          }
+        ]
+      }
     },
-    "purchases": {
-      "heading": "Purchases and restoring",
-      "body": "The full food database is a single one-time purchase — there is no subscription. If you have bought it before, on this device or another one, tap Restore Purchase on the paywall or in Settings and it will come back at no extra cost.\n\nRefunds are handled by Apple rather than by me, at reportaproblem.apple.com."
-    },
-    "data": {
-      "heading": "Your data",
-      "body": "Crudo keeps your history, favourites and calibrations on your device only. To erase all of it, delete the app.\n\nThere is no account to close and nothing stored on a server. See the privacy page for the full detail."
+    "feit-y": {
+      "name": "Feit-Y",
+      "tagline": "Your training memory.",
+      "description": "Feit-Y is a workout companion you talk to. Tell it what you lifted and it logs the set; ask about your training and it answers from your own records. Every set, every load, every PR, remembered.",
+      "meta": {
+        "title": "Feit-Y · Your training memory",
+        "description": "A workout companion you talk to. It logs your sets and answers from your own training records. For iPhone."
+      },
+      "support": {
+        "meta": {
+          "title": "Feit-Y support",
+          "description": "Help with Feit-Y: reaching me, your account, subscriptions and deleting your data."
+        },
+        "statement": "Something not working, or a question about Feit-Y? Write to me directly.",
+        "updated": "Last updated 18 September 2026",
+        "sections": [
+          {
+            "heading": "Getting in touch",
+            "body": "Email pedrofeiteira.dev@gmail.com, or use the contact form. I read everything and usually reply within two working days.\n\nIf you are reporting a problem, telling me your device, your iOS version and what you said to the assistant will get you a useful answer much faster."
+          },
+          {
+            "heading": "Your account",
+            "body": "You can sign in with an email and password, with Google or with Apple.\n\nTo delete your account, open Account in the app and tap Delete account. That erases your account and everything in it — workouts, memory, food entries and progress photos — and cannot be undone."
+          },
+          {
+            "heading": "Subscriptions",
+            "body": "Subscriptions are sold and billed by Apple. To change or cancel one, open Settings on your iPhone, tap your name, then Subscriptions. A cancelled subscription stays active until the end of the period you have paid for.\n\nIf you reinstall the app or move to a new iPhone, sign in to the same account and use Restore Purchases.\n\nRefunds are handled by Apple rather than by me, at reportaproblem.apple.com."
+          },
+          {
+            "heading": "Not medical advice",
+            "body": "Feit-Y records your training and answers questions about it. It is training guidance, not medical advice: if something hurts, or you have a condition that affects how you train, talk to a health professional."
+          }
+        ]
+      },
+      "privacy": {
+        "meta": {
+          "title": "Feit-Y privacy policy",
+          "description": "What Feit-Y stores, why, who processes it, and how to delete it."
+        },
+        "statement": "Feit-Y keeps what you tell it so it can remember your training. Here is exactly what that is, and how to erase it.",
+        "updated": "Last updated 18 September 2026",
+        "sections": [
+          {
+            "heading": "Who is responsible",
+            "body": "Feit-Y is made by Pedro Feiteira, an independent software engineer based in Portugal, who is the controller of your data. For anything on this page, write to pedrofeiteira.dev@gmail.com."
+          },
+          {
+            "heading": "What Feit-Y stores",
+            "body": "Your account: your email address and how you sign in (email and password, Google or Apple).\n\nYour training: workouts, sets, loads, reps, effort, rest and notes.\n\nYour body and health: measurements such as weight and height, personal records, food entries (macros and notes), progress photos you choose to add, and what you tell the assistant about your goals, equipment and limitations, including injuries.\n\nWhat you say to the assistant: the text of each command, kept with the actions it produced."
+          },
+          {
+            "heading": "Why, and on what basis",
+            "body": "All of it is used for one thing: to run Feit-Y for you — to log your training, remember it and answer your questions about it.\n\nMeasurements, injuries and progress photos are health data. Feit-Y processes them only with your explicit consent, which the app asks for before you first use the assistant. You can withdraw it at any time by deleting your account."
+          },
+          {
+            "heading": "The AI that reads your commands",
+            "body": "When you talk to the assistant, the text of your command, the state of your current workout and a short summary of what Feit-Y remembers about you are sent to OVHcloud AI Endpoints, which runs the open-weight gpt-oss-20b model and returns the actions to take. OVHcloud processes this on my behalf to answer that request.\n\nI do not use your data to train any model."
+          },
+          {
+            "heading": "Who else processes it",
+            "body": "Supabase stores your account, your data and your photos, in the European Union. Apple or Google confirm your identity only if you choose to sign in with them. Apple handles subscriptions and payments; I never see your payment details.\n\nFeit-Y has no advertising, no analytics or tracking SDKs, and I never sell your data."
+          },
+          {
+            "heading": "How long, and how to delete it",
+            "body": "Your data is kept for as long as your account exists. Deleting your account in the app — Account, then Delete account — erases the account and everything linked to it, progress photos included."
+          },
+          {
+            "heading": "Your rights",
+            "body": "Under the GDPR you may ask me for a copy of your data, ask me to correct or erase it, restrict or object to its use, or receive it in a portable format. Write to pedrofeiteira.dev@gmail.com.\n\nYou may also complain to the Comissão Nacional de Proteção de Dados (CNPD), Portugal's supervisory authority."
+          },
+          {
+            "heading": "Changes",
+            "body": "If this policy changes, the revised version will appear on this page with a new date at the top, and material changes will be announced in the app."
+          }
+        ]
+      }
     }
   }
 }

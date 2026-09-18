@@ -4,11 +4,16 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
 import emailjs from "@emailjs/browser"
-import { useState, useRef } from "react"
+import { useEffect, useState, useRef } from "react"
 import { useTranslations } from "next-intl"
 import Image from "next/image"
 import { toast } from "sonner"
 import { CONTACT_FORM, IDENTITY, SOCIAL_LINKS } from "../../../lib/constants"
+
+// The first thing the form asks, so a bug report and a job lead are told
+// apart at a glance. App support pages link here with ?topic=<app>.
+const TOPICS = ["project", "job", "crudo", "feit-y"] as const
+type Topic = (typeof TOPICS)[number]
 
 export default function Contact() {
   const t = useTranslations("contact")
@@ -33,6 +38,7 @@ export default function Contact() {
 function ContactForm() {
   const t = useTranslations("contact")
   const [form, setForm] = useState({ name: "", email: "", message: "", website: "" })
+  const [topic, setTopic] = useState<Topic>("project")
   const [errors, setErrors] = useState<{ name?: string; email?: string; message?: string }>({})
   const [loading, setLoading] = useState(false)
   const [lastSubmitTime, setLastSubmitTime] = useState(0)
@@ -40,6 +46,13 @@ function ContactForm() {
   const emailJsServiceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID
   const emailJsTemplateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID
   const emailJsPublicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+
+  // Read on mount rather than through useSearchParams, which would force a
+  // Suspense boundary around the form in the static export.
+  useEffect(() => {
+    const requested = new URLSearchParams(window.location.search).get("topic")
+    if (TOPICS.includes(requested as Topic)) setTopic(requested as Topic)
+  }, [])
 
   const validateEmail = (email: string): boolean => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
@@ -125,7 +138,9 @@ function ContactForm() {
         {
           from_name: form.name.trim(),
           from_email: form.email.trim(),
-          message: form.message.trim(),
+          // In the body rather than a new template variable, so it reaches the
+          // inbox without editing the EmailJS template.
+          message: `[${t(`form.topics.${topic}`)}] ${form.message.trim()}`,
         },
         { publicKey: emailJsPublicKey }
       )
@@ -175,6 +190,26 @@ function ContactForm() {
           style={{ position: "absolute", left: "-9999px" }}
           aria-hidden="true"
         />
+        <div>
+          <label htmlFor="contact-topic" className="sr-only">
+            {t("form.topics.label")}
+          </label>
+          <select
+            id="contact-topic"
+            name="topic"
+            value={topic}
+            onChange={(e) => setTopic(e.target.value as Topic)}
+            disabled={loading}
+            className="border-input dark:bg-input/30 flex h-9 w-full rounded-md border bg-transparent px-3 py-1 text-base shadow-xs outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] disabled:opacity-50 md:text-sm"
+          >
+            {TOPICS.map((key) => (
+              <option key={key} value={key}>
+                {t(`form.topics.${key}`)}
+              </option>
+            ))}
+          </select>
+        </div>
+
         <div>
           <Input
             name="name"
