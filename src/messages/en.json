@@ -307,7 +307,7 @@
     "getInTouch": "Get in touch",
     "trustTitle": "How I work",
     "trust": [
-      "I reply within 24 working hours.",
+      "I reply within two working days.",
       "A written proposal with scope and deadline before anything starts.",
       "Registered self-employed in Portugal. I issue proper invoices."
     ],
@@ -359,7 +359,7 @@
     },
     "contact": {
       "title": "Contact · Pedro Feiteira",
-      "description": "Tell me about your project. I reply within 24 working hours."
+      "description": "Tell me about your project. I reply within two working days."
     },
     "privacy": {
       "title": "Privacy · Pedro Feiteira",
@@ -455,7 +455,7 @@
         "sections": [
           {
             "heading": "Getting in touch",
-            "body": "Email pedrofeiteira.dev@gmail.com, or use the contact form. I read everything and reply within 24 working hours.\n\nIf you are reporting a problem, telling me your device, your iOS version and what you were doing at the time will get you a useful answer much faster."
+            "body": "Email pedrofeiteira.dev@gmail.com, or use the contact form. I read everything and reply within two working days.\n\nIf you are reporting a problem, telling me your device, your iOS version and what you were doing at the time will get you a useful answer much faster."
           },
           {
             "heading": "Purchases and restoring",
@@ -520,7 +520,7 @@
         "sections": [
           {
             "heading": "Getting in touch",
-            "body": "Email pedrofeiteira.dev@gmail.com, or use the contact form. I read everything and reply within 24 working hours.\n\nIf you are reporting a problem, telling me your device, your iOS version and what you said to the assistant will get you a useful answer much faster."
+            "body": "Email pedrofeiteira.dev@gmail.com, or use the contact form. I read everything and reply within two working days.\n\nIf you are reporting a problem, telling me your device, your iOS version and what you said to the assistant will get you a useful answer much faster."
           },
           {
             "heading": "Your account",
@@ -608,7 +608,7 @@
     "close": {
       "title": "Contact",
       "line": "A role to fill, or something to build?",
-      "body": "Write to me directly. I read everything and reply within 24 working hours.",
+      "body": "Write to me directly. I read everything and reply within two working days.",
       "form": "Or use the contact form"
     }
   }

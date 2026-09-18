@@ -307,7 +307,7 @@
     "getInTouch": "Entre em contacto",
     "trustTitle": "Como trabalho",
     "trust": [
-      "Respondo em 24 horas úteis.",
+      "Respondo em dois dias úteis.",
       "Proposta escrita com âmbito e prazo antes de começar.",
       "Atividade aberta nas Finanças. Emito fatura-recibo."
     ],
@@ -359,7 +359,7 @@
     },
     "contact": {
       "title": "Contacto · Pedro Feiteira",
-      "description": "Fale comigo sobre o seu projeto. Respondo em 24 horas úteis."
+      "description": "Fale comigo sobre o seu projeto. Respondo em dois dias úteis."
     },
     "privacy": {
       "title": "Privacidade · Pedro Feiteira",
@@ -455,7 +455,7 @@
         "sections": [
           {
             "heading": "Como falar comigo",
-            "body": "Envie um email para pedrofeiteira.dev@gmail.com ou use o formulário de contacto. Leio tudo e respondo em 24 horas úteis.\n\nSe estiver a comunicar um problema, indicar o seu dispositivo, a versão do iOS e o que estava a fazer na altura permite-me dar-lhe uma resposta útil muito mais depressa."
+            "body": "Envie um email para pedrofeiteira.dev@gmail.com ou use o formulário de contacto. Leio tudo e respondo em dois dias úteis.\n\nSe estiver a comunicar um problema, indicar o seu dispositivo, a versão do iOS e o que estava a fazer na altura permite-me dar-lhe uma resposta útil muito mais depressa."
           },
           {
             "heading": "Compras e restauro",
@@ -520,7 +520,7 @@
         "sections": [
           {
             "heading": "Como falar comigo",
-            "body": "Envie um email para pedrofeiteira.dev@gmail.com ou use o formulário de contacto. Leio tudo e respondo em 24 horas úteis.\n\nSe estiver a comunicar um problema, indicar o seu dispositivo, a versão do iOS e o que disse ao assistente permite-me dar-lhe uma resposta útil muito mais depressa."
+            "body": "Envie um email para pedrofeiteira.dev@gmail.com ou use o formulário de contacto. Leio tudo e respondo em dois dias úteis.\n\nSe estiver a comunicar um problema, indicar o seu dispositivo, a versão do iOS e o que disse ao assistente permite-me dar-lhe uma resposta útil muito mais depressa."
           },
           {
             "heading": "A sua conta",
@@ -608,7 +608,7 @@
     "close": {
       "title": "Contacto",
       "line": "Uma vaga para preencher, ou algo para construir?",
-      "body": "Escreva-me diretamente. Leio tudo e respondo em 24 horas úteis.",
+      "body": "Escreva-me diretamente. Leio tudo e respondo em dois dias úteis.",
       "form": "Ou use o formulário de contacto"
     }
   }
