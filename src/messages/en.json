@@ -1,11 +1,9 @@
 {
   "navigation": {
     "skipToContent": "Skip to main content",
-    "about": "About",
+    "work": "Work",
+    "apps": "Apps",
     "services": "Services",
-    "skills": "Skills",
-    "showcase": "Showcase",
-    "cases": "Case Studies",
     "resume": "Résumé",
     "contact": "Contact",
     "toggleTheme": "Toggle theme",
@@ -17,8 +15,8 @@
   },
   "hero": {
     "greeting": "Hi! I'm Pedro Feiteira",
-    "role": "Custom software for your business.",
-    "tagline": "I listen to the problem and build the solution: an automated workflow, a website or an application. On my own, or with a team I put together for the project.",
+    "role": "Software engineer",
+    "tagline": "I build web and mobile products end to end: an AI-powered support system for Aircall, a Python SDK for EngineAI, and my own iOS apps, Crudo and Feit-Y. I also build custom software for businesses.",
     "ticker": [
       "Automation",
       "Websites",
@@ -29,36 +27,16 @@
       "React",
       "AWS"
     ],
-    "contactButton": "Talk about your project",
-    "resumeButton": "View Résumé",
     "profileAlt": "Pedro Feiteira, software engineer",
-    "resumeAriaLabel": "View Pedro Feiteira's interactive résumé",
-    "contactAriaLabel": "Navigate to contact section"
-  },
-  "about": {
-    "title": "About Me",
-    "statement": "I listen to the business problem and build the solution.",
-    "description": "I am a software engineer with 5 years spent shipping production systems: Python and FastAPI on the server, React and Next.js on the client, and the AWS infrastructure underneath. I work with small and medium businesses that need a process automated, a site live, or an application built to fit. I always write a proposal with scope and deadline before starting, so you know what you are agreeing to.",
-    "location": "Based in Portugal",
-    "remote": "Remote Ready",
-    "hobbiesTitle": "Hobbies"
-  },
-  "hobbies": {
-    "gaming": {
-      "title": "Gaming",
-      "description": "One of my passions is video games. From an early age, I've been drawn to good stories, great storytelling, and solving puzzles — one of the big reasons I chose this field."
-    },
-    "fitness": {
-      "title": "Fitness",
-      "description": "I believe balance between mind and body is key to dealing with everyday challenges. I try to stay as active as possible and maintain a healthy diet."
-    },
-    "music": {
-      "title": "Music",
-      "description": "I love all styles of music — every genre has its moment. Music has always had a meaningful impact on my life and work."
-    },
-    "learning": {
-      "title": "Learning",
-      "description": "Learning about everything has always fascinated me. I'm always chasing something new — different subjects to master, not just in a professional sense."
+    "doors": {
+      "hire": {
+        "title": "Hiring?",
+        "body": "Résumé, experience and the client work behind it."
+      },
+      "build": {
+        "title": "Need something built?",
+        "body": "What I build for businesses, and how to start."
+      }
     }
   },
   "experience": {
@@ -128,34 +106,6 @@
         ]
       }
     ]
-  },
-  "skills": {
-    "title": "Skills",
-    "hardSkills": "Hard Skills",
-    "softSkills": "Soft Skills",
-    "languages": "Languages",
-    "hard": {
-      "python": "Python",
-      "sql": "SQL",
-      "docker": "Docker",
-      "cicd": "CI/CD",
-      "typescript": "Typescript",
-      "testing": "Testing"
-    },
-    "soft": {
-      "communication": "Communication",
-      "problemSolving": "Problem Solving",
-      "teamwork": "Teamwork",
-      "adaptability": "Adaptability",
-      "criticalThinking": "Critical Thinking",
-      "leadership": "Leadership",
-      "creativity": "Creativity",
-      "emotionalIntelligence": "Emotional Intelligence"
-    },
-    "languageNames": {
-      "portuguese": "Portuguese",
-      "english": "English"
-    }
   },
   "resume": {
     "title": "Résumé",
@@ -300,19 +250,11 @@
       }
     ]
   },
-  "aboutPage": {
-    "title": "About Me",
-    "backToHome": "Back to Home"
-  },
   "showcase": {
-    "title": "Showcase",
-    "description": "Concepts by sector. Each one shows how a site looks when it is built for that kind of business.",
+    "title": "Concepts",
+    "description": "Concept sites by sector. Each one shows how a site looks when it is built for that kind of business.",
     "disclosure": "Fictional brands, made for demonstration. They are not real clients.",
     "viewProject": "View Project",
-    "vertex-studio": {
-      "title": "Studio Vértex",
-      "description": "Fitness classes & trainers"
-    },
     "meridian-goods": {
       "title": "Meridian Goods",
       "description": "Lifestyle retail store"
@@ -321,22 +263,14 @@
       "title": "Linha Viva Listings",
       "description": "Real estate property sales"
     },
-    "linha-viva-obras": {
-      "title": "Linha Viva Portfolio",
-      "description": "Construction projects"
-    },
-    "roam-bean": {
-      "title": "Roam Bean Roasters",
-      "description": "Specialty consumer coffee"
-    },
     "sereno-spa": {
       "title": "Sereno Spa",
       "description": "Massage therapy & booking"
     }
   },
   "cases": {
-    "title": "Case Studies",
-    "description": "Real client work, named. Unlike the concepts under Showcase, these are projects that are or have been in production.",
+    "title": "Client work",
+    "description": "Real client work, named. Unlike the concepts below, these are projects that are or have been in production.",
     "labels": {
       "situation": "Situation",
       "work": "What I did"
@@ -425,29 +359,13 @@
     }
   },
   "pageMeta": {
-    "cases": {
-      "title": "Case Studies · Pedro Feiteira",
-      "description": "Real work for Aircall and EngineAI: what was needed, what I built, and the stack behind it."
-    },
     "resume": {
       "title": "Résumé · Pedro Feiteira",
       "description": "Résumé of Pedro Feiteira, software engineer in Portugal. View online or download as a PDF."
     },
-    "about": {
-      "title": "About me · Pedro Feiteira",
-      "description": "Software engineer in Portugal. How I work, what I build, and who I build it for."
-    },
-    "skills": {
-      "title": "Skills · Pedro Feiteira",
-      "description": "The technologies I work with: Python and FastAPI on the server, React and Next.js on the client, AWS and Terraform for infrastructure."
-    },
     "services": {
       "title": "Services · Pedro Feiteira",
       "description": "Process automation, websites and web applications, systems integration and prototypes, for small and medium businesses in Portugal."
-    },
-    "showcase": {
-      "title": "Showcase · Pedro Feiteira",
-      "description": "Concepts by sector. Each one shows how a site looks when it is built for that kind of business."
     },
     "contact": {
       "title": "Contact · Pedro Feiteira",
@@ -456,6 +374,14 @@
     "privacy": {
       "title": "Privacy · Pedro Feiteira",
       "description": "What this site does with your data: it only sees contact-form messages, and runs no analytics or tracking."
+    },
+    "work": {
+      "title": "Work · Pedro Feiteira",
+      "description": "My iOS apps, client work for Aircall and EngineAI, and three concept sites."
+    },
+    "apps": {
+      "title": "Apps · Pedro Feiteira",
+      "description": "Crudo and Feit-Y, the iOS apps I design, build and support."
     }
   },
   "footer": {
@@ -511,6 +437,9 @@
     ]
   },
   "apps": {
+    "title": "Apps",
+    "description": "iOS apps I design, build, ship and support myself.",
+    "open": "See the app",
     "comingSoon": "Coming soon to the App Store",
     "docLinks": {
       "support": "Support",
@@ -660,5 +589,10 @@
         ]
       }
     }
+  },
+  "home": {
+    "proof": "Recent work",
+    "clients": "Client work",
+    "seeWork": "See all work"
   }
 }

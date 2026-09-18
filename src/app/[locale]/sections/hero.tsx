@@ -2,7 +2,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { useTranslations, useLocale } from "next-intl"
-import { Button } from "@/components/ui/button"
+import { ArrowRight } from "lucide-react"
 import { motion, Variants } from "framer-motion"
 import { routePath } from "../../../lib/routes"
 
@@ -14,6 +14,7 @@ const GRAIN_SVG = `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='h
 
 export default function Hero() {
   const t = useTranslations("hero")
+  const locale = useLocale()
   const words = t.raw("ticker")
   // Duplicated so the marquee loops without a visible seam.
   const tickerItems = Array.isArray(words)
@@ -42,10 +43,10 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.75, ease: [0.16, 1, 0.3, 1] }}
-            className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mt-1"
+            className="flex w-full max-w-xl flex-col sm:flex-row gap-4 mx-auto md:mx-0 mt-1"
           >
-            <ContactButton />
-            <ResumeButton />
+            <Door door="hire" href={routePath("resume", locale)} />
+            <Door door="build" href={routePath("services", locale)} />
           </motion.div>
         </div>
 
@@ -211,39 +212,23 @@ function HeroName() {
   )
 }
 
-function ContactButton() {
-  const t = useTranslations("hero")
-
-  return (
-    <Button
-      onClick={() => {
-        const contactSection = document.getElementById("contact")
-        contactSection?.scrollIntoView({ behavior: "smooth" })
-      }}
-      className="w-full sm:w-auto cursor-pointer focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
-      aria-label={t("contactAriaLabel")}
-    >
-      {t("contactButton")}
-    </Button>
-  )
-}
-
-function ResumeButton() {
-  const t = useTranslations("hero")
-  const locale = useLocale()
+/**
+ * The two ways in: a recruiter heads for the résumé, a client for services.
+ * App users never need a door; they arrive from the App Store.
+ */
+function Door({ door, href }: { door: "hire" | "build"; href: string }) {
+  const t = useTranslations("hero.doors")
 
   return (
     <Link
-      href={routePath("resume", locale)}
-      className="w-full sm:w-auto focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 rounded-md"
-      aria-label={t("resumeAriaLabel")}
+      href={href}
+      className="group flex flex-1 flex-col gap-1 rounded-xl border border-border/40 bg-card/60 px-5 py-4 text-left backdrop-blur-sm transition-colors hover:border-foreground/30 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring"
     >
-      <Button
-        variant="outline"
-        className="w-full sm:w-auto cursor-pointer hover:bg-foreground hover:text-background"
-      >
-        {t("resumeButton")}
-      </Button>
+      <span className="flex items-center justify-between gap-3 text-base font-semibold">
+        {t(`${door}.title`)}
+        <ArrowRight className="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+      </span>
+      <span className="text-sm text-muted-foreground">{t(`${door}.body`)}</span>
     </Link>
   )
 }

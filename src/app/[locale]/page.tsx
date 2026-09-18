@@ -1,7 +1,6 @@
 "use client"
 import Hero from "./sections/hero";
-import Services from "./sections/services";
-import Contact from "./sections/contact";
+import Proof from "./sections/proof";
 import Header from "./sections/header";
 import Footer from "./sections/footer";
 import { AnimatedItem } from "./sections/components/common/AnimatedItem";
@@ -17,10 +16,7 @@ export default function Page() {
           {/* Hero manages its own staggered entry — no outer wrapper needed */}
           <Hero />
           <AnimatedItem>
-            <Services />
-          </AnimatedItem>
-          <AnimatedItem delay={0.05}>
-            <Contact />
+            <Proof />
           </AnimatedItem>
           <AnimatedItem direction="none" delay={0.1}>
             <Footer />

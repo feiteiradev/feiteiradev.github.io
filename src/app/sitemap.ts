@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next"
 import { locales } from "@i18n/config"
 import { SHOWCASES } from "../lib/data/showcases"
 import { SITE_URL } from "../lib/constants"
-import { APPS, APP_DOCS, ROUTE_KEYS, appPath, routePath, routeSlug } from "../lib/routes"
+import { APPS, APP_DOCS, ROUTE_KEYS, appPath, appsPath, routePath, routeSlug } from "../lib/routes"
 
 // output: "export" needs this stated explicitly for metadata routes.
 export const dynamic = "force-static"
@@ -43,15 +43,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const demos: MetadataRoute.Sitemap = SHOWCASES.flatMap((showcase) =>
     locales.map((locale) => ({
-      url: `${SITE_URL}${routePath("showcase", locale)}${showcase.slug}/`,
+      url: `${SITE_URL}${routePath("work", locale)}${showcase.slug}/`,
       changeFrequency: "monthly" as const,
       // Concept demos sit below the pages that sell the actual service.
       priority: 0.5,
       alternates: alternates(
-        (l) => `/${l}/${routeSlug("showcase", l)}/${showcase.slug}/`,
+        (l) => `/${l}/${routeSlug("work", l)}/${showcase.slug}/`,
       ),
     })),
   )
+
+  const appsIndex: MetadataRoute.Sitemap = locales.map((locale) => ({
+    url: `${SITE_URL}${appsPath(locale)}`,
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+    alternates: alternates(appsPath),
+  }))
 
   const apps: MetadataRoute.Sitemap = APPS.flatMap((app) =>
     [undefined, ...APP_DOCS].flatMap((doc) =>
@@ -64,5 +71,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ),
   )
 
-  return [...home, ...pages, ...demos, ...apps]
+  return [...home, ...pages, ...demos, ...appsIndex, ...apps]
 }

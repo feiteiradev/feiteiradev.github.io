@@ -7,32 +7,26 @@ import { routeSlug } from "../../../../lib/routes"
 import { routeMetadata } from "../../pageMeta"
 import BackButton from "./BackButton"
 
-import VertexStudio from "../../sections/showcases/vertex-studio"
 import MeridianGoods from "../../sections/showcases/meridian-goods"
 import LinhaVivaListings from "../../sections/showcases/linha-viva-listings"
-import LinhaVivaObras from "../../sections/showcases/linha-viva-obras"
-import RoamBean from "../../sections/showcases/roam-bean"
 import SerenoSpa from "../../sections/showcases/sereno-spa"
 
 type Props = { params: Promise<{ locale: string; page: string; slug: string }> }
 
 const DEMOS: Record<string, React.ComponentType> = {
-  "vertex-studio": VertexStudio,
   "meridian-goods": MeridianGoods,
   "linha-viva-listings": LinhaVivaListings,
-  "linha-viva-obras": LinhaVivaObras,
-  "roam-bean": RoamBean,
   "sereno-spa": SerenoSpa,
 }
 
-// Nested under the localised showcase slug, so the demos live at
-// /pt/trabalhos/<slug>/ and /en/showcase/<slug>/. Derived from SHOWCASES so
+// Nested under the localised work slug, so the demos live at
+// /pt/trabalho/<slug>/ and /en/work/<slug>/. Derived from SHOWCASES so
 // the sitemap and the built pages cannot drift apart.
 export function generateStaticParams() {
   return locales.flatMap((locale) =>
     SHOWCASES.map((showcase) => ({
       locale,
-      page: routeSlug("showcase", locale),
+      page: routeSlug("work", locale),
       slug: showcase.slug,
     })),
   )
@@ -44,7 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return routeMetadata({
     locale,
-    pathFor: (l) => `/${l}/${routeSlug("showcase", l)}/${slug}/`,
+    pathFor: (l) => `/${l}/${routeSlug("work", l)}/${slug}/`,
     title: `${t(`${slug}.title`)} · ${t("title")}`,
     description: `${t(`${slug}.description`)}. ${t("disclosure")}`,
   })

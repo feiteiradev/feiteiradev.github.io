@@ -1,11 +1,9 @@
 {
   "navigation": {
     "skipToContent": "Saltar para o conteúdo principal",
-    "about": "Sobre",
+    "work": "Trabalho",
+    "apps": "Apps",
     "services": "Serviços",
-    "skills": "Competências",
-    "showcase": "Trabalhos",
-    "cases": "Casos",
     "resume": "Currículo",
     "contact": "Contacto",
     "toggleTheme": "Alternar tema",
@@ -17,8 +15,8 @@
   },
   "hero": {
     "greeting": "Olá! Sou o Pedro Feiteira",
-    "role": "Software à medida para o seu negócio.",
-    "tagline": "Ouço o problema, construo a solução — um workflow automatizado, um site ou uma aplicação. Sozinho, ou com uma equipa que eu reúno para o projeto.",
+    "role": "Engenheiro de software",
+    "tagline": "Construo produtos web e mobile de ponta a ponta: um sistema de apoio com IA para a Aircall, um SDK em Python para a EngineAI e as minhas próprias apps iOS, a Crudo e o Feit-Y. Também desenvolvo software à medida para empresas.",
     "ticker": [
       "Automação",
       "Sites",
@@ -29,36 +27,16 @@
       "React",
       "AWS"
     ],
-    "contactButton": "Falar sobre o seu projeto",
-    "resumeButton": "Ver Currículo",
     "profileAlt": "Pedro Feiteira, engenheiro de software",
-    "resumeAriaLabel": "Ver o currículo interativo de Pedro Feiteira",
-    "contactAriaLabel": "Navegar para a secção de contacto"
-  },
-  "about": {
-    "title": "Sobre Mim",
-    "statement": "Ouço o problema do negócio e construo a solução.",
-    "description": "Sou engenheiro de software, com 5 anos a construir sistemas em produção: backends em Python e FastAPI, frontends em React e Next.js, e a infraestrutura AWS por baixo. Trabalho com pequenas e médias empresas que precisam de automatizar um processo, pôr um site no ar ou construir uma aplicação à medida. Escrevo sempre uma proposta com âmbito e prazo antes de começar, para saber onde se está a meter.",
-    "location": "Baseado em Portugal",
-    "remote": "Disponível Remotamente",
-    "hobbiesTitle": "Hobbies"
-  },
-  "hobbies": {
-    "gaming": {
-      "title": "Gaming",
-      "description": "Uma das minhas paixões são os videojogos. Desde criança que sou fascinado por boas histórias, boa narrativa e resolver puzzles — uma das grandes razões pela qual escolhi esta área."
-    },
-    "fitness": {
-      "title": "Fitness",
-      "description": "Acredito que o equilíbrio entre mente e corpo é fundamental para lidar com os desafios do dia-a-dia. Tento manter-me ativo e seguir uma alimentação saudável."
-    },
-    "music": {
-      "title": "Música",
-      "description": "Adoro todos os estilos de música — cada género tem o seu momento. A música sempre teve um impacto significativo na minha vida e no meu trabalho."
-    },
-    "learning": {
-      "title": "Aprendizagem",
-      "description": "Aprender sobre tudo sempre me fascinou. Estou sempre a descobrir algo novo — diferentes áreas para dominar, não apenas a nível profissional."
+    "doors": {
+      "hire": {
+        "title": "Está a recrutar?",
+        "body": "Currículo, experiência e o trabalho com clientes que os sustenta."
+      },
+      "build": {
+        "title": "Precisa de algo construído?",
+        "body": "O que construo para empresas, e como começar."
+      }
     }
   },
   "experience": {
@@ -128,34 +106,6 @@
         ]
       }
     ]
-  },
-  "skills": {
-    "title": "Competências",
-    "hardSkills": "Competências Técnicas",
-    "softSkills": "Competências Pessoais",
-    "languages": "Idiomas",
-    "hard": {
-      "python": "Python",
-      "sql": "SQL",
-      "docker": "Docker",
-      "cicd": "CI/CD",
-      "typescript": "Typescript",
-      "testing": "Testes"
-    },
-    "soft": {
-      "communication": "Comunicação",
-      "problemSolving": "Resolução de Problemas",
-      "teamwork": "Trabalho em Equipa",
-      "adaptability": "Adaptabilidade",
-      "criticalThinking": "Pensamento Crítico",
-      "leadership": "Liderança",
-      "creativity": "Criatividade",
-      "emotionalIntelligence": "Inteligência Emocional"
-    },
-    "languageNames": {
-      "portuguese": "Português",
-      "english": "Inglês"
-    }
   },
   "resume": {
     "title": "Currículo",
@@ -300,19 +250,11 @@
       }
     ]
   },
-  "aboutPage": {
-    "title": "Sobre Mim",
-    "backToHome": "Voltar ao Início"
-  },
   "showcase": {
-    "title": "Trabalhos",
-    "description": "Conceitos por setor. Cada um mostra como fica um site feito para aquele tipo de negócio.",
+    "title": "Conceitos",
+    "description": "Sites conceito por setor. Cada um mostra como fica um site feito para esse tipo de negócio.",
     "disclosure": "Marcas fictícias, criadas para demonstração. Não são clientes reais.",
     "viewProject": "Ver Projeto",
-    "vertex-studio": {
-      "title": "Studio Vértex",
-      "description": "Aulas de fitness & treinadores"
-    },
     "meridian-goods": {
       "title": "Meridian Goods",
       "description": "Loja de retalho de estilo de vida"
@@ -321,22 +263,14 @@
       "title": "Linha Viva Propriedades",
       "description": "Venda de imóveis"
     },
-    "linha-viva-obras": {
-      "title": "Linha Viva Portefólio",
-      "description": "Projetos de construção"
-    },
-    "roam-bean": {
-      "title": "Roam Bean Roasters",
-      "description": "Café de especialidade"
-    },
     "sereno-spa": {
       "title": "Sereno Spa",
       "description": "Massagens & marcação"
     }
   },
   "cases": {
-    "title": "Casos",
-    "description": "Trabalho real, com o cliente nomeado. Ao contrário dos conceitos em Trabalhos, estes são projetos que estão ou estiveram em produção.",
+    "title": "Trabalho com clientes",
+    "description": "Trabalho real para clientes, com nome. Ao contrário dos conceitos abaixo, são projetos que estão ou estiveram em produção.",
     "labels": {
       "situation": "Situação",
       "work": "O que fiz"
@@ -425,29 +359,13 @@
     }
   },
   "pageMeta": {
-    "cases": {
-      "title": "Casos · Pedro Feiteira",
-      "description": "Trabalho real para a Aircall e a EngineAI: o que era preciso, o que construí e com que stack."
-    },
     "resume": {
       "title": "Currículo · Pedro Feiteira",
       "description": "Currículo de Pedro Feiteira, engenheiro de software em Portugal. Veja online ou descarregue em PDF."
     },
-    "about": {
-      "title": "Sobre mim · Pedro Feiteira",
-      "description": "Engenheiro de software em Portugal. Como trabalho, o que construo e para quem."
-    },
-    "skills": {
-      "title": "Competências · Pedro Feiteira",
-      "description": "As tecnologias com que trabalho: Python e FastAPI no servidor, React e Next.js no cliente, AWS e Terraform na infraestrutura."
-    },
     "services": {
       "title": "Serviços · Pedro Feiteira",
       "description": "Automação de processos, sites e aplicações web, integrações entre sistemas e protótipos, para pequenas e médias empresas em Portugal."
-    },
-    "showcase": {
-      "title": "Trabalhos · Pedro Feiteira",
-      "description": "Conceitos por setor. Cada um mostra como fica um site feito para aquele tipo de negócio."
     },
     "contact": {
       "title": "Contacto · Pedro Feiteira",
@@ -456,6 +374,14 @@
     "privacy": {
       "title": "Privacidade · Pedro Feiteira",
       "description": "O que este site faz com os seus dados: só vê mensagens do formulário de contacto, sem análise de tráfego nem rastreio."
+    },
+    "work": {
+      "title": "Trabalho · Pedro Feiteira",
+      "description": "As minhas apps iOS, trabalho para a Aircall e a EngineAI, e três sites conceito."
+    },
+    "apps": {
+      "title": "Apps · Pedro Feiteira",
+      "description": "A Crudo e o Feit-Y, as apps iOS que desenho, construo e apoio."
     }
   },
   "footer": {
@@ -511,6 +437,9 @@
     ]
   },
   "apps": {
+    "title": "Apps",
+    "description": "Apps iOS que desenho, construo, publico e apoio por conta própria.",
+    "open": "Ver a app",
     "comingSoon": "Brevemente na App Store",
     "docLinks": {
       "support": "Apoio",
@@ -660,5 +589,10 @@
         ]
       }
     }
+  },
+  "home": {
+    "proof": "Trabalho recente",
+    "clients": "Trabalho com clientes",
+    "seeWork": "Ver todo o trabalho"
   }
 }

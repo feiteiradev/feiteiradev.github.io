@@ -3,7 +3,6 @@
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Search, MapPin, Bed, Bath, SquareMenu, ChevronRight, Mail } from "lucide-react"
-import Link from "next/link"
 import Image from "next/image"
 
 const PHOTO_IDS = [
@@ -63,7 +62,7 @@ export default function LinhaVivaListings() {
           <div className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
             <a href="#" className="text-amber-600 border-b border-amber-400 pb-0.5">Buy</a>
             <a href="#" className="hover:text-amber-600 transition-colors">Rent</a>
-            <Link href="./linha-viva-obras" className="hover:text-amber-600 transition-colors">Our Developments</Link>
+            <a href="#" className="hover:text-amber-600 transition-colors">Our Developments</a>
             <a href="#" className="hover:text-amber-600 transition-colors">Agents</a>
           </div>
           <Button className="bg-blue-950 hover:bg-blue-900 text-white rounded-none px-6 text-xs tracking-widest font-mono uppercase">
@@ -341,7 +340,7 @@ export default function LinhaVivaListings() {
                 Discover our portfolio of exclusive developments — A+ certified, architect-designed, built to last. From off-plan investment to ready-to-move-in residences.
               </p>
               <Button size="lg" className="bg-blue-950 hover:bg-blue-900 text-white rounded-none px-8 h-13 tracking-wide" asChild>
-                <Link href="./linha-viva-obras">View Our Developments &nbsp;&rarr;</Link>
+                <a href="#">View Our Developments &nbsp;&rarr;</a>
               </Button>
             </div>
           </div>

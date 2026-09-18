@@ -4,16 +4,9 @@ const LOCALES = ['en', 'pt'] as const;
 
 // URLs are localised: the same page is /en/showcase/ and /pt/trabalhos/.
 // Mirrors ROUTE_SLUGS in src/lib/routes.ts.
-const SHOWCASE_SLUG = { en: 'showcase', pt: 'trabalhos' } as const;
+const SHOWCASE_SLUG = { en: 'work', pt: 'trabalho' } as const;
 const BACK_LABEL = { en: 'Go Back', pt: 'Voltar' } as const;
-const SLUGS = [
-  'vertex-studio',
-  'meridian-goods',
-  'linha-viva-listings',
-  'linha-viva-obras',
-  'roam-bean',
-  'sereno-spa'
-];
+const SLUGS = ['meridian-goods', 'linha-viva-listings', 'sereno-spa'];
 
 for (const locale of LOCALES) {
   test.describe(`Showcases in ${locale}`, () => {

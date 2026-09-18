@@ -43,7 +43,7 @@ export default function Showcase() {
               </CardHeader>
               <CardContent className="mt-auto pt-4 pb-6">
                 <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors" asChild>
-                  <Link href={`${routePath("showcase", locale)}${showcase.slug}/`}>
+                  <Link href={`${routePath("work", locale)}${showcase.slug}/`}>
                     {t("viewProject")} <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>

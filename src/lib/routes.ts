@@ -3,7 +3,7 @@ import { locales, type Locale } from "@i18n/config"
 /**
  * The URL slug for each page, per locale.
  *
- * Portuguese visitors get Portuguese URLs (/pt/servicos/, /pt/sobre/), which
+ * Portuguese visitors get Portuguese URLs (/pt/servicos/, /pt/trabalho/), which
  * is the point of a site that sells to Portuguese businesses. English keeps
  * English ones.
  *
@@ -13,11 +13,8 @@ import { locales, type Locale } from "@i18n/config"
  * should hardcode a slug: use routePath() so a rename lands everywhere at once.
  */
 export const ROUTE_SLUGS = {
-  about: { en: "about", pt: "sobre" },
+  work: { en: "work", pt: "trabalho" },
   services: { en: "services", pt: "servicos" },
-  skills: { en: "skills", pt: "competencias" },
-  showcase: { en: "showcase", pt: "trabalhos" },
-  cases: { en: "case-studies", pt: "casos" },
   resume: { en: "resume", pt: "curriculo" },
   contact: { en: "contact", pt: "contacto" },
   privacy: { en: "privacy", pt: "privacidade" },
@@ -69,6 +66,11 @@ export const APP_DOC_SLUGS = {
 export type AppDoc = keyof typeof APP_DOC_SLUGS
 
 export const APP_DOCS = Object.keys(APP_DOC_SLUGS) as AppDoc[]
+
+/** The index of every app. */
+export function appsPath(locale: string): string {
+  return `/${locale}/apps/`
+}
 
 /** An app's landing page, or one of its documents when `doc` is given. */
 export function appPath(app: AppSlug, locale: string, doc?: AppDoc): string {
