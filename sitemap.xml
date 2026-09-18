@@ -113,6 +113,34 @@
 <priority>0.8</priority>
 </url>
 <url>
+<loc>https://feiteiradev.github.io/en/privacy/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/privacy/" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/privacidade/" />
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://feiteiradev.github.io/pt/privacidade/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/privacy/" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/privacidade/" />
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://feiteiradev.github.io/en/support/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/support/" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/suporte/" />
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://feiteiradev.github.io/pt/suporte/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/support/" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/suporte/" />
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
 <loc>https://feiteiradev.github.io/en/showcase/vertex-studio/</loc>
 <xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/showcase/vertex-studio/" />
 <xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/trabalhos/vertex-studio/" />
