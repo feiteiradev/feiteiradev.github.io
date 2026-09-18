@@ -20,6 +20,8 @@ export const ROUTE_SLUGS = {
   cases: { en: "case-studies", pt: "casos" },
   resume: { en: "resume", pt: "curriculo" },
   contact: { en: "contact", pt: "contacto" },
+  privacy: { en: "privacy", pt: "privacidade" },
+  support: { en: "support", pt: "suporte" },
 } as const satisfies Record<string, Record<Locale, string>>
 
 export type RouteKey = keyof typeof ROUTE_SLUGS

@@ -19,7 +19,16 @@
     "greeting": "Olá! Sou o Pedro Feiteira",
     "role": "Software à medida para o seu negócio.",
     "tagline": "Ouço o problema, construo a solução — um workflow automatizado, um site ou uma aplicação. Sozinho, ou com uma equipa que eu reúno para o projeto.",
-    "ticker": ["Automação", "Sites", "Aplicações Web", "Integrações", "Protótipos", "Python", "React", "AWS"],
+    "ticker": [
+      "Automação",
+      "Sites",
+      "Aplicações Web",
+      "Integrações",
+      "Protótipos",
+      "Python",
+      "React",
+      "AWS"
+    ],
     "contactButton": "Falar sobre o seu projeto",
     "resumeButton": "Ver Currículo",
     "profileAlt": "Pedro Feiteira, engenheiro de software",
@@ -67,7 +76,19 @@
           "Responsável pela infraestrutura cloud AWS destes sistemas: Terraform (IaC), Docker e GitLab CI/CD.",
           "Implementei autenticação e monitorização aplicacional da plataforma."
         ],
-        "technologies": ["Python", "FastAPI", "React", "Next.js", "PostgreSQL", "Redis", "AWS", "Terraform", "Docker", "GitLab CI/CD", "DataDog"]
+        "technologies": [
+          "Python",
+          "FastAPI",
+          "React",
+          "Next.js",
+          "PostgreSQL",
+          "Redis",
+          "AWS",
+          "Terraform",
+          "Docker",
+          "GitLab CI/CD",
+          "DataDog"
+        ]
       },
       {
         "role": "Programador Python",
@@ -80,7 +101,17 @@
           "Otimizei fluxos de dados entre serviços Python e Snowflake.",
           "Construí pipelines CI/CD em GitHub Actions e contribuí para os dashboards da equipa de dados (SQL/Snowflake)."
         ],
-        "technologies": ["Python", "Pandas", "Pytest", "GitHub Actions", "SQL", "Snowflake", "Playwright", "JavaScript", "Grafana K6"]
+        "technologies": [
+          "Python",
+          "Pandas",
+          "Pytest",
+          "GitHub Actions",
+          "SQL",
+          "Snowflake",
+          "Playwright",
+          "JavaScript",
+          "Grafana K6"
+        ]
       },
       {
         "role": "Estágio",
@@ -90,7 +121,11 @@
         "description": [
           "Desenvolvi uma prova de conceito para geração automática de casos de teste a partir de requisitos de software, uma aplicação full-stack em Node.js com IBM Watson, publicada em cloud."
         ],
-        "technologies": ["Node.js", "IBM Watson", "Cloud Computing"]
+        "technologies": [
+          "Node.js",
+          "IBM Watson",
+          "Cloud Computing"
+        ]
       }
     ]
   },
@@ -148,14 +183,79 @@
     },
     "location": "Costa da Caparica, Portugal",
     "skillGroups": [
-      { "label": "Linguagens", "items": ["Python", "TypeScript", "JavaScript", "SQL"] },
-      { "label": "Backend", "items": ["FastAPI", "Node.js", "Microsserviços", "APIs REST"] },
-      { "label": "Frontend", "items": ["React", "Next.js"] },
-      { "label": "IA & Ferramentas de Apoio", "items": ["LangChain", "Pinecone", "Amazon Bedrock", "Claude Code", "Cursor"] },
-      { "label": "Dados", "items": ["PostgreSQL", "Redis", "Snowflake", "pandas"] },
-      { "label": "Cloud & DevOps", "items": ["AWS", "Terraform", "Infrastructure as Code", "Docker", "GitLab CI/CD", "GitHub Actions"] },
-      { "label": "Qualidade & Observabilidade", "items": ["Pytest", "Playwright", "Grafana K6", "DataDog"] },
-      { "label": "Arquitetura & Processo", "items": ["Software Architecture", "Process Automation", "Systems Integration", "Zendesk"] }
+      {
+        "label": "Linguagens",
+        "items": [
+          "Python",
+          "TypeScript",
+          "JavaScript",
+          "SQL"
+        ]
+      },
+      {
+        "label": "Backend",
+        "items": [
+          "FastAPI",
+          "Node.js",
+          "Microsserviços",
+          "APIs REST"
+        ]
+      },
+      {
+        "label": "Frontend",
+        "items": [
+          "React",
+          "Next.js"
+        ]
+      },
+      {
+        "label": "IA & Ferramentas de Apoio",
+        "items": [
+          "LangChain",
+          "Pinecone",
+          "Amazon Bedrock",
+          "Claude Code",
+          "Cursor"
+        ]
+      },
+      {
+        "label": "Dados",
+        "items": [
+          "PostgreSQL",
+          "Redis",
+          "Snowflake",
+          "pandas"
+        ]
+      },
+      {
+        "label": "Cloud & DevOps",
+        "items": [
+          "AWS",
+          "Terraform",
+          "Infrastructure as Code",
+          "Docker",
+          "GitLab CI/CD",
+          "GitHub Actions"
+        ]
+      },
+      {
+        "label": "Qualidade & Observabilidade",
+        "items": [
+          "Pytest",
+          "Playwright",
+          "Grafana K6",
+          "DataDog"
+        ]
+      },
+      {
+        "label": "Arquitetura & Processo",
+        "items": [
+          "Software Architecture",
+          "Process Automation",
+          "Systems Integration",
+          "Zendesk"
+        ]
+      }
     ],
     "education": [
       {
@@ -167,8 +267,14 @@
       }
     ],
     "languagesList": [
-      { "name": "Português", "level": "Nativo" },
-      { "name": "Inglês", "level": "Profissional" }
+      {
+        "name": "Português",
+        "level": "Nativo"
+      },
+      {
+        "name": "Inglês",
+        "level": "Profissional"
+      }
     ]
   },
   "services": {
@@ -231,21 +337,42 @@
   "cases": {
     "title": "Casos",
     "description": "Trabalho real, com o cliente nomeado. Ao contrário dos conceitos em Trabalhos, estes são projetos que estão ou estiveram em produção.",
-    "labels": { "situation": "Situação", "work": "O que fiz" },
+    "labels": {
+      "situation": "Situação",
+      "work": "O que fiz"
+    },
     "items": [
       {
         "client": "Aircall, via AdvanceWorks",
         "period": "Set 2025 – atual",
         "situation": "A Aircall precisava de responder a perguntas frequentes de clientes sem sobrecarregar a equipa de suporte.",
         "work": "Construí e mantenho um sistema de suporte com IA generativa que ajuda a responder a perguntas de clientes, com um portal de self-service em React/Next.js e microsserviços em Python/FastAPI, mais a infraestrutura AWS que o sustenta.",
-        "stack": ["Python", "FastAPI", "React", "Next.js", "PostgreSQL", "AWS", "Terraform", "Docker", "GitLab CI/CD"]
+        "stack": [
+          "Python",
+          "FastAPI",
+          "React",
+          "Next.js",
+          "PostgreSQL",
+          "AWS",
+          "Terraform",
+          "Docker",
+          "GitLab CI/CD"
+        ]
       },
       {
         "client": "EngineAI",
         "period": "Set 2021 – Ago 2025",
         "situation": "A equipa de dados e os clientes precisavam de aceder à plataforma pela mesma base de código, sem cada lado construir a sua.",
         "work": "Desenvolvi e mantive o SDK Python da empresa, construí a suite de testes interativos em Playwright e os testes de carga em Grafana K6, e otimizei os fluxos de dados entre os serviços Python e o Snowflake.",
-        "stack": ["Python", "pandas", "Pytest", "Playwright", "Grafana K6", "Snowflake", "GitHub Actions"]
+        "stack": [
+          "Python",
+          "pandas",
+          "Pytest",
+          "Playwright",
+          "Grafana K6",
+          "Snowflake",
+          "GitHub Actions"
+        ]
       }
     ],
     "resultsNote": "Números concretos e referências: falo sobre isso numa chamada, com o detalhe que cada cliente autoriza."
@@ -318,12 +445,22 @@
     "contact": {
       "title": "Contacto · Pedro Feiteira",
       "description": "Fale comigo sobre o seu projeto. Respondo em 24 horas úteis."
+    },
+    "privacy": {
+      "title": "Privacidade · Pedro Feiteira",
+      "description": "O que este site e a aplicação Crudo fazem com os seus dados. Em resumo: o site só vê mensagens do formulário, e a aplicação não recolhe nada."
+    },
+    "support": {
+      "title": "Apoio · Pedro Feiteira",
+      "description": "Ajuda com a Crudo e com tudo o resto que construo: como falar comigo, restaurar compras e onde ficam os seus dados."
     }
   },
   "footer": {
     "backToTop": "Voltar ao Topo",
     "scrollToTop": "Rolar para o topo",
-    "copyright": "Pedro Feiteira. Todos os direitos reservados."
+    "copyright": "Pedro Feiteira. Todos os direitos reservados.",
+    "privacy": "Privacidade",
+    "support": "Apoio"
   },
   "notFound": {
     "title": "Página Não Encontrada",
@@ -338,5 +475,55 @@
   "languageSwitcher": {
     "label": "Mudar idioma",
     "currentLanguage": "Idioma atual: {language}"
+  },
+  "privacy": {
+    "title": "Privacidade",
+    "statement": "Recolho o mínimo possível, e a aplicação Crudo não recolhe absolutamente nada.",
+    "updated": "Última atualização a 18 de setembro de 2026",
+    "who": {
+      "heading": "Quem é o responsável",
+      "body": "Este site e a aplicação Crudo são da autoria de Pedro Feiteira, engenheiro de software independente em Portugal. Para qualquer questão sobre esta página, escreva para pedrofeiteira.dev@gmail.com."
+    },
+    "site": {
+      "heading": "Este site",
+      "body": "Os únicos dados que este site recebe são os que escreve no formulário de contacto: o seu nome, o seu endereço de email e a sua mensagem. Chegam à minha caixa de correio através do EmailJS e servem apenas para lhe responder. Não os vendo, não os partilho nem os junto a qualquer lista de divulgação.\n\nEste site não usa análise de tráfego, não instala cookies de rastreio e não integra redes de publicidade."
+    },
+    "apps": {
+      "heading": "A aplicação Crudo",
+      "body": "A Crudo não recolhe quaisquer dados pessoais. Funciona inteiramente offline e não tem sistema de contas.\n\nTudo o que cria na aplicação — o histórico de conversões, os favoritos e as calibrações de rendimento — fica guardado apenas no seu dispositivo e desaparece quando apaga a aplicação. Nada disso me é enviado, nem a mim nem a terceiros.\n\nAs compras são tratadas exclusivamente pela Apple. Nunca vejo os seus dados de pagamento, e a Apple comunica-me apenas totais de vendas anónimos."
+    },
+    "legal": {
+      "heading": "Fundamento legal e conservação",
+      "body": "As mensagens do formulário de contacto são tratadas com base no seu consentimento, dado quando decide enviá-las, e conservadas apenas enquanto a conversa o justificar.\n\nComo a aplicação não guarda nada fora do seu dispositivo, não existem dados da aplicação para eu conservar, divulgar ou apagar."
+    },
+    "rights": {
+      "heading": "Os seus direitos",
+      "body": "Ao abrigo do RGPD pode pedir-me uma cópia de tudo o que tenha a seu respeito, pedir a correção ou o apagamento desses dados, ou opor-se à sua utilização. Escreva para pedrofeiteira.dev@gmail.com e responderei.\n\nSe considerar que tratei mal os seus dados, pode apresentar queixa à Comissão Nacional de Proteção de Dados (CNPD), a autoridade de controlo portuguesa."
+    },
+    "changes": {
+      "heading": "Alterações",
+      "body": "Se esta política mudar, a versão revista aparecerá nesta página com uma nova data no topo."
+    }
+  },
+  "support": {
+    "title": "Apoio",
+    "statement": "Algo não está a funcionar, ou tem uma questão sobre a Crudo? Escreva-me diretamente.",
+    "updated": "Última atualização a 18 de setembro de 2026",
+    "contact": {
+      "heading": "Como falar comigo",
+      "body": "Envie um email para pedrofeiteira.dev@gmail.com ou use o formulário de contacto deste site. Leio tudo e respondo normalmente em dois dias úteis.\n\nSe estiver a comunicar um problema, indicar o seu dispositivo, a versão do iOS e o que estava a fazer na altura permite-me dar-lhe uma resposta útil muito mais depressa."
+    },
+    "crudo": {
+      "heading": "Sobre a Crudo",
+      "body": "A Crudo converte o peso dos alimentos entre o estado cru e o cozinhado, por alimento e método de confeção, para que o valor que regista corresponda ao valor que tem na balança. Os fatores de rendimento vêm de dados publicados pelo USDA.\n\nFunciona sem ligação à Internet e não exige conta."
+    },
+    "purchases": {
+      "heading": "Compras e restauro",
+      "body": "A base de dados completa de alimentos é uma compra única — não há subscrição. Se já a comprou, neste ou noutro dispositivo, toque em Restaurar compra na página de compra ou nas Definições e ela volta sem custo adicional.\n\nOs reembolsos são tratados pela Apple e não por mim, em reportaproblem.apple.com."
+    },
+    "data": {
+      "heading": "Os seus dados",
+      "body": "A Crudo guarda o histórico, os favoritos e as calibrações apenas no seu dispositivo. Para apagar tudo, elimine a aplicação.\n\nNão há conta para encerrar nem nada guardado num servidor. Veja a página de privacidade para o detalhe completo."
+    }
   }
 }

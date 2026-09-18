@@ -1,14 +1,17 @@
 "use client"
 
-import { useTranslations } from "next-intl"
+import { useTranslations, useLocale } from "next-intl"
 import SocialMediaSection from "@/components/common/socialMedia"
 import { Button } from "@/components/ui/button"
 import { ArrowUp } from "lucide-react"
 import { useEffect, useState } from "react"
+import Link from "next/link"
+import { routePath } from "../../../lib/routes"
 
 export default function Footer() {
   const [showScrollTop, setShowScrollTop] = useState(false)
   const t = useTranslations("footer")
+  const locale = useLocale()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,6 +46,18 @@ export default function Footer() {
           &copy; {new Date().getFullYear()} {t("copyright")}
         </p>
         <div className="flex items-center gap-4">
+          <Link
+            href={routePath("privacy", locale)}
+            className="text-xs text-muted-foreground hover:text-foreground transition-colors"
+          >
+            {t("privacy")}
+          </Link>
+          <Link
+            href={routePath("support", locale)}
+            className="text-xs text-muted-foreground hover:text-foreground transition-colors"
+          >
+            {t("support")}
+          </Link>
           <SocialMediaSection />
         </div>
       </div>

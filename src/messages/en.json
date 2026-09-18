@@ -19,7 +19,16 @@
     "greeting": "Hi! I'm Pedro Feiteira",
     "role": "Custom software for your business.",
     "tagline": "I listen to the problem and build the solution: an automated workflow, a website or an application. On my own, or with a team I put together for the project.",
-    "ticker": ["Automation", "Websites", "Web Apps", "Integrations", "Prototypes", "Python", "React", "AWS"],
+    "ticker": [
+      "Automation",
+      "Websites",
+      "Web Apps",
+      "Integrations",
+      "Prototypes",
+      "Python",
+      "React",
+      "AWS"
+    ],
     "contactButton": "Talk about your project",
     "resumeButton": "View Résumé",
     "profileAlt": "Pedro Feiteira, software engineer",
@@ -67,7 +76,19 @@
           "Own the AWS cloud infrastructure behind these systems: Terraform (IaC), Docker and GitLab CI/CD.",
           "Implemented authentication and application monitoring for the platform."
         ],
-        "technologies": ["Python", "FastAPI", "React", "Next.js", "PostgreSQL", "Redis", "AWS", "Terraform", "Docker", "GitLab CI/CD", "DataDog"]
+        "technologies": [
+          "Python",
+          "FastAPI",
+          "React",
+          "Next.js",
+          "PostgreSQL",
+          "Redis",
+          "AWS",
+          "Terraform",
+          "Docker",
+          "GitLab CI/CD",
+          "DataDog"
+        ]
       },
       {
         "role": "Python Developer",
@@ -80,7 +101,17 @@
           "Optimized data flows between Python services and Snowflake.",
           "Built CI/CD pipelines in GitHub Actions and contributed to the data team's dashboards (SQL/Snowflake)."
         ],
-        "technologies": ["Python", "Pandas", "Pytest", "GitHub Actions", "SQL", "Snowflake", "Playwright", "JavaScript", "Grafana K6"]
+        "technologies": [
+          "Python",
+          "Pandas",
+          "Pytest",
+          "GitHub Actions",
+          "SQL",
+          "Snowflake",
+          "Playwright",
+          "JavaScript",
+          "Grafana K6"
+        ]
       },
       {
         "role": "Internship",
@@ -90,7 +121,11 @@
         "description": [
           "Built a proof of concept for automatic test-case generation from software requirements, as a full-stack application in Node.js with IBM Watson, deployed to the cloud."
         ],
-        "technologies": ["Node.js", "IBM Watson", "Cloud Computing"]
+        "technologies": [
+          "Node.js",
+          "IBM Watson",
+          "Cloud Computing"
+        ]
       }
     ]
   },
@@ -148,14 +183,79 @@
     },
     "location": "Costa da Caparica, Portugal",
     "skillGroups": [
-      { "label": "Languages", "items": ["Python", "TypeScript", "JavaScript", "SQL"] },
-      { "label": "Backend", "items": ["FastAPI", "Node.js", "Microservices", "REST APIs"] },
-      { "label": "Frontend", "items": ["React", "Next.js"] },
-      { "label": "AI & Supporting Tools", "items": ["LangChain", "Pinecone", "Amazon Bedrock", "Claude Code", "Cursor"] },
-      { "label": "Data", "items": ["PostgreSQL", "Redis", "Snowflake", "pandas"] },
-      { "label": "Cloud & DevOps", "items": ["AWS", "Terraform", "Infrastructure as Code", "Docker", "GitLab CI/CD", "GitHub Actions"] },
-      { "label": "Quality & Observability", "items": ["Pytest", "Playwright", "Grafana K6", "DataDog"] },
-      { "label": "Architecture & Process", "items": ["Software Architecture", "Process Automation", "Systems Integration", "Zendesk"] }
+      {
+        "label": "Languages",
+        "items": [
+          "Python",
+          "TypeScript",
+          "JavaScript",
+          "SQL"
+        ]
+      },
+      {
+        "label": "Backend",
+        "items": [
+          "FastAPI",
+          "Node.js",
+          "Microservices",
+          "REST APIs"
+        ]
+      },
+      {
+        "label": "Frontend",
+        "items": [
+          "React",
+          "Next.js"
+        ]
+      },
+      {
+        "label": "AI & Supporting Tools",
+        "items": [
+          "LangChain",
+          "Pinecone",
+          "Amazon Bedrock",
+          "Claude Code",
+          "Cursor"
+        ]
+      },
+      {
+        "label": "Data",
+        "items": [
+          "PostgreSQL",
+          "Redis",
+          "Snowflake",
+          "pandas"
+        ]
+      },
+      {
+        "label": "Cloud & DevOps",
+        "items": [
+          "AWS",
+          "Terraform",
+          "Infrastructure as Code",
+          "Docker",
+          "GitLab CI/CD",
+          "GitHub Actions"
+        ]
+      },
+      {
+        "label": "Quality & Observability",
+        "items": [
+          "Pytest",
+          "Playwright",
+          "Grafana K6",
+          "DataDog"
+        ]
+      },
+      {
+        "label": "Architecture & Process",
+        "items": [
+          "Software Architecture",
+          "Process Automation",
+          "Systems Integration",
+          "Zendesk"
+        ]
+      }
     ],
     "education": [
       {
@@ -167,8 +267,14 @@
       }
     ],
     "languagesList": [
-      { "name": "Portuguese", "level": "Native" },
-      { "name": "English", "level": "Professional" }
+      {
+        "name": "Portuguese",
+        "level": "Native"
+      },
+      {
+        "name": "English",
+        "level": "Professional"
+      }
     ]
   },
   "services": {
@@ -231,21 +337,42 @@
   "cases": {
     "title": "Case Studies",
     "description": "Real client work, named. Unlike the concepts under Showcase, these are projects that are or have been in production.",
-    "labels": { "situation": "Situation", "work": "What I did" },
+    "labels": {
+      "situation": "Situation",
+      "work": "What I did"
+    },
     "items": [
       {
         "client": "Aircall, via AdvanceWorks",
         "period": "Sep 2025 – present",
         "situation": "Aircall needed to answer common customer questions without overloading the support team.",
         "work": "I built and maintain a generative AI-powered support system that helps answer customer questions, with a self-service portal in React/Next.js and Python/FastAPI microservices, plus the AWS infrastructure behind it.",
-        "stack": ["Python", "FastAPI", "React", "Next.js", "PostgreSQL", "AWS", "Terraform", "Docker", "GitLab CI/CD"]
+        "stack": [
+          "Python",
+          "FastAPI",
+          "React",
+          "Next.js",
+          "PostgreSQL",
+          "AWS",
+          "Terraform",
+          "Docker",
+          "GitLab CI/CD"
+        ]
       },
       {
         "client": "EngineAI",
         "period": "Sep 2021 – Aug 2025",
         "situation": "The data team and the customers both needed to reach the platform through one codebase, rather than each building their own.",
         "work": "I developed and maintained the company's Python SDK, built the interactive test suite in Playwright and the load tests in Grafana K6, and optimised the data flows between the Python services and Snowflake.",
-        "stack": ["Python", "pandas", "Pytest", "Playwright", "Grafana K6", "Snowflake", "GitHub Actions"]
+        "stack": [
+          "Python",
+          "pandas",
+          "Pytest",
+          "Playwright",
+          "Grafana K6",
+          "Snowflake",
+          "GitHub Actions"
+        ]
       }
     ],
     "resultsNote": "Concrete numbers and references: I go through those on a call, in whatever detail each client allows."
@@ -318,12 +445,22 @@
     "contact": {
       "title": "Contact · Pedro Feiteira",
       "description": "Tell me about your project. I reply within 24 working hours."
+    },
+    "privacy": {
+      "title": "Privacy · Pedro Feiteira",
+      "description": "What this site and the Crudo app do with your data. Short version: the site only sees contact-form messages, and the app collects nothing."
+    },
+    "support": {
+      "title": "Support · Pedro Feiteira",
+      "description": "Help with Crudo and anything else I build: how to reach me, restoring purchases, and where your data lives."
     }
   },
   "footer": {
     "backToTop": "Back to Top",
     "scrollToTop": "Scroll to top",
-    "copyright": "Pedro Feiteira. All rights reserved."
+    "copyright": "Pedro Feiteira. All rights reserved.",
+    "privacy": "Privacy",
+    "support": "Support"
   },
   "notFound": {
     "title": "Page Not Found",
@@ -338,5 +475,55 @@
   "languageSwitcher": {
     "label": "Change language",
     "currentLanguage": "Current language: {language}"
+  },
+  "privacy": {
+    "title": "Privacy",
+    "statement": "I collect as little as I can, and the Crudo app collects nothing at all.",
+    "updated": "Last updated 18 September 2026",
+    "who": {
+      "heading": "Who is responsible",
+      "body": "This site and the Crudo app are made by Pedro Feiteira, an independent software engineer based in Portugal. For anything on this page, write to pedrofeiteira.dev@gmail.com."
+    },
+    "site": {
+      "heading": "This website",
+      "body": "The only data this site receives is what you type into the contact form: your name, your email address and your message. It is delivered to my inbox through EmailJS, and I use it for one thing only — replying to you. I do not sell it, share it or add it to a mailing list.\n\nThis site runs no analytics, sets no tracking cookies and embeds no advertising networks."
+    },
+    "apps": {
+      "heading": "The Crudo app",
+      "body": "Crudo collects no personal data whatsoever. It works entirely offline and has no account system.\n\nEverything you create in the app — your conversion history, favourites and any yield calibrations — is stored only on your own device, and is removed when you delete the app. None of it is sent to me or to anyone else.\n\nPurchases are handled entirely by Apple. I never see your payment details, and Apple tells me only anonymous sales totals."
+    },
+    "legal": {
+      "heading": "Legal basis and retention",
+      "body": "Contact-form messages are processed on the basis of your consent, given when you choose to send the form, and kept only as long as the conversation needs them.\n\nBecause the app stores nothing off your device, there is no app data for me to retain, disclose or delete."
+    },
+    "rights": {
+      "heading": "Your rights",
+      "body": "Under the GDPR you may ask me for a copy of anything I hold about you, ask me to correct or erase it, or object to my using it. Write to pedrofeiteira.dev@gmail.com and I will respond.\n\nIf you believe I have handled your data badly, you may complain to the Comissão Nacional de Proteção de Dados (CNPD), Portugal's supervisory authority."
+    },
+    "changes": {
+      "heading": "Changes",
+      "body": "If this policy changes, the revised version will appear on this page with a new date at the top."
+    }
+  },
+  "support": {
+    "title": "Support",
+    "statement": "Something not working, or a question about Crudo? Write to me directly.",
+    "updated": "Last updated 18 September 2026",
+    "contact": {
+      "heading": "Getting in touch",
+      "body": "Email pedrofeiteira.dev@gmail.com, or use the contact form on this site. I read everything and usually reply within two working days.\n\nIf you are reporting a problem, telling me your device, your iOS version and what you were doing at the time will get you a useful answer much faster."
+    },
+    "crudo": {
+      "heading": "About Crudo",
+      "body": "Crudo converts food weight between its raw and cooked states, by food and cooking method, so the number you log matches the number on your scale. The yield figures come from published USDA data.\n\nIt works with no network connection and needs no account."
+    },
+    "purchases": {
+      "heading": "Purchases and restoring",
+      "body": "The full food database is a single one-time purchase — there is no subscription. If you have bought it before, on this device or another one, tap Restore Purchase on the paywall or in Settings and it will come back at no extra cost.\n\nRefunds are handled by Apple rather than by me, at reportaproblem.apple.com."
+    },
+    "data": {
+      "heading": "Your data",
+      "body": "Crudo keeps your history, favourites and calibrations on your device only. To erase all of it, delete the app.\n\nThere is no account to close and nothing stored on a server. See the privacy page for the full detail."
+    }
   }
 }

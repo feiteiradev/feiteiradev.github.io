@@ -8,6 +8,7 @@ import Services from "../sections/services"
 import Showcase from "../sections/showcase"
 import Cases from "../sections/cases"
 import Contact from "../sections/contact"
+import { Privacy, Support } from "../sections/legal"
 import { AnimatedItem } from "../sections/components/common/AnimatedItem"
 import type { RouteKey } from "../../../lib/routes"
 
@@ -20,6 +21,8 @@ const SECTIONS: Partial<Record<RouteKey, React.ComponentType>> = {
   showcase: Showcase,
   cases: Cases,
   contact: Contact,
+  privacy: Privacy,
+  support: Support,
 }
 
 export default function PageBody({ routeKey }: { routeKey: RouteKey }) {
