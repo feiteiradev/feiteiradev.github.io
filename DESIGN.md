@@ -187,9 +187,9 @@ components:
 
 **Creative North Star: "The Numbered Poster"**
 
-The site is one International Typographic Style poster, set on a strict 12-column grid and hung from a single vertical axis. The home opens as a portrait-led split: a tall colour portrait cropped to the three columns left of the axis, the name at poster scale and one line of promise right of it, the two ways in as numbered ruled cells, and the work as a four-cell numbered strip across the bottom of the first viewport. Everything is ruled, square, and flat: hairlines do the structural work that cards and shadows do elsewhere.
+The site is one International Typographic Style poster, set on a strict 12-column grid and hung from a single vertical axis. The home opens as a portrait-led split: a tall colour portrait cropped to the three columns left of the axis, the name at poster scale and one line of promise right of it, the two ways in as ruled cells marked by an accent icon, and the work as a four-cell strip across the bottom of the first viewport, each cell marked by an icon: the apps by their own App Store icons, client work by an accent line icon. Everything is ruled, square, and flat: hairlines do the structural work that cards and shadows do elsewhere.
 
-Colour is almost absent on purpose. Cool paper and ink carry the page; one ultramarine does all the signalling, so a visitor's eye goes to numerals, links, the active state and the primary action and nowhere else. Behind every page runs one living surface that answers the visitor: three accent-tinted mesh fields drift under an interactive dot grid; the dots part around the pointer, swell and turn ultramarine, a tap or click sends a ripple through the grid, and a slow wave keeps it breathing when nobody is pointing. Under reduced motion it is the same grid, still. It keeps the poster from feeling cold without covering the work.
+Colour is almost absent on purpose. Cool paper and ink carry the page; one ultramarine does all the signalling, so a visitor's eye goes to icons, links, the active state and the primary action and nowhere else. Behind every page runs one living surface that answers the visitor: three accent-tinted mesh fields drift under an interactive dot grid; the dots part around the pointer, swell and turn ultramarine, a tap or click sends a ripple through the grid, and a slow wave keeps it breathing when nobody is pointing. Under reduced motion it is the same grid, still. It keeps the poster from feeling cold without covering the work.
 
 Inside the site's frame, each iOS app wears its own brand. The Crudo and Feit-Y bands re-point the same tokens to the app's palette and face, so the grid, axis, rules and interaction stay the site's while colour and type become the app's.
 
@@ -206,7 +206,7 @@ Inside the site's frame, each iOS app wears its own brand. The Crudo and Feit-Y 
 Cool paper, ink, and one ultramarine; every other colour is a neutral or belongs to an app band.
 
 ### Primary
-- **Ultramarine** (`ultramarine`; dark: `night-ultramarine`): index numerals, door numbers, links, the active nav item, the hairline that draws on hover, the 4% row tint on hover, the primary filled action, the focus ring, text selection and the caret. White text (`on-ultramarine`) sits on it in light mode; near-black (`on-night-ultramarine`) in dark.
+- **Ultramarine** (`ultramarine`; dark: `night-ultramarine`): the work and door icons, links, the active nav item, the hairline that draws on hover, the 4% row tint on hover, the primary filled action, the focus ring, text selection and the caret. White text (`on-ultramarine`) sits on it in light mode; near-black (`on-night-ultramarine`) in dark.
 
 ### Neutral
 - **Cool Paper** (`cool-paper`; dark: `night-paper`): the page ground under the mesh.
@@ -243,7 +243,7 @@ Cool paper, ink, and one ultramarine; every other colour is a neutral or belongs
 
 ### Hierarchy
 - **Display** (`display`): the name only, in two lines, each line revealed through its own box on load.
-- **Numeral** (`numeral`): the home index numbers 01-04, in ultramarine, co-focal with the name.
+- **Numeral** (`numeral`): reserved; the home no longer numbers its work (the cells lead with icons since 2026-09-18).
 - **Headline** (`headline`, 2.25rem below 1024px): the closing line on home and the services subtitle; measure 20-26ch.
 - **Statement** (`statement`, 1.875rem below 1024px): the lead sentence of document pages (privacy, app support/privacy); measure 24ch.
 - **Title** (`title`): block headings on the left of the axis, rail titles, door titles (up to 1.875rem at lg).
@@ -258,7 +258,7 @@ Cool paper, ink, and one ultramarine; every other colour is a neutral or belongs
 - **Feit-Y**: Outfit for everything (`feity-display`, 3.75rem below 1024px), with IBM Plex Mono for tabular figures such as the "last updated" date (`feity-figures`).
 
 ### Named Rules
-**The Tabular Figures Rule.** Any number that sits in a column or a date line (index numerals, door numbers, periods, "updated" dates, the footer year) is set with tabular figures.
+**The Tabular Figures Rule.** Any number that sits in a column or a date line (periods, "updated" dates, the footer year) is set with tabular figures.
 
 **The No Label Rule.** Sections are named by a sentence-case heading left of the axis, never by a small uppercase, letter-spaced label above the content.
 
@@ -268,7 +268,7 @@ A centred frame (max 1440px) with side padding of 16px, 24px from 640px, and 40p
 
 At 1024px and up, the axis is the left edge of column 4. A faint ink rule (15%) is drawn there once, fixed behind the whole page; opaque app bands redraw it on their content column. Every block puts its heading in columns 1-3 (sticky at 96px from the top) and its content in columns 4-12, inset 32px from the axis. The header's nav starts on the axis too. Below 1024px the heading stacks above the content and the axis disappears.
 
-Blocks are separated by a 15% top hairline and 64px vertical padding (96px at lg). Rows inside them are 16-32px tall in padding, separated only by hairlines. The home hero is a portrait-led split at lg: the portrait spans columns 1-3 and stretches to the height of the column beside it (name, role line, one-line statement, doors in columns 4-12); the work strip spans all 12 columns below, four cells of three columns each, numeral beside name. It fits the first viewport at 1280x800 and up. On phones the order is name, portrait (4:3), statement, doors, then the work cells.
+Blocks are separated by a 15% top hairline and 64px vertical padding (96px at lg). Rows inside them are 16-32px tall in padding, separated only by hairlines. The home hero is a portrait-led split at lg: the portrait spans columns 1-3 and stretches to the height of the column beside it (name, role line, one-line statement, doors in columns 4-12); the work strip spans all 12 columns below, four cells of three columns each, icon beside name. It fits the first viewport at 1280x800 and up. On phones the order is name, portrait (4:3), statement, doors, then the work cells.
 
 **The One Axis Rule.** Nothing crosses the axis at lg: a heading is either left of it or the content is right of it. A row that needs to span starts on the axis, not before it.
 
@@ -295,8 +295,8 @@ Few and blunt: a square block of accent with a short verb and an arrow.
 
 ### Index rows (signature)
 The site's unit of content: home index, app list, service list, contact routes, app document links.
-- **Structure:** a ruled row (15% ink top hairline) with a numeral or icon column, a name, a provenance line in meta, and a dated status line; an arrow sits at the end when the row leaves the page.
-- **Hover / Focus:** the hairline draws in ultramarine from the axis side (scaleX 0 to 1, 600ms, cubic-bezier(0.16, 1, 0.3, 1)), the row tints ultramarine at 4%, and the numeral nudges 4px right or the arrow lifts 2px up-right and turns ultramarine.
+- **Structure:** a ruled row (15% ink top hairline) with an icon column (an app's own App Store icon, or an ultramarine lucide line icon at 1.25 stroke), a name, a provenance line in meta, and a dated status line; an arrow sits at the end when the row leaves the page.
+- **Hover / Focus:** the hairline draws in ultramarine from the axis side (scaleX 0 to 1, 600ms, cubic-bezier(0.16, 1, 0.3, 1)), the row tints ultramarine at 4%, and the icon nudges 4px right or the arrow lifts 2px up-right and turns ultramarine.
 
 ### Doors
 The two primary ways in from home, numbered 05 and 06 as the index continues. A 2px full-ink top rule that draws 2px thick in ultramarine on hover, a small ultramarine number, a title-size question, a graphite line, and a 24px arrow.
@@ -320,7 +320,7 @@ The only authored motion. First-viewport modules rise 14px and fade in over 900m
 ### Do:
 - **Do** hang every block from the axis: heading in columns 1-3, content from column 4 inset 32px.
 - **Do** present lists of work, services, routes and documents as numbered or ruled index rows with provenance and a dated status mark.
-- **Do** use ultramarine only for numerals, links, the active state, the primary action and focus.
+- **Do** use ultramarine only for icons, links, the active state, the primary action and focus.
 - **Do** give interactive rows the hairline-draw hover: accent rule drawn from the axis side, 4% accent tint, and a small nudge on the numeral or arrow.
 - **Do** set numbers that line up with tabular figures.
 - **Do** keep app pages inside a brand band that re-points tokens only, with Crudo locked to light.

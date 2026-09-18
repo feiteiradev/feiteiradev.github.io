@@ -166,14 +166,6 @@
   letter-spacing: -0.045em;
 }
 
-/* The index numerals are display type too: the work carries the same
-   weight as the name, so the first viewport reads as one poster. */
-@utility index-numeral {
-  font-size: clamp(2.75rem, 1rem + 2.6vw, 4.25rem);
-  line-height: 0.8;
-  letter-spacing: -0.04em;
-}
-
 /* The one authored moment: the first viewport's modules rise into place in a
    single stagger, the name revealed line by line through its own box. It is
    CSS, so nothing waits on JavaScript to become visible. */

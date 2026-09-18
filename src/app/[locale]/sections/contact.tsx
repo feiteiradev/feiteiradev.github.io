@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import emailjs from "@emailjs/browser"
 import { useEffect, useState, useRef } from "react"
 import { useTranslations } from "next-intl"
-import { ArrowUpRight, ChevronDown } from "lucide-react"
+import { ArrowUpRight, ChevronDown, Mail } from "lucide-react"
 import { Block } from "./components/common/Block"
 import { toast } from "sonner"
 import { CONTACT_FORM, IDENTITY, SOCIAL_LINKS } from "../../../lib/constants"
@@ -280,8 +280,8 @@ function ContactForm() {
 function ContactInfo() {
   const t = useTranslations("contact")
   const routes = [
-    { href: `mailto:${IDENTITY.email}`, label: IDENTITY.email, external: false },
-    ...SOCIAL_LINKS.map(({ href, label }) => ({ href, label, external: true })),
+    { href: `mailto:${IDENTITY.email}`, label: IDENTITY.email, external: false, icon: "email" },
+    ...SOCIAL_LINKS.map(({ href, label, icon }) => ({ href, label, external: true, icon })),
   ]
 
   return (
@@ -295,7 +295,10 @@ function ContactInfo() {
                 {...(r.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                 className="group relative flex items-center justify-between gap-4 border-t border-rule/15 py-4 hairline-draw"
               >
-                <span className="break-all group-hover:text-primary">{r.label}</span>
+                <span className="flex min-w-0 items-center gap-4">
+                  <RouteIcon name={r.icon} />
+                  <span className="break-all group-hover:text-primary">{r.label}</span>
+                </span>
                 <ArrowUpRight className="h-4 w-4 shrink-0 text-muted-foreground group-hover:text-primary" strokeWidth={1.5} aria-hidden="true" />
               </a>
             </li>
@@ -313,4 +316,15 @@ function ContactInfo() {
       </div>
     </div>
   )
+}
+
+/**
+ * One icon per route, all in the accent. Lucide has no brand marks, so the
+ * LinkedIn, GitHub and X logos are masks over their SVGs: they take the
+ * current colour exactly like the lucide glyph beside them.
+ */
+function RouteIcon({ name }: { name: string }) {
+  if (name === "email") return <Mail className="h-5 w-5 shrink-0 text-primary" strokeWidth={1.5} aria-hidden="true" />
+  const mask = `url(/icons/${name}.svg) center / contain no-repeat`
+  return <span aria-hidden="true" className="h-5 w-5 shrink-0 bg-primary" style={{ mask, WebkitMask: mask }} />
 }
