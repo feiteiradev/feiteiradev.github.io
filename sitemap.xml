@@ -127,20 +127,6 @@
 <priority>0.8</priority>
 </url>
 <url>
-<loc>https://feiteiradev.github.io/en/support/</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/support/" />
-<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/suporte/" />
-<changefreq>monthly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>https://feiteiradev.github.io/pt/suporte/</loc>
-<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/support/" />
-<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/suporte/" />
-<changefreq>monthly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
 <loc>https://feiteiradev.github.io/en/showcase/vertex-studio/</loc>
 <xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/showcase/vertex-studio/" />
 <xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/trabalhos/vertex-studio/" />
@@ -223,5 +209,89 @@
 <xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/trabalhos/sereno-spa/" />
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
+</url>
+<url>
+<loc>https://feiteiradev.github.io/en/apps/crudo/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/apps/crudo/" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/apps/crudo/" />
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://feiteiradev.github.io/pt/apps/crudo/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/apps/crudo/" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/apps/crudo/" />
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://feiteiradev.github.io/en/apps/crudo/support/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/apps/crudo/support/" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/apps/crudo/suporte/" />
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://feiteiradev.github.io/pt/apps/crudo/suporte/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/apps/crudo/support/" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/apps/crudo/suporte/" />
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://feiteiradev.github.io/en/apps/crudo/privacy/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/apps/crudo/privacy/" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/apps/crudo/privacidade/" />
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://feiteiradev.github.io/pt/apps/crudo/privacidade/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/apps/crudo/privacy/" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/apps/crudo/privacidade/" />
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://feiteiradev.github.io/en/apps/feit-y/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/apps/feit-y/" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/apps/feit-y/" />
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://feiteiradev.github.io/pt/apps/feit-y/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/apps/feit-y/" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/apps/feit-y/" />
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://feiteiradev.github.io/en/apps/feit-y/support/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/apps/feit-y/support/" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/apps/feit-y/suporte/" />
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://feiteiradev.github.io/pt/apps/feit-y/suporte/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/apps/feit-y/support/" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/apps/feit-y/suporte/" />
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://feiteiradev.github.io/en/apps/feit-y/privacy/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/apps/feit-y/privacy/" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/apps/feit-y/privacidade/" />
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
+</url>
+<url>
+<loc>https://feiteiradev.github.io/pt/apps/feit-y/privacidade/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://feiteiradev.github.io/en/apps/feit-y/privacy/" />
+<xhtml:link rel="alternate" hreflang="pt" href="https://feiteiradev.github.io/pt/apps/feit-y/privacidade/" />
+<changefreq>monthly</changefreq>
+<priority>0.3</priority>
 </url>
 </urlset>
