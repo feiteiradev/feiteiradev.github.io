@@ -4,8 +4,8 @@
   "description": "Engenheiro de software em Portugal. Automação de processos, sites e aplicações web à medida para pequenas e médias empresas.",
   "start_url": "/pt/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#000000",
+  "background_color": "#f2f3f0",
+  "theme_color": "#0e0f0d",
   "orientation": "portrait-primary",
   "icons": [
     {

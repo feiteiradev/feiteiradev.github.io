@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
 2:I[39756,["/_next/static/chunks/01xlw8hd842-c.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
 3:I[37457,["/_next/static/chunks/01xlw8hd842-c.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"default"]
-4:[]
-0:{"rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"isPartial":false,"staleTime":300,"varyParams":"$W4","buildId":"35P0-GH9l-N6LuC_eS_-u"}
+:HL["/_next/static/chunks/0xpmk4.9_qhms.css","style"]
+0:{"rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0xpmk4.9_qhms.css","precedence":"next"}]],["$","div",null,{"className":"generalsans_5295d805-module__Ce78zW__variable outfit_bf27d5f4-module__HwFO5a__variable ibm_plex_mono_5555ac1b-module__ODy_iG__variable","children":["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"dHT9UKRH446rrRuXgdeNj"}
